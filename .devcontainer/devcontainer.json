@@ -1,6 +1,7 @@
 {
     "image": "mcr.microsoft.com/vscode/devcontainers/jekyll",
     "postCreateCommand": "bundle",
+    "remoteUser": "vscode",
     "forwardPorts": [4000],
     "extensions": [
         "sissel.shopify-liquid"
