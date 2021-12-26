@@ -16,13 +16,13 @@ GitHub Pages. It is already live on
 
 ### Building and testing
 
-This website is built with Jekyll, and Jekyll requires Linux and Ruby. If you
-are on Windows (as is no doubt the case for you, an Open Rails developer), I
-suggest using Windows Subsystem for Linux to run Linux and
-[rbenv](https://github.com/rbenv/rbenv) to download and compile Ruby. Once Ruby
-is installed, you can run `gem install bundler` to install Bundler and then
-`bundle install` to install Jekyll and all its dependencies. Finally, use
-`bundle exec jekyll serve` to build this project and spin up a test server.
+Use the
+[Remote Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
+extension for Visual Studio Code, along with
+[Docker Desktop](https://www.docker.com/products/docker-desktop),
+to build and test the website on Windows. After opening the project folder in a
+container, press F5 (or use Run > Start Debugging) to run Jekyll. The site will
+be available at http://localhost:4000.
 
 ### Changes from the PHP version
 
