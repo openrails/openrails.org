@@ -7,8 +7,8 @@ toc:
         url: /discover/our-mission/
       - page: Our Plans
         url: /discover/our-plans/
-      - page: Version 1.3
-        url: /discover/version-1-3/
+      - page: Version 1.4
+        url: /discover/version-1-4/
       - page: Project Team
         url: /discover/project-team/
       - page: News
@@ -37,8 +37,6 @@ toc:
         url: /learn/activities/
   - title: Share
     subfolderitems:
-      - page: Gallery
-        url: /share/gallery/
       - page: Community
         url: /share/community/
       - page: Multi-Player

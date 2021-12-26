@@ -16,9 +16,6 @@
 - date: 2018-03-01
   text:
     - Geoff Rowlands found a way to model 3D controls so they can be grabbed by the handle <a href="https://www.youtube.com/watch?v=UO9XrBz3iD0&feature=youtu.be">as in this video</a>.
-- date: 2017-11-01
-  text:
-    - Open Rails trialled <a href="http://www.monogame.net/">with Monogame instead of XNA</a> uses less RAM and give higher frame rates.
 - date: 2017-01-01
   title: Version 1.2
   text:

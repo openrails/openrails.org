@@ -1,11 +1,11 @@
 stable_installer:
-  url: http://openrails.org/files/OpenRails-1.3.1-Setup.exe
-  date: 2018-12-08
-  bytes: 45757016
+  url: http://openrails.org/files/OpenRails-1.4-Setup.exe
+  date: 2021-10-19
+  bytes: 79242328
 stable_source:
-  url: http://openrails.org/files/OpenRails-1.2-Source.zip
-  date: 2017-01-22
-  bytes: 33468761
+  url: http://openrails.org/files/OpenRails-1.4-Source.zip
+  date: 2021-10-19
+  bytes: 118285847
 testing_build:
   url: http://openrails.org/files/OpenRails-Testing.zip
   date: 2020-09-30
