@@ -19,6 +19,8 @@ toc:
     subfolderitems:
       - page: Program
         url: /download/program/
+      - page: Versions
+        url: /download/versions/
       - page: Source
         url: /download/source/
       - page: Changes
