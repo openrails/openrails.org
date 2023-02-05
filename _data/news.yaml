@@ -1,3 +1,24 @@
+- date: 2023-01-01
+  title: Portugal '79
+  text:
+    - <a href="https://github.com/cpvirtual/OR_CPV.git">Portugal '79</a> has been published. 
+      This provides 1775km of broad gauge track, with full detail on 91km between Entroncamento and Alfarelos.
+- date: 2023-01-01
+  title: HSB Simulator
+  text:
+    - New commercial route <a href="http://www.hsb-simulator.com/">HSB Simulator</a> published. 
+      This contains 87 miles of the Harz narrow-gauge railway, the longest narrow-gauge route network in Europe.
+- date: 2022-11-01
+  title: Version 1.5.1
+  text:
+    - <a href="/discover/version-1-5-1/">Open Rails 1.5.1</a> released to fix 3 bugs in v1.5.
+- date: 2022-11-01
+  title: Version 1.5
+  text:
+    - <a href="/discover/version-1-5/">Open Rails 1.5</a> released.
+- date: 2022-07-01
+  text:
+    - Three new UK routes are now available for immediate download <a href="http://openrails.org/download/content/">here</a>.
 - date: 2021-10-19
   text:
     - <a href="/discover/version-1-4/">Version 1.4</a> is now available for immediate download <a href="/download/program/">here</a>.
