@@ -5,7 +5,7 @@ preambles:
   - modal: modal1
     title: Get Started with Open Rails
 ---
-<!-- HdJ: Made changes to function and positioning of header buttons-->
+
 <div class="row">
        <div class="col-md-6">
           <img class="focus_image" src='assets/banner.jpg' title="UP SD70ACe train consist visiting the CN Ruel Subdivision&#xa;(Open Rails route in development)&#xa;posted by TrainSimulations.net" alt="UP SD70ACe train consist visiting the CN Ruel Subdivision&#xa;(Open Rails route in development)&#xa;posted by TrainSimulations.net">
@@ -14,7 +14,7 @@ preambles:
              <div class="col-md-6" align="right">
               <p>&nbsp;<br>&nbsp;<br>&nbsp;</p>
                  <div class="description">
-                      Totally free train simulator that supports<br>the world's largest range of digital content.
+                Totally free train simulator that supports<br>the world's largest range of digital content.
                  </div>
                  <div class="download">
                     
@@ -24,7 +24,9 @@ preambles:
                     <!-- Button to Build Route -->
                     <a href="/learn/build-route/" role="button" class='btn download_button'>Build your own Route</a>
                     </span>
+
                 </div>
+    
           </div>
 </div>
 

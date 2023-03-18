@@ -12,7 +12,6 @@
       {%- include menu.html -%}
 
       <div class="row">
-<!-- HdJ: Made the box wider so the page titles don't wrap. -->
         <div class="col-md-12">
           {%- if page.section -%}
           <h1>{{ page.section }} > {{ page.title }}</h1>

@@ -3,20 +3,20 @@ layout: default
 section: Learn
 title: Build Your Own Route
 ---
-<!-- HdJ: Removed double header row -->
+<!-- HdJ Fixed wrapping of the headers -->
 		<div class="row">
       <div class="col-md-2">&nbsp;</div>
 			<div class="col-md-8">
 				<h2>What the tutorial covers</h2>
         <p>
-<!-- HdJ: Some textual changes on bullet points -->
+<!-- Some textual changes on bullet points -->
           <ul>
             <li>Installing all the free tools that you need to build a route.</li>
             <li>Finding the information that you need to build a current or historic real-world based route.</li>
             <li>Creating the different elements of route building in a practical sequence.</li>
             <li>Running your first train.</li>
           </ul>
-<!-- HdJ End textual changes -->
+<!-- HdJ End changes -->
         </p><p>
           Peter Newell hosts the "Coals to Newcastle" website which is packed with useful technical information
           for accurate simulation using Open Rails.

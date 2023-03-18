@@ -2,7 +2,7 @@ toc:
   - title: Discover
     subfolderitems:
       - page: Get Started
-        url: /discover/get-started/
+        url: /get-started/
       - page: Open Rails
         url: /discover/open-rails/
       - page: Mission
