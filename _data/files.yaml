@@ -1,0 +1,52 @@
+stable_installer:
+  url: http://openrails.org/files/OpenRails-1.5.1-Setup.exe
+  date: 2022-11-27
+  bytes: 85092792
+stable_source:
+  url: http://openrails.org/files/OpenRails-1.5.1-Source.zip
+  date: 2022-11-27
+  bytes: 112062082
+testing_build:
+  url: http://openrails.org/files/OpenRails-Testing.zip
+  date: 2023-02-03
+  bytes: 95706807
+testing_source:
+  url: http://openrails.org/files/OpenRails-Testing-Source.zip
+  date: 2023-02-03
+  bytes: 147063174
+testing_manual:
+  url: http://openrails.org/files/OpenRails-Testing-Manual.pdf
+  date: 2023-02-03
+  bytes: 36504088
+doc_install_en:
+  url: /assets/files/installation_guide_en.pdf
+  date: 2020-09-01
+  bytes: 993137
+doc_install_es:
+  url: /assets/files/installation_guide_es.pdf
+  date: 2020-09-01
+  bytes: 501541
+doc_german_keyboards:
+  url: /assets/files/Keyboard_Layout_DE_V1.3.1e.pdf
+  date: 2013-07-31
+  bytes: 452861
+doc_signaling:
+  url: /assets/files/signalling_operational.pdf
+  date: 2013-03-21
+  bytes: 80656
+doc_trackviewer:
+  url: /assets/files/ORTS_Trackviewer_manual.pdf
+  date: 2014-07-19
+  bytes: 840438
+doc_steam:
+  url: /assets/files/OR_Steam Model_03_02_2014.pdf
+  date: 2014-03-02
+  bytes: 313800
+doc_curves:
+  url: /assets/files/superelevation_v1.pdf
+  date: 2014-06-03
+  bytes: 126282
+content_demomodel1:
+  url: https://codeload.github.com/cjakeman/Demo-Model-1/zip/main
+  date: 2015-07-30
+  bytes: 252635806

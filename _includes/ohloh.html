@@ -1,0 +1,53 @@
+<a href="#" title="Click for another snippet">
+    <span class="glyphicon glyphicon-chevron-right next_snippet"></span>
+    <iframe src="https://www.openhub.net/p/or/widgets/project_factoids" seamless style="width:100%; height:100%; border:none; background-color:white;">
+    </iframe>
+</a><script type="text/javascript">
+(function(){
+const another = document.currentScript.previousSibling;
+const iframe = another.getElementsByTagName("iframe")[0];
+let session;
+try {
+    session = sessionStorage;
+} catch {
+    session = undefined;
+}
+
+const current = () => {
+    if (session == undefined) {
+        return 0;
+    } else {
+        const v = session.getItem("or_ohloh_snippet");
+        return v === null ? 0 : parseInt(v);
+    }
+};
+const show = () => {
+    switch (current())
+    {
+        case 0:
+        default:
+            iframe.src = "https://www.openhub.net/p/or/widgets/project_factoids";
+            break;
+        case 1:
+            iframe.src = "https://www.openhub.net/p/or/widgets/project_basic_stats";
+            break;
+        case 2:
+            iframe.src = "https://www.openhub.net/p/or/widgets/project_cocomo";
+            break;
+    }
+};
+const next = () => {
+    if (session !== undefined)
+        session.setItem("or_ohloh_snippet", (current() + 1) % 3);
+};
+
+another.addEventListener("click", (e) => {
+    show();
+    next();
+    e.preventDefault();
+});
+
+show();
+next();
+})();
+</script>

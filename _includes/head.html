@@ -1,0 +1,30 @@
+<head>
+  {%- if include.homepage -%}
+  <title>{{ page.title }}</title>
+  {%- else -%}
+  {%- if page.section -%}
+  <title>{{ page.title }} - {{ page.section }} - Open Rails</title>
+  {%- else -%}
+  <title>{{ page.title }} - Open Rails</title>
+  {%- endif -%}
+  {%- endif -%}
+  {%- seo title=false -%}
+  {%- feed_meta -%}
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {%- if jekyll.environment == 'production' and site.google_analytics -%}
+    {%- include google-analytics.html -%}
+  {%- endif -%}
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" type="text/css">
+  <link rel="stylesheet" href="{{ "/assets/template.css" | relative_url }}">
+  {%- if include.homepage -%}
+  <link rel="stylesheet" href="{{ "/assets/homepage.css" | relative_url }}">
+  {%- endif -%}
+  {%- if page.use_accordion -%}
+  <link rel="stylesheet" href="{{ "/assets/accordion/accordion.css" | relative_url }}" >
+  {%- endif -%}
+  {%- if page.use_iframe -%}
+  <link rel="stylesheet" href="{{ "/assets/iframe.css" | relative_url }}" >
+  {%- endif -%}
+</head>
