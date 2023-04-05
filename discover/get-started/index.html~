@@ -6,22 +6,22 @@ use_accordion: true
 
 carousels:
   zigzag:
-    - image: /assets/images/ZigZag-01.png
-    - image: /assets/images/ZigZag-02.png
-    - image: /assets/images/ZigZag-03.png
-    - image: /assets/images/ZigZag-04.png
-    - image: /assets/images/ZigZag-05.png
-    - image: /assets/images/ZigZag-06.png
-    - image: /assets/images/ZigZag-07.png
-    - image: /assets/images/ZigZag-08.png
-    - image: /assets/images/ZigZag-09.png
-    - image: /assets/images/ZigZag-10.png
-    - image: /assets/images/ZigZag-11.png
-    - image: /assets/images/ZigZag-12.png
-    - image: /assets/images/ZigZag-13.png
-    - image: /assets/images/ZigZag-14.png
-    - image: /assets/images/ZigZag-15.png
-    - image: /assets/images/ZigZag-16.png
+    - image: /assets/images/ZigZag-01.jpeg
+    - image: /assets/images/ZigZag-02.jpeg
+    - image: /assets/images/ZigZag-03.jpeg
+    - image: /assets/images/ZigZag-04.jpeg
+    - image: /assets/images/ZigZag-05.jpeg
+    - image: /assets/images/ZigZag-06.jpeg
+    - image: /assets/images/ZigZag-07.jpeg
+    - image: /assets/images/ZigZag-08.jpeg
+    - image: /assets/images/ZigZag-09.jpeg
+    - image: /assets/images/ZigZag-10.jpeg
+    - image: /assets/images/ZigZag-11.jpeg
+    - image: /assets/images/ZigZag-12.jpeg
+    - image: /assets/images/ZigZag-13.jpeg
+    - image: /assets/images/ZigZag-14.jpeg
+    - image: /assets/images/ZigZag-15.jpeg
+    - image: /assets/images/ZigZag-16.jpeg
     
   scenic:
     - image: /assets/images/BNRLScenic-01.jpeg
@@ -174,7 +174,7 @@ carousels:
 </p>
 <p>Drive a freight train powered by several diesel locomotives through the majestic Cascade mountains in Northern Washington State, USA.</p>
    <div class="col-md-12">&nbsp;</div>
-   <p>If you still need to install Open Rails program, first</p>
+   <p>If you still need to install the Open Rails Simulator, first</p>
 
    <div class="row">
  <!--    <div class="col-md-12">&nbsp;</div> -->
