@@ -3,39 +3,6 @@ layout: default
 section: Discover
 title: Get Started
 use_accordion: true
-
-carousels:
-  zigzag:
-    - image: /assets/images/ZigZag-01.jpeg
-    - image: /assets/images/ZigZag-02.jpeg
-    - image: /assets/images/ZigZag-03.jpeg
-    - image: /assets/images/ZigZag-04.jpeg
-    - image: /assets/images/ZigZag-05.jpeg
-    - image: /assets/images/ZigZag-06.jpeg
-    - image: /assets/images/ZigZag-07.jpeg
-    - image: /assets/images/ZigZag-08.jpeg
-    - image: /assets/images/ZigZag-09.jpeg
-    - image: /assets/images/ZigZag-10.jpeg
-    - image: /assets/images/ZigZag-11.jpeg
-    - image: /assets/images/ZigZag-12.jpeg
-    - image: /assets/images/ZigZag-13.jpeg
-    - image: /assets/images/ZigZag-14.jpeg
-    - image: /assets/images/ZigZag-15.jpeg
-    - image: /assets/images/ZigZag-16.jpeg
-    
-  scenic:
-    - image: /assets/images/BNRLScenic-01.jpeg
-    - image: /assets/images/BNRLScenic-02.jpeg
-    - image: /assets/images/BNRLScenic-03.jpeg
-    - image: /assets/images/BNRLScenic-04.jpeg
-    - image: /assets/images/BNRLScenic-05.jpeg
-    - image: /assets/images/BNRLScenic-06.jpeg
-    - image: /assets/images/BNRLScenic-07.jpeg
-    - image: /assets/images/BNRLScenic-08.jpeg
-    - image: /assets/images/BNRLScenic-09.jpeg
-    - image: /assets/images/BNRLScenic-10.jpeg
-    - image: /assets/images/BNRLScenic-11.jpeg
-    - image: /assets/images/BNRLScenic-12.jpeg
 ---
 <!-- HdJ: New page for first time OR visitors. Need to review the coloring of the download buttons. Should probably come from CSS but not sure where from...   -->
 <div class="row">
@@ -138,7 +105,7 @@ carousels:
 <!--    <p><img src="/assets/landing_page_ctn.png" width="440" title="The tutorials in this kit will help you to learn the rudimentary controls in Open Rails, how to drive a steam locomotive, operate the air brakes to stop the train, to turn the locomotive on a turntable, to fuel locomotive with water and coal, and also how to shunt cars and wagons"></p> -->
 
    <p>
-         {%- include slideshow.html height="50" unit="%" duration="6" route="zigzag" -%}
+         {%- include slideshow.html height="62" unit="%" duration="nil" route="zigzag" -%}
     </p>
 
 
@@ -170,7 +137,7 @@ carousels:
 <!--   <p><img src="/assets/landing_page_ts.png" width="440" title="" ></p>  -->
 
 <p>
-  {%- include slideshow.html height="50" unit="%" duration="nil" route="scenic" -%}
+  {%- include slideshow.html height="62" unit="%" duration="6" route="scenic" -%}
 </p>
 <p>Drive a freight train powered by several diesel locomotives through the majestic Cascade mountains in Northern Washington State, USA.</p>
    <div class="col-md-12">&nbsp;</div>
