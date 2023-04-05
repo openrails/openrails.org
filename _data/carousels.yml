@@ -1,22 +1,31 @@
-- images:
-  - image: /assets/images/ZigZag-01.jpg
-  - image: /assets/images/ZigZag-02.jpg
-  - image: /assets/images/ZigZag-03.jpg
-  - image: /assets/images/ZigZag-04.jpg
-  - image: /assets/images/ZigZag-05.jpg
-  - image: /assets/images/ZigZag-06.jpg
-  - image: /assets/images/ZigZag-07.jpg
-  - image: /assets/images/ZigZag-08.jpg
-  - image: /assets/images/ZigZag-09.jpg
-  - image: /assets/images/ZigZag-10.jpg
-  - image: /assets/images/ZigZag-11.jpg
-  - image: /assets/images/ZigZag-12.jpg
-  - image: /assets/images/ZigZag-13.jpg
-  - image: /assets/images/ZigZag-14.jpg
-  - image: /assets/images/ZigZag-15.jpg
-  - image: /assets/images/ZigZag-16.jpg
-
-- images: 
-  - image: /assets/images/house.jpg
-  - image: /assets/images/back.jpg
-  - image: /assets/images/front.jpg
+zigzag:
+  - image: /assets/images/ZigZag-01.jpeg
+  - image: /assets/images/ZigZag-02.jpeg
+  - image: /assets/images/ZigZag-03.jpeg
+  - image: /assets/images/ZigZag-04.jpeg
+  - image: /assets/images/ZigZag-05.jpeg
+  - image: /assets/images/ZigZag-06.jpeg
+  - image: /assets/images/ZigZag-07.jpeg
+  - image: /assets/images/ZigZag-08.jpeg
+  - image: /assets/images/ZigZag-09.jpeg
+  - image: /assets/images/ZigZag-10.jpeg
+  - image: /assets/images/ZigZag-11.jpeg
+  - image: /assets/images/ZigZag-12.jpeg
+  - image: /assets/images/ZigZag-13.jpeg
+  - image: /assets/images/ZigZag-14.jpeg
+  - image: /assets/images/ZigZag-15.jpeg
+  - image: /assets/images/ZigZag-16.jpeg
+    
+scenic:
+  - image: /assets/images/BNRLScenic-01.jpeg
+  - image: /assets/images/BNRLScenic-02.jpeg
+  - image: /assets/images/BNRLScenic-03.jpeg
+  - image: /assets/images/BNRLScenic-04.jpeg
+  - image: /assets/images/BNRLScenic-05.jpeg
+  - image: /assets/images/BNRLScenic-06.jpeg
+  - image: /assets/images/BNRLScenic-07.jpeg
+  - image: /assets/images/BNRLScenic-08.jpeg
+  - image: /assets/images/BNRLScenic-09.jpeg
+  - image: /assets/images/BNRLScenic-10.jpeg
+  - image: /assets/images/BNRLScenic-11.jpeg
+  - image: /assets/images/BNRLScenic-12.jpeg

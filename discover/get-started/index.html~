@@ -138,7 +138,7 @@ carousels:
 <!--    <p><img src="/assets/landing_page_ctn.png" width="440" title="The tutorials in this kit will help you to learn the rudimentary controls in Open Rails, how to drive a steam locomotive, operate the air brakes to stop the train, to turn the locomotive on a turntable, to fuel locomotive with water and coal, and also how to shunt cars and wagons"></p> -->
 
    <p>
-         {%- include slideshow.html height="50" unit="%" duration="5" number="zigzag" -%}
+         {%- include slideshow.html height="50" unit="%" duration="6" route="zigzag" -%}
     </p>
 
 
@@ -170,7 +170,7 @@ carousels:
 <!--   <p><img src="/assets/landing_page_ts.png" width="440" title="" ></p>  -->
 
 <p>
-  {%- include slideshow.html height="50" unit="%" duration="nil" number="scenic" -%}
+  {%- include slideshow.html height="50" unit="%" duration="nil" route="scenic" -%}
 </p>
 <p>Drive a freight train powered by several diesel locomotives through the majestic Cascade mountains in Northern Washington State, USA.</p>
    <div class="col-md-12">&nbsp;</div>
