@@ -7,9 +7,9 @@ stable_source:
   date: 2022-11-27
   bytes: 112062082
 testing_build:
-  url: http://openrails.org/files/OpenRails-Testing.zip
-  date: 2023-02-03
-  bytes: 95706807
+  url: https://github.com/openrails/openrails-testing/releases/download/T1.5.1-442-gbaefb6b08/Open.Rails.T1.5.1-442-gbaefb6b08.zip
+  date: 2023-06-16
+  bytes: 95911713
 testing_source:
   url: http://openrails.org/files/OpenRails-Testing-Source.zip
   date: 2023-02-03
@@ -50,3 +50,4 @@ content_demomodel1:
   url: https://codeload.github.com/cjakeman/Demo-Model-1/zip/main
   date: 2015-07-30
   bytes: 252635806
+
