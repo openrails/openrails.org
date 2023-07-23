@@ -1,0 +1,802 @@
+<li class='recent text-primary'><code>T1.5.1-507-gebafd5dad</code> Merge pull request #833 from cesarBLG/relay-valve<br>Implement brake relay valve<ul><li><code>50e84993</code> Merge branch 'master' into relay-valve</li>
+<li><code>8a2fb4ea</code> Add proper brake initialization code</li>
+<li><code>01aaca76</code> Different relay valve ratio for engine brakes</li>
+<li><code>b0b146ea</code> Add documentation for relay valves</li>
+<li><code>5a713928</code> Cylinder volume independent from auto brake parameters</li>
+<li><code>adf9260a</code> Proportional relay valve</li></ul></li>
+<li class='recent text-primary'><code>T1.5.1-500-gd06a7b66e</code> Merge pull request #829 from cesarBLG/emergency-valves<br>Improvements for air brakes #3 - Emergency valves<ul><li><code>434af02d</code> Make emergency dump valve work also for twin pipe systems</li>
+<li><code>908f0110</code> Disable emergency valve triggering for AI trains</li>
+<li><code>7afb0a4a</code> Fix emergency dump valve not deactivating and add sound trigger</li>
+<li><code>308959f0</code> Add emergency dump valve</li></ul></li>
+<li class=''><code>T1.5.1-495-g55f992dcd</code> Merge pull request #847 from peternewell/brake-shoe#2<br>Add additional default brakeshoe CoF<ul><li><code>51067c3c</code> Streamline code</li>
+<li><code>a5df2865</code> Add additional default brakeshoe CoF</li></ul></li>
+<li class=''><code>T1.5.1-492-g2232f9c75</code> Merge pull request #808 from Weter-ORTS/master<br>Updated translations<ul><li><code>73dab070</code> Translation revision</li>
+<li><code>9466900a</code> Messages suppressed translation</li>
+<li><code>46ef5bce</code> Straight brake tokens&new brake buttons translated</li>
+<li><code>1af3cc4c</code> Messages suppression translated</li>
+<li><code>bcb23066</code> Merge branch 'openrails:master' into master</li>
+<li><code>3995907b</code> Updated translations<br>Added cruise control features translation<br>Translated some Imperial unit's names</li></ul></li>
+<li class=''><code>T1.5.1-485-g7772f5814</code> Merge pull request #845 from cesarBLG/adhesion-resume<br>Save axle integrator status<ul><li><code>6fa5ef20</code> Initialize called after Resume</li>
+<li><code>2ecc1641</code> Save axle integrator status</li></ul></li>
+<li class=''><code>T1.5.1-482-g7f7dd9993</code> Merge pull request #840 from SteelFill/sanding-fix<br>Bug fix for sanding max speed not working<ul><li><code>8a6f8334</code> From the top! Submitting just the updated physics now</li></ul></li>
+<li class=''><code>T1.5.1-480-gfb4d8a106</code> Merge pull request #830 from cesarBLG/electric-hot-start<br>Electric locomotive hot start<ul><li><code>e30b900f</code> Fix wrong sound event</li>
+<li><code>19ee7607</code> Clarify behaviour in timetable mode</li>
+<li><code>ce2726a4</code> Make battery react to quick power on/off</li>
+<li><code>45a411f0</code> Update changed default value in documentation</li>
+<li><code>ceeaba76</code> Change default value for setting</li>
+<li><code>280ee744</code> Add documentation</li>
+<li><code>b9350ff7</code> Electric locomotive hot start</li></ul></li>
+<li class=''><code>T1.5.1-472-g8e1445425</code> Merge pull request #843 from Csantucci/fix-freightanim-weight-bug<br>Fix for https://bugs.launchpad.net/or/+bug/2024295  Freight weight only added for first wagon<ul><li><code>eb7efa3a</code> Fix for https://bugs.launchpad.net/or/+bug/2024295  Freight weight only added for first wagon</li></ul></li>
+<li class=''><code>T1.5.1-470-ga80e86872</code> Merge pull request #835 from peternewell/brake_shoe#1<br>Correct Brake Shoe Force Calculation<ul><li><code>e632edbc</code> Fix bug introduced to dynamic brake blending</li>
+<li><code>4c9375ed</code> Update Documentation</li>
+<li><code>1df98a39</code> Adjust user inputs</li>
+<li><code>037dbdf9</code> Correct codacy error</li>
+<li><code>fa510b01</code> Correct Codacy issue</li>
+<li><code>1b6ca35a</code> Add documentation</li>
+<li><code>756716bf</code> improve readability</li>
+<li><code>c3d05c4f</code> Restore brakeshoe CoF to legacy operation</li>
+<li><code>1168d619</code> Restore original brake calculations</li>
+<li><code>4447c8d4</code> Change default settings for drive wheel braking</li>
+<li><code>57dfe639</code> Fix superheat display</li>
+<li><code>32bb9110</code> Correct reading of input parameters</li>
+<li><code>a479616b</code> Correction to CoF</li>
+<li><code>70a32d81</code> Revert "Correction to brake CoF"<br>This reverts commit f36598411c407a642d7200125df1d481a01a8f5c.</li>
+<li><code>4495dfe4</code> Revert "Fix display error with HuD"<br>This reverts commit e9c98d70fc441a6f88f5e76e528b2d249af530ab.</li>
+<li><code>e9c98d70</code> Fix display error with HuD</li>
+<li><code>f3659841</code> Correction to brake CoF</li>
+<li><code>44cb5a52</code> Minor correction</li>
+<li><code>96e3353e</code> Add parameter to specify number of brake shoes</li>
+<li><code>ea7a67f5</code> Correct code factor issues.</li>
+<li><code>d1ddb987</code> Correct calculation issue with brake shoe CoF</li>
+<li><code>4e475c28</code> Adjust input of MaxBrakeShoeForce</li>
+<li><code>7d81e0a5</code> Install default CoF curves for Cast Iron and Composte CoF</li>
+<li><code>8b4e134f</code> Correct issue reading brake shoe force</li>
+<li><code>27025200</code> Allow for Brake shoe force in dynamic load operation.</li>
+<li><code>366c96e4</code> Correct typing error</li>
+<li><code>86b0c1e8</code> Adjust Brake Force to use Brake Shoe Force</li></ul></li>
+<li class=''><code>T1.5.1-442-gbaefb6b08</code> Merge pull request #813 from pzgulyas/profiler<br>Refactored garbage generators<ul><li><code>7fdad389</code> Refactored garbage generators</li></ul></li>
+<li class=''><code>T1.5.1-440-g0914a53e4</code> Merge pull request #803 from peternewell/steam_slip#3<br>Various adjustments to steam adhesion<ul><li><code>7157e08a</code> Correct some display values in HuD</li>
+<li><code>b05b85ce</code> Correct sound variable</li></ul></li>
+<li class=''><code>T1.5.1-437-g40a311d87</code> Merge pull request #818 from cesarBLG/multiple-axles<br>Allow independent drive axles for locomotives<ul><li><code>23f34886</code> Add debug info for all axles</li>
+<li><code>69c947de</code> Fix potential bug with save/resume</li>
+<li><code>1fb28f0c</code> Remove clause overriding axle behaviour<br>If the clause was trying to fix an specific issue of the axle model, the issue<br>must be identified and fixed at the Axle class</li>
+<li><code>6bf37337</code> Trying to fix initialization issues</li>
+<li><code>cebe7ac5</code> Wag file axle configuration</li>
+<li><code>76f28016</code> Use allocation free enumerator</li>
+<li><code>ffe8ff94</code> Allow independent powered axles</li></ul></li>
+<li class=''><code>T1.5.1-429-gd8f5ccd10</code> Merge pull request #802 from sweiland-openrails/TrackViewerAddEvents<br>Added support for activity location events to the TrackViewer<ul><li><code>4d198e46</code> Added support for activity location events to the TrackViewer</li></ul></li>
+<li class=''><code>T1.5.1-427-g8a33d6c8b</code> Merge pull request #823 from Csantucci/select-track-sound-percent-retained<br>Select track sound volume percent retained in .eng and .wag files<ul><li><code>5e1c03b8</code> Select track sound volume percent retained in .eng and .wag files https://blueprints.launchpad.net/or/+spec/select-tracksound-volume</li></ul></li>
+<li class=''><code>T1.5.1-425-g3f1e747b1</code> Merge pull request #825 from Csantucci/controls-in-side-views-of-2D-cabs<br>2D Cabview controls for side viewpoints https://blueprints.launchpad.net/or/+spec/2dcabview-controls-for-side-views<ul><li><code>29ed4271</code> 2D Cabview controls for side viewpoints https://blueprints.launchpad.net/or/+spec/2dcabview-controls-for-side-views</li></ul></li>
+<li class=''><code>T1.5.1-423-gd493edeae</code> Merge pull request #837 from cjakeman/github-policies<br>copies website policies to repo<ul><li><code>04973160</code> copies website policies to repo</li></ul></li>
+<li class=''><code>T1.5.1-421-ge7eeae603</code> Merge pull request #836 from cjakeman/website-policies<br>Adds policy on crashes and derailments<ul><li><code>62e6d023</code> Adds policy on crashes and derailments<br>As in http://www.elvastower.com/forums/index.php?/topic/36794-ormt-sessions/page__view__findpost__p__294316</li></ul></li>
+<li class=''><code>T1.5.1-419-g1469003df</code> Merge pull request #834 from cjakeman/website-contact-form<br>Replaces email service with FormSpark<ul><li><code>7a98eca5</code> Replaces email service with FormSpark<br>Also BotPoison spam catcher and FreshDesk ticketing services</li></ul></li>
+<li class=''><code>T1.5.1-417-g07c9195bf</code> Merge pull request #824 from openrails/contributing-titles-1<br>Update Readme.md<ul><li><code>f16ebeda</code> Update Readme.md</li></ul></li>
+<li class=''><code>T1.5.1-415-g50a6921ad</code> Merge pull request #815 from twpol/feature/auto-gen-release-notes<br>chore: Add GitHub automatic release notes configuration<ul><li><code>a5cc165e</code> chore: Add GitHub automatic release notes configuration</li></ul></li>
+<li class=''><code>T1.5.1-413-g1daa6a7c6</code> Merge pull request #832 from cesarBLG/cc-train-priority<br>Fix Cruise Control together with Train Brake<ul><li><code>bb8941fb</code> Fix wrong parenthesis avoiding train brake to work together with CC</li></ul></li>
+<li class=''><code>T1.5.1-411-g51d4cd969</code> Merge pull request #751 from cesarBLG/external-controllers<br>Web interface to control cab controls with external hardware<ul><li><code>00981a20</code> Fix bug for 3D-only cabs</li>
+<li><code>f947f295</code> Merge branch 'master' into external-controllers</li>
+<li><code>6b933ed1</code> Fix race condition</li>
+<li><code>dbb9e3c7</code> Explains the JSON needed by SetCabControls</li>
+<li><code>b499ec96</code> Add support for cruise control</li>
+<li><code>f6d3e76b</code> Initial support for external controllers using the Web Server</li></ul></li>
+<li class=''><code>T1.5.1-404-gb79cb2da8</code> Merge pull request #732 from cesarBLG/braking-enhancement<br>Improvements for air brakes<ul><li><code>c163e213</code> Set default value for brake insensitivity<br>A non-zero value is required in order to release brakes after an overcharge.</li>
+<li><code>341c1ce9</code> Change application and release rates for dynamic brake bail off</li>
+<li><code>b8c97ee3</code> Fix regression for auto bail off</li>
+<li><code>d9d87277</code> Add further information about EP braking</li>
+<li><code>af6f0f05</code> Add default keyboard commands to manual</li>
+<li><code>ab753bf9</code> Fix blending issue</li>
+<li><code>0531e583</code> Fix non-EP tokens</li>
+<li><code>938b3203</code> Add documentation for new parameters</li>
+<li><code>d406c67c</code> Straight air engine brakes for tenders</li>
+<li><code>76094c4b</code> Allow tenders with distributing valve</li>
+<li><code>66ad2a90</code> Partial dynamic brake bailoff<br>Dynamic brakes are complemented with air brakes proportionally to automatic brake demand</li>
+<li><code>874881d7</code> Changes to bailoff</li>
+<li><code>4b2a44c8</code> Add distributing valve</li>
+<li><code>7f9e634e</code> Split EP special tokens</li>
+<li><code>19574dd9</code> Improve air brake systems<br>New variant of EP braking where every vehicle modifies BP pressure<br>Better handling of dynamic brake blending</li></ul></li>
+<li class=''><code>T1.5.1-388-gebe1c5ccc</code> Merge pull request #822 from sweiland-openrails/Bug_2017417_battery_switch<br>battery switch two buttons option in combination with a delay<ul><li><code>832a3965</code> added documentaion line for battery switch</li></ul></li>
+<li class=''><code>T1.5.1-386-g218d3f6c1</code> Merge pull request #826 from Csantucci/cab-switch-crash-fix<br>Bug fix for Crash when switching cab https://bugs.launchpad.net/or/+bug/2018230<ul><li><code>2ca8fd7a</code> Bug fix for Crash when switching cab https://bugs.launchpad.net/or/+bug/2018230</li></ul></li>
+<li class=''><code>T1.5.1-384-g9bc71d854</code> Merge pull request #828 from cesarBLG/braking-enhancement2<br>Harmless part of "Improvements for braking systems"<ul><li><code>611753fe</code> Prevent LINQ usage to reduce allocations</li>
+<li><code>048c7b22</code> Synchronized compressor startup</li>
+<li><code>c15227b2</code> Add brake pipe pressure to scripts</li>
+<li><code>142ab903</code> Add keyboard command for quick release</li>
+<li><code>9dd9eb45</code> Keyboard command for overcharge</li></ul></li>
+<li class=''><code>T1.5.1-378-g35b9498d6</code> Merge pull request #820 from sweiland-openrails/Bug_2017335_masterkey_delayoff<br>delay option for masterkey does not delay switch off<ul><li><code>6e7a5b6c</code> delay option for masterkey does not delay switch off</li></ul></li>
+<li class=''><code>T1.5.1-376-g885592329</code> Merge pull request #816 from Csantucci/fix-EOT-dismount-after-reverse<br>Bug fix for https://bugs.launchpad.net/or/+bug/2014992 EOT can't be dismounted after train reversal<ul><li><code>eae646d2</code> Bug fix for https://bugs.launchpad.net/or/+bug/2014992 EOT can't be dismounted after train reversal</li></ul></li>
+<li class=''><code>T1.5.1-374-gefe66c5c2</code> Merge pull request #819 from sweiland-openrails/Bug_2016006_Headlight_switch<br>Headlight switch makes sound when not appropriate<ul><li><code>51b98b2d</code> If trying to switch the headlight beyond or below the last position, a click sound is to be heard. In real live the switch would not make such a sound.</li></ul></li>
+<li class=''><code>T1.5.1-372-g5db5c7824</code> Merge pull request #817 from cjakeman/website-block-bad-link<br>weblink updated<ul><li><code>9c174356</code> weblink updated</li></ul></li>
+<li class=''><code>T1.5.1-370-g7a9a7d4e5</code> Merge pull request #814 from Csantucci/fix-EOT-train-uncouple-crash<br>Bug fix for https://bugs.launchpad.net/or/+bug/2013969 Crash after uncoupling player loco of a train with EOT<ul><li><code>b102c1cd</code> Bug fix for https://bugs.launchpad.net/or/+bug/2013969 Crash after uncoupling player loco of a train with EOT</li></ul></li>
+<li class=''><code>T1.5.1-368-g38888b34f</code> Merge pull request #809 from sweiland-openrails/on-screen_messages_2008012<br>Some on-screen messages not suppressed, Bug #2008012<ul><li><code>f67822a7</code> suppress on screen messages, bug 2008012</li>
+<li><code>be04a6ad</code> Merge branch 'openrails:master' into master</li>
+<li><code>edcd0d0e</code> Merge branch 'openrails:master' into master</li>
+<li><code>e199aa19</code> Merge branch 'openrails:master' into master</li>
+<li><code>d819ff92</code> Merge branch 'master' of https://github.com/sweiland-openrails/openrails</li>
+<li><code>490a64e8</code> Merge branch 'map_in_browser'</li></ul></li>
+<li class=''><code>T1.5.1-361-g092a6c7ef</code> Merge pull request #767 from twpol/feature/sunrise-sunset<br>Refine sunrise and sunset<ul><li><code>82c5f1ca</code> refactor: Review comments</li>
+<li><code>4cb5c773</code> fix: Do not crash if the environment file does not have any sky satellites</li>
+<li><code>9317f8c6</code> fix: Fix bug #2003001</li>
+<li><code>719c7376</code> fix: Correctly calculate the sun's position in the sky</li>
+<li><code>5c518176</code> feat: Calculate solar hour angle from MSTS environment file sun rise/set times</li>
+<li><code>43379ea8</code> style: Format sun/moon position code</li>
+<li><code>654dfd15</code> feat: Add sun/moon rise/set times to environment data</li>
+<li><code>f981ec28</code> refactor: Clean up environment parsing code including a new block list utility</li>
+<li><code>6c3df128</code> style: Format environment file reader code</li></ul></li>
+<li class=''><code>T1.5.1-351-gc9abcd22b</code> Merge pull request #722 from Sharpe49/fix/wf-deprecations<br>Fix Windows Forms deprecations in ActivityEditor<ul><li><code>fb9079eb</code> Fix Windows Forms deprecations in ActivityEditor</li></ul></li>
+<li class=''><code>T1.5.1-349-g5db05ff0c</code> Merge pull request #812 from Csantucci/rotated-dpu-display<br>Bug fix for https://bugs.launchpad.net/or/+bug/2009955 Missing code to rotate DMU display in 2D cabs<ul><li><code>9dadddb4</code> Remove unneeded commented line</li>
+<li><code>d07f812e</code> Bug fix for https://bugs.launchpad.net/or/+bug/2009955 Missing code to rotate DMU display in 2D cabs</li></ul></li>
+<li class=''><code>T1.5.1-346-g3831af9fa</code> Merge pull request #807 from twpol/bugfix/64bit-z-fighting<br>fix: Stop z-fighting by pushing world/view/projection multiplications onto the GPU<ul><li><code>791c0a3a</code> fix: Stop z-fighting by pushing world/view/projection multiplications onto the GPU</li></ul></li>
+<li class=''><code>T1.5.1-344-ga8a891064</code> Merge pull request #811 from Csantucci/fix-brake-data-in-dpu-display<br>Bug fix for https://bugs.launchpad.net/or/+bug/2009842 DPU: wrong BP and MR values of helpers in display<ul><li><code>f784151d</code> Bug fix for https://bugs.launchpad.net/or/+bug/2009842 DPU: wrong BP and MR values of helpers in display</li></ul></li>
+<li class=''><code>T1.5.1-342-g9beb2603f</code> Merge pull request #810 from Csantucci/fix-AI-WP-restart-events<br>Bug fix for AI train WP restart events don't work after save<ul><li><code>e2ad93ee</code> Bug fix for https://bugs.launchpad.net/or/+bug/1848878 AI train WP restart events don't work after save</li></ul></li>
+<li class=''><code>T1.5.1-340-g907936445</code> Merge pull request #795 from Roeterdink/AcceptSpeedMPSforApproachSpeed<br>Accept SpeedMPS as dimension for Approach Control Speed definition<ul><li><code>79979e2d</code> Accept SpeedMPS as dimension for Approach Control Speed definition</li></ul></li>
+<li class=''><code>T1.5.1-338-g237bf68a4</code> Merge pull request #794 from Roeterdink/ReversePathTTPool<br>Use reverse path in TT Pool<ul><li><code>6d2bf041</code> Use reverse path in TT Pool</li></ul></li>
+<li class=''><code>T1.5.1-336-ge810f4744</code> Merge pull request #793 from Roeterdink/CorrectErrorsTurntable<br>Correct errors in Turntables.cs<ul><li><code>8897021c</code> Correct errors in Turntables.cs</li></ul></li>
+<li class=''><code>T1.5.1-334-g4757b006d</code> Merge pull request #792 from Roeterdink/CorrectRequiredActions<br>Correct required actions<ul><li><code>f6c16fb5</code> Correct required actions</li></ul></li>
+<li class=''><code>T1.5.1-332-g902809c05</code> Merge pull request #791 from Roeterdink/CorrectSwitchstand<br>Correct update for Switchstand signalscript function<ul><li><code>5bc890b0</code> Correct update for Switchstand signalscript function</li></ul></li>
+<li class=''><code>T1.5.1-330-g94da7879d</code> Merge pull request #790 from Roeterdink/CrashInTrainCar<br>Correct crash in TrainCar.cs<ul><li><code>36a9921f</code> Correct crash in TrainCar.cs</li></ul></li>
+<li class=''><code>T1.5.1-328-g5d9debbe0</code> Merge pull request #789 from Roeterdink/CrashOnTrainWOStartTime<br>Avoid error on inserting train without start time<ul><li><code>81b11f77</code> Avoid error on inserting train without start time</li></ul></li>
+<li class=''><code>T1.5.1-326-g541056ef9</code> Merge pull request #788 from Roeterdink/ImproveDebugOutputsTTTrain<br>Improve Debug Outputs for TTTrain.cs<ul><li><code>94a73d58</code> Improve Debug Outputs for TTTrain.cs</li></ul></li>
+<li class=''><code>T1.5.1-324-gea394e51d</code> Merge pull request #787 from Roeterdink/ImproveDebugPoolInfo<br>Improve debug output for turntable pools<ul><li><code>e0ad6589</code> Improve debug output for turntable pools</li></ul></li>
+<li class=''><code>T1.5.1-322-g2c690460a</code> Merge pull request #786 from Roeterdink/ImproveSyntaxCheck<br>Improve syntax check on timetable files<ul><li><code>f2c5d2df</code> Improve syntax check on timetable files</li></ul></li>
+<li class=''><code>T1.5.1-320-g9ebd05044</code> Merge pull request #785 from Roeterdink/IncorrectCalculationTrainAhead<br>Incorrect calculation of distance to train ahead<ul><li><code>fd121be5</code> Incorrect calculation of distance to train ahead</li></ul></li>
+<li class=''><code>T1.5.1-318-geb30a97e9</code> Merge pull request #784 from Roeterdink/IncorrectDistanceAlongTrack<br>Incorrect distance along track<ul><li><code>1c37be35</code> Incorrect distance along track</li></ul></li>
+<li class=''><code>T1.5.1-316-g54f6282b7</code> Merge pull request #783 from Roeterdink/MoveCreateInPool<br>Move CreateInPool from AI to Pools<ul><li><code>083bc6c7</code> Move CreateInPool from AI to Pools</li></ul></li>
+<li class=''><code>T1.5.1-314-g16c7c0f53</code> Merge pull request #782 from Roeterdink/NoPhysicsUpdateForAIStatic<br>Nu full physics update is required for trains in state AIStatic<ul><li><code>23c41b55</code> Nu full physics update is required for trains in state AIStatic</li></ul></li>
+<li class=''><code>T1.5.1-312-ga8616f6c3</code> Merge pull request #781 from Roeterdink/PendingSpeedUpdate<br>Correct update of pending speed limits for timetable mode<ul><li><code>4d9c3fbe</code> Correct update of pending speed limits for timetable mode</li></ul></li>
+<li class=''><code>T1.5.1-310-gcf8971cad</code> Merge pull request #780 from Roeterdink/ProcessPassingTime<br>Process passing time<ul><li><code>5b3f246e</code> Process passing time</li></ul></li>
+<li class=''><code>T1.5.1-308-g7cdc4eb81</code> Merge pull request #779 from Roeterdink/RemoveClearSectionActions<br>Remove forced processed ClearSection actions<ul><li><code>87c34a74</code> Remove forced processed ClearSection actions</li></ul></li>
+<li class=''><code>T1.5.1-306-gdca615cf4</code> Merge pull request #778 from Roeterdink/CorrectionPlayerOnTurntable<br>Correction for player locomotive on turntable<ul><li><code>779a8193</code> Correction for player locomotive on turntable</li></ul></li>
+<li class=''><code>T1.5.1-304-gdf0f36129</code> Merge pull request #769 from Csantucci/partial-turntables<br>Partial turntables https://blueprints.launchpad.net/or/+spec/partial-turntable<ul><li><code>1a99f431</code> Partial turntable: https://blueprints.launchpad.net/or/+spec/partial-turntable</li>
+<li><code>0ab7ebfa</code> Manual documentation for partial turntables</li></ul></li>
+<li class=''><code>T1.5.1-301-g87ba54ca8</code> Merge pull request #777 from Roeterdink/SaveRestoreActionClearMovingTable<br>Save and restore ClearMovingTable action (for timetables)<ul><li><code>7724f2b9</code> Save and restore ClearMovingTable action (for timetables)</li></ul></li>
+<li class=''><code>T1.5.1-299-ge00595321</code> Merge pull request #776 from Roeterdink/UpdateReceiversInViewer<br>Update Receivers in Viewer.cs<ul><li><code>7b6af67a</code> Update Receivers in Viewer.cs</li></ul></li>
+<li class=''><code>T1.5.1-297-gbe03e8504</code> Merge pull request #775 from Roeterdink/UpdateTurntablePools<br>Update turntable pools<ul><li><code>d84c8d87</code> Update Turntable Pools</li>
+<li><code>1852fcbf</code> Update turntable pools</li></ul></li>
+<li class=''><code>T1.5.1-294-g1e52c2c64</code> Merge pull request #774 from Roeterdink/UseOrgAINumber<br>Use variable OrgAINumber for all train to train references<ul><li><code>d3f8c2e4</code> Use variable OrgAINumber for all train to train references</li></ul></li>
+<li class=''><code>T1.5.1-292-g8651348b4</code> Merge pull request #772 from Roeterdink/UpdateTTTrain<br>Update tt train<ul><li><code>36c36628</code> Update for TTTrain.cs</li>
+<li><code>8295509f</code> Various changes</li>
+<li><code>657485f6</code> Various updates to TTTrain</li></ul></li>
+<li class=''><code>T1.5.1-288-g42ab904e3</code> Merge pull request #771 from Roeterdink/CorrectActionOnHoldSignal<br>Action on Hold Signal is no longer invalidated if train is not stoppe…<ul><li><code>c380043f</code> Action on Hold Signal is no longer invalidated if train is not stopped in related station</li></ul></li>
+<li class=''><code>T1.5.1-286-gadb309c17</code> Merge pull request #797 from cjakeman/control-car-gear-controller<br>To use enum for ControlGearBoxType<ul><li><code>7ced1fee</code> To use enum for ControlGearBoxType</li></ul></li>
+<li class=''><code>T1.5.1-284-gdc39bb19c</code> Merge pull request #806 from Csantucci/Fix-manual-typo<br>Fix typo in OR manual<ul><li><code>01b88f7e</code> Fix typo in OR manual, see http://www.elvastower.com/forums/index.php?/topic/36946-manual-typo-error/</li></ul></li>
+<li class=''><code>T1.5.1-282-gf50545908</code> Merge pull request #805 from sweiland-openrails/bug_2008614<br>bug 2008614 bad http link in manual<ul><li><code>8364df57</code> bug 2008614 bad httop link in manual www.burrinjuck.coalstonewcastle.com.au</li></ul></li>
+<li class=''><code>T1.5.1-280-gf99a2fc4e</code> Merge pull request #804 from sweiland-openrails/bug_2008011<br>Bug #2008011 Bad key listings in manual<ul><li><code>3eb3f28a</code> Bug #2008011 Bad key listings in manual, See http://www.elvastower.com/forums/index.php?/topic/36937-open-rail-manual/page__view__findpost__p__294566</li></ul></li>
+<li class=''><code>T1.5.1-278-g7f34b56af</code> Merge pull request #753 from cjakeman/api-cabcontrols4<br>Extends CabControls for user input<ul><li><code>ab8fe321</code> Extends CaControls for user input</li></ul></li>
+<li class=''><code>T1.5.1-276-g3047d0a76</code> Merge pull request #798 from Csantucci/fix-casting-error<br>Temporary bug fix for https://bugs.launchpad.net/or/+bug/2004100 Casting error crash<ul><li><code>4b6141d5</code> Stop also rotating wagon wheels when brake skid</li>
+<li><code>1e37279e</code> Temporary bug fix for https://bugs.launchpad.net/or/+bug/2004100 Casting error crash</li></ul></li>
+<li class=''><code>T1.5.1-273-g4903ade62</code> Merge pull request #796 from cjakeman/fix-save-filenames<br>fix: Resume from Save fails - filenames do not match<ul><li><code>a67ee615</code> fix: Resume from Save fails - filenames do not match<br>See https://bugs.launchpad.net/or/+bug/2004067</li></ul></li>
+<li class=''><code>T1.5.1-271-g58e67675d</code> Merge pull request #773 from Roeterdink/WatchdogPingTrainProcessing<br>Add watchdog ping to Train Processing<ul><li><code>4543e4b5</code> Add watchdog ping to Train Processing</li></ul></li>
+<li class=''><code>T1.5.1-269-g01607fd93</code> Merge pull request #766 from peternewell/control_car_gear_controller<br>Control Car additional functionality<ul><li><code>f1759ded</code> Add documentation</li>
+<li><code>c9657def</code> Add warning message for type C gearboxes</li>
+<li><code>3d5d238b</code> Correct issues with gear controls not being passed to other locomotives</li>
+<li><code>f143fcc0</code> Correct gear operation from Control Car</li>
+<li><code>6d522992</code> Add ability to control vacuum brakes and gears to Control Car</li></ul></li>
+<li class=''><code>T1.5.1-263-gd19a96a3d</code> Merge pull request #770 from cjakeman/website-ctn-updates<br>adds page for tutorial: Build Your Own Route<ul><li><code>453cdcdc</code> adds page for Build Your Own Route</li></ul></li>
+<li class=''><code>T1.5.1-261-g5072d724b</code> Merge pull request #768 from sweiland-openrails/map_in_browser<br>OpenRailway Map enhancements<ul><li><code>bc8aea47</code> Changed the class methods to PascalCase and the method parameters to camelCase</li>
+<li><code>41c9f261</code> Changed the documentation</li>
+<li><code>a0eae374</code> PascalCase for al C# items</li>
+<li><code>5fdb384c</code> Storing map webpage layer choice in the HTML Web Storage instead of the registry</li>
+<li><code>5e4989c1</code> Merge branch 'map_in_browser' of https://github.com/sweiland-openrails/openrails into map_in_browser</li>
+<li><code>0ca48fb8</code> Documentation added for webapi OpenRaillway Map</li>
+<li><code>cd34de67</code> Merge branch 'map_in_browser' of https://github.com/sweiland-openrails/openrails into map_in_browser</li>
+<li><code>5d8ea22f</code> Enhancements for OpenRailway Map:<br>- added web browser tab Open Rails icon (favicon)<br>- changed locomotive icon, now three icons: steam, electric, diesel<br>- added locomotive direction arrow<br>- added three OpenRailway layers to choose from: maximum speed, guage and electrification. Choice stored in registry and used the next opening of the map.<br>- added three layers with Open Rails data: track, named and rest. Choice also stored.<br>Don't know if these layers are usefull, anyway they can be switched on and off again.<br>Names of the layers are not translateble, is that a problem? Would be hard to implement.<br>For some routes the track layer takes too much performance from the web browser because of tracks size (for instance the MECoast line). But it gives you an idea of the layout of the track in the real world.<br>On the Ruebelandbahn for the "RLB Schneepflug Fahrbar" the locomotive arrow on the map is in the wrong direction (180 degrees). I can't find out why. Not seen this for any other locomotive.</li></ul></li>
+<li class=''><code>T1.5.1-251-gfd53951b7</code> Merge pull request #735 from Sharpe49/feature/battery-switch-defaulton<br>Added new parameter for battery switch<ul><li><code>b9a0ea30</code> Added new parameter for battery switch</li></ul></li>
+<li class=''><code>T1.5.1-249-gad1c4e33f</code> Merge pull request #719 from Sharpe49/upgrade-monogame<br>Upgraded to MonoGame 3.8.0 (+ small update for other libraries)<ul><li><code>0f4d9757</code> Update</li>
+<li><code>44a37fa3</code> Change Git attributes</li>
+<li><code>bc22a20f</code> Moved the dotnet tool restore command to the PostBuildActions.cmd file</li>
+<li><code>4602a6b2</code> Changed AppVeyor CI file to restore dotnet tools</li>
+<li><code>504f9282</code> Upgraded to MonoGame 3.8.0</li></ul></li>
+<li class=''><code>T1.5.1-243-g3ffb9bc10</code> Merge pull request #760 from twpol/feature/editorconfig-2022<br>Updated EditorConfig with .NET and StyleCop analyzer configuration<ul><li><code>113dd63c</code> chore: Add StyleCop analyzer configuration to match custom code style</li>
+<li><code>0304a434</code> chore: Add .NET analyzer configuration to match custom code style</li>
+<li><code>c8d3a853</code> chore: Update to latest EditorConfig template</li></ul></li>
+<li class=''><code>T1.5.1-239-g951c47025</code> Merge pull request #764 from twpol/feature/bug-1471416-sky-dome-smooth<br>fix: Improve sky dome distortion causing bug #1471416<ul><li><code>5f9a01bb</code> fix: Cloud dome now extends same distance past horizon as sky dome</li></ul></li>
+<li class=''><code>T1.5.1-237-g5c9f646ff</code> Merge pull request #765 from Csantucci/fix-ok-to-proceed-bug<br>Bug fix for https://bugs.launchpad.net/or/+bug/2002183 OK to proceed sound played wrongly<ul><li><code>083467b3</code> Bug fix for https://bugs.launchpad.net/or/+bug/2002183 OK to proceed sound played wrongly</li></ul></li>
+<li class=''><code>T1.5.1-235-gd0b80edbf</code> Merge pull request #717 from cesarBLG/unlimited-tcs-controls<br>Allow unlimited number of TCS cabview controls<ul><li><code>98221c03</code> Fix merge conflicts</li>
+<li><code>9f390fd9</code> Merge branch 'master' into unlimited-tcs-controls</li>
+<li><code>44fa8ad6</code> Prevent key not found exception</li>
+<li><code>d93e863d</code> Rename variable</li>
+<li><code>e2c841da</code> Code refactoring for 3D cabs</li>
+<li><code>1306375b</code> Allow unlimited number of cabview controls</li></ul></li>
+<li class=''><code>T1.5.1-228-g7047b8ce4</code> Merge pull request #747 from Looky1173/master<br>Update Hungarian translations<ul><li><code>f0af2aac</code> Add files via upload</li>
+<li><code>f3085827</code> Add files via upload</li></ul></li>
+<li class=''><code>T1.5.1-225-g17af6ffa8</code> Merge pull request #761 from twpol/bugfix/persistent-clouds<br>fix: Allow 100% cloud-free skys by making 0% overcast = 0% clouds<ul><li><code>f6a3acae</code> fix: Allow 100% cloud-free skys by making 0% overcast = 0% clouds</li></ul></li>
+<li class=''><code>T1.5.1-223-g0db4bb3e8</code> Merge pull request #706 from cesarBLG/tcs-extensions<br>Extended door functionality<ul><li><code>91bcfa20</code> Reverse order of enum</li>
+<li><code>570ab217</code> Remove unused variables</li>
+<li><code>265d33d7</code> Change DoorState to CurrentDoorState to avoid conflicts</li>
+<li><code>e4af8015</code> Reduce unnecessary operations</li>
+<li><code>7a9fc6c5</code> Refactor code due to satisfy review</li>
+<li><code>1dbf5a51</code> Add manual entry</li>
+<li><code>6c3c286a</code> Code simplification</li>
+<li><code>f786fff4</code> Add STF parsing</li>
+<li><code>a208b1d6</code> Refactor door handling and add TCS hooks</li>
+<li><code>9f08bc0c</code> Add TCS hooks to check for door state</li></ul></li>
+<li class=''><code>T1.5.1-212-g7decf71b3</code> Merge pull request #746 from cjakeman/website-release-1.5<br>Website release 1.5.1<ul><li><code>f5566d73</code> Merge branch 'website-release-1.5' of https://github.com/cjakeman/openrails into website-release-1.5</li>
+<li><code>84f53277</code> Home page now links to 1.5.1 also</li>
+<li><code>9fafc07d</code> 1.5.1 detail added to 1.5 page. Roadmap updated.<br>Separate webpage for v1.5.1 merged with v1.5 page as this is the one that code links to.</li>
+<li><code>b6acfde4</code> Update index.php<br>Trivial change to provoke new Unstable Version</li>
+<li><code>4609acb3</code> Merge branch 'website-release-1.5' of https://github.com/cjakeman/openrails into website-release-1.5</li>
+<li><code>22504a3a</code> Changes to accommodate v1.5.1</li>
+<li><code>94f66f00</code> Updated link to video on YouTube</li>
+<li><code>34408803</code> Changes to release V1.5</li>
+<li><code>8f53b83f</code> added contributors to this release</li>
+<li><code>0530ee3b</code> Added section on Oher Changes</li>
+<li><code>494c34b4</code> last draft webpages added</li>
+<li><code>ae3bf8ed</code> first draft webpages added</li></ul></li>
+<li class=''><code>T1.5.1-197-g7f4815f9e</code> Merge pull request #763 from twpol/bugfix/remove-solutiondir-variable<br>build: Remove use of SolutionDir which is not supported everywhere<ul><li><code>12e250d3</code> build: Remove accidentally included package reference</li>
+<li><code>746bdeed</code> build: Remove use of SolutionDir which is not supported everywhere<br>Certain tooling, especially that focused on .NET 5+, does not understand $SolutionDir - and since it is not actually necessary, by removing it more tools will work seamlessly with the codebase</li></ul></li>
+<li class=''><code>T1.5.1-194-gfbeaf7368</code> Merge pull request #754 from Csantucci/container-weights-official<br>Container weights: https://blueprints.launchpad.net/or/+spec/container-weights<br>Blueprint approved and code merged.<br>Thanks, Carlo,<br>Chris<ul><li><code>3549c399</code> Container weight: remove two code duplications</li>
+<li><code>70a1325b</code> Container weights: fix crashing bug</li>
+<li><code>563fe9df</code> https://blueprints.launchpad.net/or/+spec/container-weights Container weight management</li></ul></li>
+<li class=''><code>T1.5.1-190-g1cc4a74eb</code> Merge pull request #758 from peternewell/steam_wheel_slip#1<br>Steam wheel slip#1<ul><li><code>a9e9512d</code> Fix conflict with PR #732</li>
+<li><code>ee55d7ae</code> Disable derailment coefficient for "dummy" cars</li>
+<li><code>b87e4734</code> Fix issue with geared stam locomotive not operating correctly</li>
+<li><code>00005ce6</code> Documentation update.</li>
+<li><code>906e4022</code> Correct steam exhaust operation</li>
+<li><code>5c6dbc7c</code> Stack smoke adjustment</li>
+<li><code>a63643a6</code> More documentation, and adjust smoke stack with exhaust.</li>
+<li><code>ed72cdb1</code> Correct conflict issue</li>
+<li><code>8e11b677</code> Update documentation to suit.</li>
+<li><code>7454142e</code> Add steam exhaust to cylinders</li>
+<li><code>a2046bd5</code> Adjust cylinder coks to operate off crank angle</li>
+<li><code>14771d0d</code> Allow adjustment of crank angle</li>
+<li><code>0a6359e6</code> Documentation update</li>
+<li><code>33903e0e</code> Adjustments to wheel slip</li>
+<li><code>87638fa1</code> Steam slip</li></ul></li>
+<li class=''><code>T1.5.1-174-gd2e682132</code> Merge pull request #749 from sweiland-openrails/map_in_browser<br>OpenRailway Map<ul><li><code>db5764c9</code> Created class LatLon. Created function GetLatLon in TrainCar. Reworked index.js. Returned LatLon object for /API/MAP.</li>
+<li><code>7dab2701</code> Another && to || fix</li>
+<li><code>2220414a</code> Merge branch 'map_in_browser' of https://github.com/sweiland-openrails/openrails into map_in_browser</li>
+<li><code>6dce0485</code> changed latLong --> latLon, corrected locomotiv --> locomotive</li>
+<li><code>e6cc5530</code> Merge branch 'lat_long_fix_bug_1393111' into map_in_browser</li>
+<li><code>2523f91f</code> fixed and (&&) in or (II) in if lat != latPrev</li>
+<li><code>0858c49e</code> OpenRailway Map</li></ul></li>
+<li class=''><code>T1.5.1-164-g084d23230</code> Merge pull request #762 from cjakeman/website-hsb-simulator<br>News and trade updated<ul><li><code>3d001fe5</code> News and trade updated</li></ul></li>
+<li class=''><code>T1.5.1-162-gfd249824e</code> Merge pull request #759 from twpol/feature/bug-1471416-sky-dome-smooth<br>fix: Improve sky dome distortion causing bug #1471416<ul><li><code>3c84439d</code> docs: Add more documentation on sky formation</li>
+<li><code>da4c88e2</code> fix: Improve clouds by flattening dome (temporary test)</li>
+<li><code>5ab8faa3</code> fix: Improve sky dome distortion causing bug #1471416</li></ul></li>
+<li class=''><code>T1.5.1-158-g6e55f9cf4</code> Merge pull request #744 from Sharpe49/fix/disabledif-conditions<br>Fixed and improved cabview control conditions related to power supply state<ul><li><code>1b56aa6b</code> Updated manual</li>
+<li><code>6f6ad69d</code> Fixed and improved cabview control conditions related to power suppy state<br>https://bugs.launchpad.net/or/+bug/1995820<br>https://blueprints.launchpad.net/or/+spec/power-supply-enhancements</li></ul></li>
+<li class=''><code>T1.5.1-155-g6cf0e6461</code> Merge pull request #756 from Csantucci/fix-night-dds-not-loaded<br>Bug fix for https://bugs.launchpad.net/or/+bug/1999253 Night .dds textures not loaded<ul><li><code>c3f5c55b</code> Bug fix for https://bugs.launchpad.net/or/+bug/1999253 Night .dds texture not loaded</li></ul></li>
+<li class=''><code>T1.5.1-153-g02e149cfb</code> Merge pull request #738 from Sharpe49/feature/brake-controller-improvements<br>Brake controller scripts refactoring and improvements for mouse control<ul><li><code>88cadc92</code> Added CurrentNotch and IntermediateValue to support mouse control with scripted brake controller</li>
+<li><code>109f48b8</code> Refactored the brake controller in order to use the same design pattern as the C# signal scripts (compatible with current scripts)</li></ul></li>
+<li class=''><code>T1.5.1-150-g896573d4b</code> Merge pull request #755 from Csantucci/throttle-air-combined-control-fix<br>Bug fix for https://bugs.launchpad.net/or/+bug/1999330 Crash with a throttle-air combined control<ul><li><code>f79c1e26</code> Update Source/Orts.Simulation/Simulation/RollingStocks/MSTSLocomotive.cs<br>Co-authored-by: César Benito Lamata <cesarbema2009@hotmail.com></li>
+<li><code>2fd409a5</code> Bug fix for https://bugs.launchpad.net/or/+bug/1999330 Crash with a throttle-air combined control</li></ul></li>
+<li class=''><code>T1.5.1-147-g9dc723758</code> Merge pull request #740 from Sharpe49/feature/traction-cut-off-refactoring<br>Refactored the circuit breaker and the traction cut-off relay in order to use the same design pattern as the C# signal scripts (compatible with current scripts)<ul><li><code>b3e66cac</code> Refactored the circuit breaker and the traction cut-off relay in order to use the same design pattern as the C# signal scripts (compatible with current scripts)</li></ul></li>
+<li class=''><code>T1.5.1-145-g5f2ded579</code> Merge pull request #750 from mbm-OR/bugfix/Fix-Menu-ExploreInActivityMode<br>Bug fix for https://bugs.launchpad.net/or/+bug/1997482. Explore in Activity Mode, is not restored.<ul><li><code>424de68c</code> Bug fix for https://bugs.launchpad.net/or/+bug/1997482. Explore in Activity Mode, is not restored.</li></ul></li>
+<li class=''><code>T1.5.1-143-g0927dda4e</code> Merge pull request #752 from openrails/release/1.5<br>Merge pull request #741 from Sharpe49/fix/brake-controller-timetable<ul><li><code>611b0195</code> Merge pull request #733 from Sharpe49/fix/battery-switch-sound<br>Fixed battery switch sound being repeted</li>
+<li><code>4c26d6de</code> Merge pull request #734 from Sharpe49/fix/battery-switch-timer<br>Fixed battery switch timer not working properly</li>
+<li><code>3fcf6804</code> Merge pull request #741 from Sharpe49/fix/brake-controller-timetable<br>Fixed brake controller script not being loaded in timetable mode</li></ul></li>
+<li class=''><code>T1.5-142-ga16da1f4a</code> Merge pull request #713 from Csantucci/CruiseControl-official<br>https://blueprints.launchpad.net/or/+spec/cruise-control<ul><li><code>6ca89da0</code> CC: fix crash bug http://www.elvastower.com/forums/index.php?/topic/36716-many-most-trains-seem-to-crash-latest-unstable-version/</li>
+<li><code>bc3a13b5</code> CC: delete obsolete parameters</li>
+<li><code>391e8824</code> CC: support further CC configurations</li>
+<li><code>dbb06bd0</code> CC: introduce parameter to allow CC mode switch also when throttle is not at 0</li>
+<li><code>5a8da777</code> Fix typo in cabview control name</li>
+<li><code>4c52f582</code> Update Train Brake usage documentation</li>
+<li><code>ff5f18d0</code> Generalized controls to set CC speed</li>
+<li><code>d0539473</code> Add two-state controls to increment and decrement selected speed by fixed value. By Paolo</li>
+<li><code>d2053372</code> Update of the OR manual</li>
+<li><code>c00f611b</code> Demand train brake if dynamic brake not available</li>
+<li><code>0488826e</code> Do not move brake lever when applying brakes</li>
+<li><code>6e2f0bae</code> Further fixes for force selector</li>
+<li><code>47013830</code> Fix combined control change by mouse</li>
+<li><code>6c8701f4</code> Fix bugs regarding force selector</li>
+<li><code>966a61cf</code> Bug fix for not being able to brake</li>
+<li><code>f281de6a</code> Fix bug with acceleration</li>
+<li><code>f6b292d7</code> Refactoring of multi position controller</li>
+<li><code>ffc93eb8</code> Add parameter to set train brake increase/decrease speed</li>
+<li><code>8bb3bfeb</code> Refine train braking algorithm</li>
+<li><code>df4fde42</code> Further refactoring of CC class</li>
+<li><code>33de10b0</code> Some cleanup</li>
+<li><code>3f5e038e</code> Fix STF parsing problem</li>
+<li><code>b2b05f37</code> Adjust throttle and dynamic brake percents instead of overriding force calculation</li>
+<li><code>2478066c</code> Third batch of code cleaning as required by reviewer</li>
+<li><code>39fb6c2e</code> Second batch of code cleaning as required by reviewer</li>
+<li><code>dd69c72b</code> Fix  dynamic brake force not acting</li>
+<li><code>5d62da58</code> Add Cruise Control variables to main HUD</li>
+<li><code>80491f58</code> First batch of code cleaning as required by reviewer</li>
+<li><code>0b1f1e68</code> Revert wrongly introduced debug patch</li>
+<li><code>637f947b</code> https://blueprints.launchpad.net/or/+spec/cruise-control ; initiator and main contributor: Jindrich</li></ul></li>
+<li class=''><code>T1.5-111-g71c1114b7</code> Merge pull request #745 from cesarBLG/rotate-digits-3dcab<br>Fix digital displays in rear 3D cab<ul><li><code>cf5acd25</code> Rotate 180 degrees digital displays in rear 3D cabs</li></ul></li>
+<li class=''><code>T1.5-109-g8196a3f8d</code> Merge pull request #743 from Csantucci/default-include-filename<br>Default filename for include statements<ul><li><code>c1801f4f</code> Update Source/Documentation/Manual/physics.rst<br>Cédric, thanks for patience<br>Co-authored-by: Cedric GNIEWEK <gniewek.cedric@free.fr></li>
+<li><code>0292f162</code> Change again special character to recognize default include file, to avoid crash</li>
+<li><code>bdc6668a</code> Change special character as suggested by James Ross</li>
+<li><code>60c8b99e</code> Update Source/Documentation/Manual/physics.rst<br>Co-authored-by: Cedric GNIEWEK <gniewek.cedric@free.fr></li>
+<li><code>809cb6e4</code> Default filename for include statements, see http://www.elvastower.com/forums/index.php?/topic/36671-suggestion-new-include-parameter/page__view__findpost__p__290387</li></ul></li>
+<li class=''><code>T1.5-103-g3756630e7</code> Merge pull request #736 from cjakeman/manual-corrections4<br>Replaced truncated brake token table with lists<ul><li><code>a8450854</code> Replace truncated brake token table with lists</li></ul></li>
+<li class=''><code>T1.5-101-g1ceb042d8</code> Merge pull request #630 from DR-Aeronautics/sky-color<br>Sky Color Fix (Addresses Trello Roadmap Card #367 for More accurate sunrise and sunset)<ul><li><code>704731ac</code> Updated Skyshader to address the error found by Csantucci<br>Bracketed the pow() functions with abs() to prevent the non-negative advisory error.<br>Also added better control in astronomical twilight to return the stars to their pre-update brightness at the onset of full night.</li>
+<li><code>688d0cd0</code> Updated 2 files to make the sunset and sunrise more realistic</li></ul></li>
+<li class=''><code>T1.5-98-g567f7ca0a</code> Merge pull request #742 from Weter-ORTS/master<br>Update of Russian Locales 'Oct 2022<ul><li><code>48c1ac2f</code> Updated Menu (ru)</li>
+<li><code>31d354e8</code> Updated ORTS.Simulation</li>
+<li><code>bfbc611d</code> Updated RunActivity (ru)</li></ul></li>
+<li class=''><code>T1.5-94-gf59d2015d</code> Merge pull request #677 from peternewell/diesel-mechanic#4<br>Correct double heading bug<ul><li><code>c1c417fb</code> Fix for MSTS Gear Motor Bug</li>
+<li><code>ad0cd0e9</code> Fix bug with MSTS versions</li>
+<li><code>c0e78f2a</code> Add information for manual.</li>
+<li><code>12d50c5f</code> Adjust Diesel Power</li>
+<li><code>0855181b</code> Some minor adjustments</li>
+<li><code>ec8217c0</code> Correct MaxTE calculation</li>
+<li><code>a432acfb</code> Correct calculation of MaxTE.</li>
+<li><code>2290a17e</code> Further adjustment to save/restore of DM</li>
+<li><code>5ab0e7eb</code> Correct issue with engine efficiency in HuD</li>
+<li><code>c124bdea</code> Correct issue with load%</li>
+<li><code>9d5fb93c</code> Correct two issues with engines not restoring and efficiency HuD values not displaying correctly.</li>
+<li><code>e7564c0d</code> Correct an issue with gearbox not changing on multiple engines</li>
+<li><code>0483b62d</code> Pass gear command key to other gearboxes in the same locomotive</li>
+<li><code>e610841b</code> Add gear reverse indication and fix second geared locomotive not engaging</li>
+<li><code>a1dc40bf</code> Correct double heading bug</li></ul></li>
+<li class=''><code>T1.5-78-gcf1e833bc</code> Merge pull request #739 from openrails/release/1.5<br>Merge pull request #731 from twpol/bugfix/multithread-crash<ul><li><code>3bc85cb3</code> Merge pull request #731 from twpol/bugfix/multithread-crash<br>fix: Log first error during Viewer mark-sweep clean-up</li></ul></li>
+<li class=''><code>T1.4-769-g5a8a93652</code> Merge pull request #730 from openrails/release/1.5<br>Merge pull request #728 from Csantucci/cosine-fix<ul><li><code>a84cab05</code> Merge pull request #726 from cesarBLG/triple-valve-initialize<br>Fix brake initialization problems</li>
+<li><code>b709ac01</code> Merge pull request #728 from Csantucci/cosine-fix<br>Bug fix for https://bugs.launchpad.net/or/+bug/1992301 World becoming fully dark</li></ul></li>
+<li class=''><code>T1.4-763-g41442f9ab</code> Merge pull request #729 from twpol/feature/1.5-merge-fix-2<br>Feature/1.5 merge fix 2<ul><li><code>4df9901e</code> Merge branch 'release/1.5' into feature/1.5-merge-fix-2</li></ul></li>
+<li class=''><code>T1.4-747-gfae361c39</code> Merge pull request #699 from mbm-OR/bugfix/Fix-Web-HUD-Force-labels<br>Bug fix for https://bugs.launchpad.net/or/+bug/1987453. Web: HUD/Force Information, some labels not visible.<ul><li><code>6baf43d0</code> Bug fix for https://bugs.launchpad.net/or/+bug/1987453. Web: HUD/Force Information, some labels not visible.</li></ul></li>
+<li class=''><code>T1.4-745-g77be597b9</code> Merge pull request #712 from cesarBLG/fix-null-fntype<br>Search for NORMAL signals if no argument is provided<ul><li><code>68cd8ab7</code> Cast MstsSignalFunction to SignalFunction</li>
+<li><code>6cdbdfee</code> Provide integer to SignalFunction conversion</li>
+<li><code>28372a4d</code> Search for NORMAL signals if no argument is provided</li></ul></li>
+<li class=''><code>T1.4-741-gf4212d3c4</code> Fixes from release/1.5 branch<ul><li><code>eb99b759</code> Merge pull request #711 from Csantucci/fix-precipitation-out-of-bounds<br>Bug fix for https://bugs.launchpad.net/or/+bug/1989426 Out of bounds crash in Precipitation.cs</li>
+<li><code>44180b5d</code> Merge pull request #710 from Sharpe49/fix/get-draw-state<br>Fix GetDrawState when using upper characters in the name parameter</li>
+<li><code>f4db4c12</code> Merge pull request #705 from twpol/feature/locale-russian<br>feat: Updated Russian translations</li>
+<li><code>9a42f10b</code> update Installation Guide.docx<br>not updated since v0.9 and much of its content is already in the Manual.</li>
+<li><code>7f5d6110</code> Merge pull request #667 from KRtekTM/patch-1<br>Fix typo in Czech translation of menu<br>First contribution - thanks KRtekTM<br>Howky checked that it's all OK.</li>
+<li><code>1cec11b3</code> Promoted Installer references to v1.5<br>Also default installs in Program Files for 64-bit PCs instead of Program Files (x86)</li></ul></li>
+<li class=''><code>T1.4-730-ge27379c0f</code> Merge pull request #714 from twpol/feature/1.5-merge-fix-1<br>Feature/1.5 merge fix 1<ul><li><code>d289d28a</code> Merge branch 'release/1.5' into feature/1.5-merge-fix-1</li></ul></li>
+<li class=''><code>T1.4-726-g2dd1c6336</code> Merge pull request #688 from cjakeman/menu-options07d<br>adds Help Icons to Video tab<ul><li><code>7b6b608b</code> Updated image for manual</li>
+<li><code>e4999f0b</code> Adjusted label hiding "anti-aliasing"</li>
+<li><code>e44897d2</code> adds Help Icons to Video tab<br>Also moves 2 controls there from Experimental tab</li></ul></li>
+<li class=''><code>T1.4-722-g82a9ca1ff</code> Merge pull request #709 from twpol/feature/command-line-syntax-2<br>fix: Add help option to help output to Data Validator<ul><li><code>dc950d9a</code> fix: Add help option to help output</li></ul></li>
+<li class=''><code>T1.4-720-g123107f69</code> Merge pull request #708 from twpol/feature/command-line-syntax-3<br>fix: Add help option to help output of Data Converter<ul><li><code>93834484</code> fix: Add help option to help output</li></ul></li>
+<li class=''><code>T1.4-718-gf359ae234</code> Merge pull request #707 from twpol/feature/command-line-syntax-4<br>fix: Add help option to help output of Data Collector<ul><li><code>f7186153</code> fix: Add help option to help output</li></ul></li>
+<li class=''><code>T1.4-716-g01de7b11e</code> Merge pull request #690 from Csantucci/MP-turntable-official Sync turntables and transfertables in multiplayer mode<ul><li><code>91ec7c35</code> Merge branch 'master' into MP-turntable-official to remove conflict</li>
+<li><code>3399d4b7</code> Further code cleanup</li>
+<li><code>8eea0096</code> Cleanup code</li>
+<li><code>fd34961a</code> Sync turntables and transfertables in multiplayer mode https://blueprints.launchpad.net/or/+spec/sync-turntables-in-multiplayer</li></ul></li>
+<li class=''><code>T1.4-711-g107075959</code> Merge pull request #702 from Csantucci/mp-switches<br>Bug fix for https://bugs.launchpad.net/or/+bug/1987504 Server can't throw switches for clients in multiplayer<ul><li><code>ea8c6f0a</code> Bug fix for https://bugs.launchpad.net/or/+bug/1987504 Server can't throw switches for clients in multiplayer</li></ul></li>
+<li class=''><code>T1.4-709-ge4cb5406f</code> Merge pull request #701 from cesarBLG/explorer-ooc<br>Prevent train from going to manual mode from an explorer activity<ul><li><code>757b1bec</code> Provide transitory functionality for existing scripts</li>
+<li><code>4b70d861</code> Prevent change to Auto Signal from Explorer due to clear request propagation</li>
+<li><code>fc73ac89</code> Prevent train from going to manual mode from an explorer activity</li></ul></li>
+<li class=''><code>T1.4-705-gaa5f4aceb</code> Merge pull request #703 from cesarBLG/default-signal-function<br>Add default signal function in case of SIGCFG errors<ul><li><code>6b619973</code> Move default value to property declaration</li>
+<li><code>87990a3c</code> Add default signal function in case of SIGCFG errors</li></ul></li>
+<li class=''><code>T1.4-702-g3023eb3df</code> Merge pull request #700 from Sharpe49/csharp-script-extensions<br>Fix for crash during signal loading<ul><li><code>568fab58</code> Fixed wrongly made rebase</li>
+<li><code>5c98e2f7</code> Fix for crash</li></ul></li>
+<li class=''><code>T1.4-699-gdff850087</code> Merge pull request #691 from Sharpe49/project-file-fix<br>Removed lines in the RunActivity project file that are no longer used<ul><li><code>b2223e44</code> Removed lines in the RunActivity project file that are no longer used</li></ul></li>
+<li class=''><code>T1.4-697-g95c8cb157</code> Merge pull request #695 from Csantucci/MP-containers-official<br>Container loaded wagons in Multiplayer mode .<br>Blueprint approved and PR merged.<br>Thanks, Carlo<ul><li><code>237904dd</code> Remove redundant method call parameter</li>
+<li><code>bf98bf78</code> Container loaded wagons in Multiplayer mode https://blueprints.launchpad.net/or/+spec/mp-containers</li></ul></li>
+<li class=''><code>T1.4-694-gbe955cc78</code> Merge pull request #689 from openrails/release/1.5<br>chore: Update for 1.5 release<ul><li><code>cd538b8f</code> chore: Update for 1.5 release</li></ul></li>
+<li class=''><code>T1.4-692-g624a46885</code> Merge pull request #684 from twpol/feature/command-line-syntax-2<br>fix: Clean up Data Validator help output to match dotnet-style<ul><li><code>3f4cc623</code> fix: Clean up Data Validator help output to match dotnet-style</li></ul></li>
+<li class=''><code>T1.4-690-g3cc8e48cd</code> Merge pull request #685 from twpol/feature/command-line-syntax-3<br>fix: Clean up Data Converter help output to match dotnet-style<ul><li><code>203bbd2c</code> fix: Clean up Data Converter help output to match dotnet-style</li></ul></li>
+<li class=''><code>T1.4-688-gb6bbc88e0</code> Merge pull request #686 from twpol/feature/command-line-syntax-4<br>fix: Clean up Data Collector help output to match dotnet-style<ul><li><code>dab3e59c</code> fix: Clean up Data Collector help output to match dotnet-style</li></ul></li>
+<li class=''><code>T1.4-686-ga9f8174e8</code> Merge pull request #678 from twpol/feature/traincar-refactor-1<br>Refactor TrainCar part 1<ul><li><code>c19e7184</code> Merge branch 'master' into feature/traincar-refactor-1</li>
+<li><code>262a6b5e</code> refactor: TrainCar: extract animated air hose data structures</li>
+<li><code>7edd52d3</code> refactor: TrainCar: extract animated coupler data structures</li></ul></li>
+<li class=''><code>T1.4-682-g678a67412</code> Merge pull request #537 from Sharpe49/csharp-script-extensions<br>C# signal script extensions<ul><li><code>939b2b26</code> Added C# signal script functions for setting speed info and refactored signal functions, signal object types and signal speed info<br>Fixed display of SPEED signals on track monitor</li>
+<li><code>f8ecd7b3</code> Show signalling debug information for all signal types</li>
+<li><code>27bfb9b9</code> Add HoldState and HandleEvent to C# signal scripts (and refactoring)</li>
+<li><code>883b932c</code> Code cleanup before modification</li>
+<li><code>01365cfd</code> More cleanup</li>
+<li><code>b507ea59</code> Added signal shape name to the C# signal script interface</li>
+<li><code>6553f9a1</code> Moved signals initialization after world info addition</li>
+<li><code>35ea8003</code> Cleanup: Replace signalObjects by an auto-property</li>
+<li><code>bfdfae19</code> Classes moved to separate files and code cleanup</li></ul></li>
+<li class=''><code>T1.4-672-g5b753d000</code> Merge pull request #679 from cesarBLG/signed-distance-scripts<br>Provide travelled distance to TCS scripts taking into account the running direction<ul><li><code>223aae66</code> Add check to prevent crashes when signal scripts use a bad draw state</li>
+<li><code>2ffcf483</code> Add travelled distance with sign to scripts</li></ul></li>
+<li class=''><code>T1.4-669-g202962fd1</code> Merge pull request #675 from Csantucci/AIContainers-official<br>Bug fix for https://bugs.launchpad.net/or/+bug/1983511 When an AI train disappears at end of run, containers remain visible<ul><li><code>4d797560</code> Cleanup fix</li>
+<li><code>96641418</code> Bug fix for https://bugs.launchpad.net/or/+bug/1983511 When an AI train disappears at end of run, containers remain visible</li></ul></li>
+<li class=''><code>T1.4-666-g1ea0b22b0</code> Merge pull request #681 from twpol/feature/json-reader-test-fix<br>test: Fix tests when StfReader tests run before JsonReader tests<ul><li><code>c5cc0673</code> test: Fix tests when StfReader tests run before JsonReader tests</li></ul></li>
+<li class=''><code>T1.4-664-g471115c59</code> Merge pull request #687 from twpol/feature/command-line-syntax-5<br>fix: Clean up Content Checker help output to match dotnet-style<ul><li><code>2cbce1f7</code> fix: Clean up Content Checker help output to match dotnet-style</li></ul></li>
+<li class=''><code>T1.4-662-g712b9e5f5</code> Merge pull request #683 from twpol/feature/command-line-syntax-1<br>fix: Clean up Simulator Tester help output to match dotnet-style<ul><li><code>031b2970</code> fix: Clean up Simulator Tester help output to match dotnet-style</li></ul></li>
+<li class=''><code>T1.4-660-g5342950a2</code> Merge pull request #680 from twpol/feature/correct-file-metadata<br>build: Fix the file metadata after the .NET SDK project switch<ul><li><code>2cae93dc</code> build: Fix the file metadata after the .NET SDK project switch</li></ul></li>
+<li class=''><code>T1.4-658-gf890b9398</code> Merge pull request #682 from cjakeman/website-correct-links2<br>Updated links to Deco Games<ul><li><code>7fb9de65</code> Updated links to Deco Games</li></ul></li>
+<li class=''><code>T1.4-656-g14559529c</code> Merge pull request #676 from cjakeman/website-download-content<br>adds content hosted on GitHub.com<ul><li><code>3ee08222</code> Corrected bad link</li>
+<li><code>7687cb85</code> adds content hosted on GitHub.com</li></ul></li>
+<li class=''><code>T1.4-653-g3db20bc2a</code> Merge pull request #671 from cjakeman/manual-to-v1.5<br>Updates manual for Release 1.5<ul><li><code>c5dcc73c</code> Updates manual for Release 1.5</li></ul></li>
+<li class=''><code>T1.4-651-gbb1bf6232</code> Merge pull request #665 from cjakeman/menu-options02n<br>02n: Removes some redundant experimental options<ul><li><code>59564121</code> Merge branch 'master' into menu-options02n</li>
+<li><code>4601d509</code> Changes to resolve merge conflicts</li>
+<li><code>d249deb9</code> Removes some redundant experimental options<br>Load DDS textures in preference to ACE is now always true.<br>Adhesion is now always reduced by rain/snow/fog.<br>Precipitation Box values are hidden awaiting any user feedback.</li></ul></li>
+<li class=''><code>T1.4-647-g3729acdb6</code> Merge pull request #674 from Sharpe49/fix-wagon-smoke<br>Mark particle drawer texture for wagons<ul><li><code>e160e261</code> Mark particle drawer texture for wagons</li></ul></li>
+<li class=''><code>T1.4-645-g9e0e99a77</code> Merge pull request #569 from Sharpe49/dotnetsdk-project-files-upgrade<br>Upgraded project files to .Net SDK project file format<ul><li><code>e51497d7</code> Delete unused XnaGeometry</li>
+<li><code>35efe98c</code> Switch Ionic.Zip by DotNetZip (same library renamed)</li>
+<li><code>e47d5c39</code> Switch ICSharpCode.SharpZipLib to NuGet</li>
+<li><code>42c6aa49</code> Switch Newtonsoft.Json to NuGet</li>
+<li><code>26985df8</code> Upgraded project files to .Net SDK project file format<br>Removed AssemblyInfo files (integrated in the project file)<br>Removed unused files (not referenced in the old project files)<br>Removed resource files in ActivityEditor which were causing execution problems</li></ul></li>
+<li class=''><code>T1.4-639-g16ad3c118</code> Merge pull request #673 from pzgulyas/locale-hu<br>hu locales update<ul><li><code>3080e857</code> hu locales</li></ul></li>
+<li class=''><code>T1.4-637-ga6c0f0448</code> Merge pull request #669 from twpol/feature/performance-counter-thread<br>refactor: Separate host performance data collection and processing to another thread<ul><li><code>1ab5f580</code> refactor: Separate host performance data collection and processing to another thread</li></ul></li>
+<li class=''><code>T1.4-635-g93555b6b5</code> Merge pull request #672 from cesarBLG/explorer-signal-distance<br>Calculate distance to signal in explorer mode<ul><li><code>e4ba7221</code> Calculate distance to signal in explorer mode</li></ul></li>
+<li class=''><code>T1.4-633-g1d15fa043</code> Merge pull request #525 from Sharpe49/tcs-extensions<br>TCS extensions<ul><li><code>614b2220</code> Add MaxThrottlePercent to TCS scripts (with some refactoring in TrainCar)</li>
+<li><code>a81711cb</code> Add SignalTypeName and DrawStateName to SignalFeatures<br>https://blueprints.launchpad.net/or/+spec/tcs-extensions</li></ul></li>
+<li class=''><code>T1.4-630-gdece9b39c</code> Merge pull request #670 from cjakeman/menu-options03c<br>adds Help Icons to Audio options tab (again)<ul><li><code>b6dcdee2</code> adds Help Icons to Audio options tab</li></ul></li>
+<li class=''><code>T1.4-628-ga89467078</code> Merge pull request #627 from cesarBLG/enhance-adhesion<br>Improve advanced adhesion model<ul><li><code>eca1e35d</code> Add manual documentation</li>
+<li><code>df8a6f30</code> Tune zero-speed adhesion</li>
+<li><code>e5815eb7</code> Add support for AC induction motor</li>
+<li><code>95a3398a</code> Add debug info of slip control</li>
+<li><code>8311431c</code> Refactor adhesion parameters</li>
+<li><code>86639a22</code> Merge branch 'master' into enhance-adhesion</li>
+<li><code>feff20c9</code> Change variable name</li>
+<li><code>156a2be3</code> Refactoring of slip control</li>
+<li><code>452a72f8</code> Use custom integrator to exploit particularities of the axle model</li>
+<li><code>05bff155</code> Add simple slip control</li>
+<li><code>14c0a126</code> Correct axle out force calculation: use RK4</li>
+<li><code>70e15ffd</code> Further adjustements at zero speed</li>
+<li><code>42f5be34</code> Use Runge-Kutta 4 integrator with function evaluation</li>
+<li><code>7113eef4</code> Improve RK4 integrator</li>
+<li><code>69dabe47</code> Fix missing absolute value</li>
+<li><code>d3563a76</code> Remove unused fields</li>
+<li><code>da23e7bb</code> Reduce wheel inertia calculations</li>
+<li><code>541f82cb</code> Reduce integration step of axle calculations</li>
+<li><code>121de222</code> Update code comment</li>
+<li><code>91ae409b</code> Set units on formula</li>
+<li><code>88c63f33</code> Unify all axle types</li>
+<li><code>71383c34</code> Quick fix to get non-zero adhesion at high slip speeds</li>
+<li><code>00a82809</code> Correct problems regarding wheel speed calculation</li></ul></li>
+<li class=''><code>T1.4-604-gd56c11a97</code> Merge pull request #663 from cjakeman/menu-option-LOD-to-horizon<br>Restores option 02g removed in PR#589<ul><li><code>a1ecce2f</code> Restores option 02g removed in PR#589</li></ul></li>
+<li class=''><code>T1.4-602-ge44612297</code> Merge pull request #661 from cjakeman/manual-corrections3<br>Corrected text that had become out of date<ul><li><code>173c4d4f</code> Corrected text that had become out of date</li></ul></li>
+<li class=''><code>T1.4-600-g8540a8fae</code> Merge pull request #668 from twpol/feature/fix-defaults<br>fix: Swap defaults for instancing and glass back<ul><li><code>75b230a0</code> fix: Swap defaults for instancing and glass back</li></ul></li>
+<li class=''><code>T1.4-598-gb50712e3f</code> Merge pull request #656 from Csantucci/fix-drive-wheels-rotation-speed<br>Bug fix for https://bugs.launchpad.net/or/+bug/1979005 Drive wheels not rotating at correct speed<ul><li><code>e5128e4d</code> Bug fix for https://bugs.launchpad.net/or/+bug/1979005 Drive wheels not rotating at correct speed</li></ul></li>
+<li class=''><code>T1.4-596-g9be6251ca</code> Merge pull request #657 from twpol/feature/fix-hang-stacks<br>fix: Correctly merge exception and current stack traces in logger<ul><li><code>35913ded</code> fix: Correctly merge exception and current stack traces in logger</li></ul></li>
+<li class=''><code>T1.4-594-g0ff87d8dd</code> Merge pull request #659 from Csantucci/clock-3Dcab<br>Bug fix for https://bugs.launchpad.net/or/+bug/1979824 Seconds in digital clock within 3Dcab not displayed<ul><li><code>f38fc9ba</code> Bug fix for https://bugs.launchpad.net/or/+bug/1979824 Seconds in digital clock within 3Dcab not displayed</li></ul></li>
+<li class=''><code>T1.4-592-gedf9a7384</code> Merge pull request #658 from twpol/feature/editorconfig<br>style: Add .NET editorconfig from Visual Studio templates<ul><li><code>04d76b5e</code> style: Add .NET editorconfig from Visual Studio templates</li></ul></li>
+<li class=''><code>T1.4-590-gc9e1389fa</code> Merge pull request #660 from twpol/feature/fix-hudwindow-hang<br>perf: Improved performance counter initialisation<ul><li><code>78184140</code> perf: Improved performance counter initialisation</li></ul></li>
+<li class=''><code>T1.4-588-gd66ab2a82</code> Merge pull request #666 from cjakeman/website-correct-links1<br>Website - correction to link for unstable versions<ul><li><code>24de1666</code> opens off-site links in new tab</li>
+<li><code>f1966749</code> Correction to link for unstable versions</li></ul></li>
+<li class=''><code>T1.4-585-g80c1805ed</code> Merge pull request #662 from cesarBLG/fix-brake-application<br>Brake pipe pressure is reduced instantly to EQ pressure<ul><li><code>318e2a1c</code> Fix typo</li>
+<li><code>53643351</code> Fix wrong check for edge case</li></ul></li>
+<li class=''><code>T1.4-582-gca359cdca</code> Merge pull request #655 from cjakeman/menu-block-bad-content-location<br>Menu block for bad content location<ul><li><code>6a2a582f</code> Block added to Manual</li>
+<li><code>02dd21d4</code> Adds block to stop use of content located in Open Rails folder</li></ul></li>
+<li class=''><code>T1.4-579-g748be1dff</code> Merge pull request #632 from cjakeman/menu-options07a<br>Menu options07a - Re-do System Tab<ul><li><code>a24a4f18</code> Resolved conflicts and updated screenshots</li>
+<li><code>5d0be400</code> Merge remote-tracking branch 'upstream/master' into menu-options07a</li>
+<li><code>1ed56020</code> Turned off AutoSize for labels on System tab<br>Also gave them a generous size so that translations will be less cramped.</li>
+<li><code>94e2f732</code> Merge latest upstream/master into branch menu-options07a</li>
+<li><code>6a640d62</code> Move PerformanceTuner control to System tab</li>
+<li><code>0d217a6a</code> Moves WebServerPort control to System tab</li>
+<li><code>e077d018</code> Moves ControlConfirmations control to System tab</li>
+<li><code>49f84f20</code> Moves WindowGlass control to System tab</li>
+<li><code>4ae28a0c</code> Moves Window controls to System tab</li>
+<li><code>1e8b53cc</code> Adds HelpIcon for Update Mode controls</li>
+<li><code>aff1751d</code> Moves Language control to System tab</li></ul></li>
+<li class=''><code>T1.4-567-gc204d0ab5</code> Merge pull request #645 from FrannDzs/language-templates<br>Rebuilded language templates for all modules<ul><li><code>31f43e02</code> Update templates</li></ul></li>
+<li class=''><code>T1.4-565-ga22d237f8</code> Merge pull request #653 from Csantucci/Containers-official<br>Blueprint for container management https://blueprints.launchpad.net/or/+spec/containers<ul><li><code>12548071</code> Containers: change extension of .json files</li>
+<li><code>c41c531c</code> Merge branch 'master' into Containers-official</li>
+<li><code>b348ee08</code> Containers: reject save and warn player during a container load/unload operation</li>
+<li><code>a8e1cc71</code> Containers: fix manual pictures and reference to immediate refill key</li>
+<li><code>0ca40ed8</code> Containers: fixed reference to an image in the manual</li>
+<li><code>0bc1d9cb</code> Containers: bug fix for http://www.elvastower.com/forums/index.php?/topic/36316-odd-consist-bug/page__view__findpost__p__286076</li>
+<li><code>94345b45</code> Containers: remove commented code</li>
+<li><code>c6a069de</code> Containers: changed wording from "occupancy" to "population" and extension from ".lso" to ".lsp"</li>
+<li><code>79ab03c2</code> Containers: first release of documentation</li>
+<li><code>e1269b61</code> Containers: proceeding on the container station documentation</li>
+<li><code>2956c450</code> Containers: first part of container station documentation</li>
+<li><code>0cec6dd9</code> Containers: wagon related documentation complete</li>
+<li><code>95cbee9a</code> Prosecuting generation of documentation</li>
+<li><code>a52423c7</code> Starting generation of documentation</li>
+<li><code>5ea1cbe0</code> Containers: manage both 45ft and 45ftHC containers</li>
+<li><code>65c8461e</code> Fix bug in specific container layout on wagons</li>
+<li><code>17423b9a</code> Blueprint for container management https://blueprints.launchpad.net/or/+spec/containers</li>
+<li><code>84cbb796</code> Merge pull request #24 from twpol/Containers-official<br>fix: Fix parsing of container JSON files</li>
+<li><code>3a2b356f</code> Containers: commit to test Json issues</li></ul></li>
+<li class=''><code>T1.4-544-gcb60f8898</code> Merge pull request #617 from cjakeman/menu-options02m<br>02m: Removed menu option Debrief Evaluation. Now always available.<ul><li><code>97cb8cff</code> Correct Resume for Evaluations</li>
+<li><code>95084123</code> Adds DbfEvalAutoPilot to F2 Save and Resume</li>
+<li><code>99c6474f</code> Fix for unwanted loop reporting evaluation</li>
+<li><code>a90e4efd</code> Merge remote-tracking branch 'upstream/master' into menu-options02m</li>
+<li><code>06d28e66</code> Removes option to creates an activity evaluation. Now always created.</li>
+<li><code>c21d6280</code> Merge remote-tracking branch 'upstream/master' into menu-options02m</li>
+<li><code>15c7a833</code> Evaluation data now saved by F2</li></ul></li>
+<li class=''><code>T1.4-536-g031cddbd9</code> Merge pull request #629 from cjakeman/website-download-versions<br>Refined label for downloading Testing Version<ul><li><code>34abd9c4</code> Remove spurious message</li>
+<li><code>1baec1a7</code> Refined label for downloading Testing Version</li></ul></li>
+<li class=''><code>T1.4-533-gab4f4bd24</code> Merge pull request #654 from cjakeman/fix-for-missing-coupler-shapes<br>Fix to add .Mark() for Coupler and AirHose shapes<ul><li><code>9af502c5</code> adds .Mark() for Coupler and AirHose shapes</li></ul></li>
+<li class=''><code>T1.4-531-gf0f9cb480</code> Merge pull request #649 from twpol/feature/simulator-test<br>feat: Add help information to Simulator Tester<ul><li><code>3a3df1c0</code> feat: Add help information to Simulator Tester</li></ul></li>
+<li class=''><code>T1.4-529-g82748772f</code> Merge pull request #647 from twpol/feature/binpat-cache-directory<br>fix: Put all cache files into the designated area away from user files<ul><li><code>4e3b696d</code> fix: Turns out I'd gotten the extension backwards</li>
+<li><code>48cc9ffc</code> fix: Put all cache files into the designated area away from user files</li></ul></li>
+<li class=''><code>T1.4-526-gea2738cc3</code> Merge pull request #651 from twpol/feature/update-json-reader-usage<br>fix: Update existing JsonReader loading code for new array handling<ul><li><code>44bf0dc2</code> fix: Update existing JsonReader loading code for new array handling</li></ul></li>
+<li class=''><code>T1.4-524-g50f43621b</code> Merge pull request #646 from cesarBLG/brake-controller-mrp<br>Fix issue with brake controller pressure<ul><li><code>5d22bbe6</code> Add warning for incompatible brake valves</li>
+<li><code>0f890b05</code> Add missing change</li>
+<li><code>0cbbc613</code> Further corrections regarding main res pressure</li>
+<li><code>89e82a82</code> Use main reservoir pressure instead of main res pipe pressure</li></ul></li>
+<li class=''><code>T1.4-519-g16d3fbcb8</code> Merge pull request #642 from FrannDzs/spanish-localization<br>Update es.po (menu)<ul><li><code>151caea1</code> Update es.po<br>Added missing quotation marks.</li>
+<li><code>daa81a5c</code> Update es.po<br>Fixed last commit with obsolete translation.</li>
+<li><code>3f2e60c2</code> Update es.po<br>Corrected some expressions and minor fixes.</li>
+<li><code>be96bcbc</code> Update es.po<br>More fixes, some texts did not fit in the boxes.</li>
+<li><code>cedbc135</code> Updated es.po<br>- Clima aleatorio > Aleatorización de clima<br>- Temporada: > Estación:</li>
+<li><code>71984a17</code> File cleaning</li>
+<li><code>4933bae2</code> Updated es.po<br>Rebuilt and updated with latest version of the template.</li>
+<li><code>35723928</code> Merge branch 'openrails:master' into spanish-localization</li>
+<li><code>d734c9be</code> Update es.po<br>- Alerta en la cabina > "Hombre Muerto" en cabina</li>
+<li><code>79016dc8</code> Update es.po<br>- Mensajes de configuración "verbosed" de ENG/WAG >Mensajes de configuración detallados de .ENG/.WAG<br>- Nombre: > Nombre</li>
+<li><code>734adba6</code> Updated es.mo<br>- Sombra para todas las formas > Sombras para todas las "shapes" (objetos estáticos)</li>
+<li><code>91dbe9f0</code> Update es.po<br>This fixes a string from the previous commit. (Aleatorización de clima > Clima aleatorio)</li>
+<li><code>4899beb4</code> Update es.po</li>
+<li><code>908567cb</code> Update es.po<br>- Recompiled with Poedit</li>
+<li><code>be0e0818</code> Update es.po<br>- Luminosidad de luz de señalización > Resplandor de luces de señalización</li>
+<li><code>acf49272</code> Update es.po<br>Unnecessary spaces eliminated.<br>Fixes for text strings not fitting correctly in buttons/boxes.</li></ul></li>
+<li class=''><code>T1.4-502-g60109ba58</code> Merge pull request #648 from cjakeman/json-reader-vector3<br>adds AsBoolean, AsVector3 to JsonReader<ul><li><code>9e773459</code> fix: JsonReader.AsVector3 improvements and tests</li>
+<li><code>4e835556</code> adds AsBoolean, AsVector3<br>also propagates warnings so they can be reported easily</li></ul></li>
+<li class=''><code>T1.4-499-g7c98da120</code> Merge pull request #640 from twpol/feature/simulator-test<br>feat: Initial implementation of Simulation Tester<ul><li><code>e80ec992</code> Merge branch 'master' into feature/simulator-test</li>
+<li><code>68c9cbdf</code> fix: Use fixed seed for deterministic runs of the simulation</li>
+<li><code>17324d72</code> feat: Initial implementation of Simulation Tester</li></ul></li>
+<li class=''><code>T1.4-495-g6908fa6db</code> Merge pull request #619 from peternewell/diesel-mechanic#3<br>Adjust HuD to display relevant parameters for DM locomotive<ul><li><code>ea10bfcf</code> Allow tractive force table to work for non-mechanical geared locomotive.</li>
+<li><code>69b8ccc5</code> Adjustments to power displays for DM</li>
+<li><code>05af3581</code> Adjust HuD to display relevant parameters for DM locomotive</li></ul></li>
+<li class=''><code>T1.4-491-g897fb9e9c</code> Merge pull request #616 from cesarBLG/triple-valve-twin-pipe<br>Improvements in graduated/full release braking<ul><li><code>c8250ef4</code> Add warning if no brake valve defined in wag file</li>
+<li><code>1b168a0a</code> Add manual entries for new parameters</li>
+<li><code>b0293f01</code> Add possibility of MRP pipe not affecting brake system</li>
+<li><code>0abe9f47</code> Fix bug when value is zero</li>
+<li><code>1dc61c53</code> Add rate for emergency brake actuation of triple valves</li>
+<li><code>58de89c7</code> Separate brake release from triple valve operation<br>Brake release depends on more conditions apart from triple valve state</li>
+<li><code>f102d485</code> Remove references to emergency reservoir being used as control reservoir</li>
+<li><code>82afb61c</code> Use plain triple valve if no distributor defined</li>
+<li><code>e9b7c48f</code> Separate graduated/full release application from type of brake system</li></ul></li>
+<li class=''><code>T1.4-481-gdd3cd2dc1</code> Merge pull request #620 from peternewell/wheel-slip<br>Adjust kinietic friction calculations<ul><li><code>39938b2c</code> Adjust adhesion / friction coefficient</li>
+<li><code>ed282a5c</code> Correct small error</li>
+<li><code>dbcdee07</code> Adjust precipitation and fog adhesion coefficients</li>
+<li><code>67c67f1d</code> Temporary alteration to adhesion calculation</li>
+<li><code>944f427c</code> Tune adhesion coefficient</li>
+<li><code>560c07c7</code> Update slip adhesion</li>
+<li><code>11a25633</code> Adjust kinietic friction calculations</li></ul></li>
+<li class=''><code>T1.4-473-gab364f3e6</code> Merge pull request #643 from cesarBLG/fix-brake-button-animation<br>Brake controller buttons are not animated<ul><li><code>cfbc4aac</code> Fix missing line to select correct texture</li></ul></li>
+<li class=''><code>T1.4-471-g1321417b2</code> Merge pull request #639 from twpol/feature/correct-random<br>fix: Use correct randomness source for viewer weather<ul><li><code>26c4dbf7</code> fix: Use correct randomness source for viewer weather</li></ul></li>
+<li class=''><code>T1.4-469-ge465222fa</code> Merge pull request #624 from cjakeman/menu-option04<br>Menu option04 - invert controls<ul><li><code>01231e14</code> Labels more consistent</li>
+<li><code>dd591342</code> Matching changes to the Manual</li>
+<li><code>24a76e24</code> Inverted option NoDieselEngineStart</li>
+<li><code>34fa4e32</code> Inverted option "Disable TCS scripts"</li></ul></li>
+<li class=''><code>T1.4-464-g80b961a59</code> Merge pull request #635 from peternewell/water-level<br>Minor steam locomotive issues.<ul><li><code>b7314886</code> Fix an issue with auxiliary water tender water level not being restored correctly.</li></ul></li>
+<li class=''><code>T1.4-462-ga53e0826f</code> Merge pull request #613 from twpol/feature/smoothed-data-tests<br>fix: Use properly FPS-independent smoothing function<ul><li><code>ad210fd7</code> docs: Add short explanation and link to reference material</li>
+<li><code>39fb000a</code> fix: Use properly FPS-independent smoothing function</li>
+<li><code>79cea887</code> test: Add tests for SmoothedData</li></ul></li>
+<li class=''><code>T1.4-458-g992c4f7f0</code> Merge pull request #638 from FrannDzs/master<br>Update es.po (menu)<ul><li><code>ba2f7bb6</code> Minor changes in Spanish locale</li>
+<li><code>03c9fda2</code> Update es.po<br>Added last correction</li>
+<li><code>62bb7def</code> Update es.po<br>Some fixes.</li>
+<li><code>e476cc4f</code> Update es.po<br>Minor fix</li>
+<li><code>a31c23d1</code> Update es.po<br>Spanish translation updated to date.</li></ul></li>
+<li class=''><code>T1.4-452-g49b954398</code> Merge pull request #637 from Csantucci/AIcoupling-bug-fix<br>Bug fix for http://www.elvastower.com/forums/index.php?/topic/36129-player-trainlead-locomotive-must-be-player-locomotive-crash/<ul><li><code>b24ab3df</code> Bug fix for http://www.elvastower.com/forums/index.php?/topic/36129-player-trainlead-locomotive-must-be-player-locomotive-crash/<br>Bug fix for AI trains couple/uncouple</li></ul></li>
+<li class=''><code>T1.4-450-ge76166a2e</code> Merge pull request #622 from mbm-OR/bugfix/Fix-TDI-brakes-token-alignment<br>Bug fix for https://bugs.launchpad.net/or/+bug/1965311. TDI: The vacuum brake value is misaligned.<ul><li><code>c01c4a6a</code> Bug fix for https://bugs.launchpad.net/or/+bug/1965311. TDI: The vacuum brake value is misaligned.</li></ul></li>
+<li class=''><code>T1.4-448-g6f824cf76</code> Merge pull request #631 from cesarBLG/next-signal-same-tc<br>Get correct signal id if signal ahead is in same Track Circuit<ul><li><code>443fc13e</code> Get correct signal id if signal is ahead in same Track Circuit</li></ul></li>
+<li class=''><code>T1.4-446-gbdb0429f1</code> Merge pull request #625 from cjakeman/menu-options05<br>Menu > Options - Change defaults for best graphics<ul><li><code>b1616255</code> Change defaults for best graphics</li></ul></li>
+<li class=''><code>T1.4-444-gf90682dcf</code> Merge pull request #633 from cjakeman/bugfix-mapwindow<br>Removed ViewDispatcher setting<br>Thanks, Cesar.<br>Hannes has confirmed that the bug is fixed.<ul><li><code>7ce52a73</code> Removed ViewDispatcher setting<br>To fix bug reported by Hannes</li></ul></li>
+<li class=''><code>T1.4-442-g5b6d34554</code> Merge pull request #636 from cesarBLG/fix-angle-cocks<br>Remove venting of MRP because conflicts with EOT<ul><li><code>cef92539</code> Remove venting of MRP because conflicts with EOT</li></ul></li>
+<li class=''><code>T1.4-440-g2ebd1f6d3</code> Merge pull request #615 from Csantucci/EOT-official<ul><li><code>1c5a0b2c</code> EOT: improve restore when delay timer was on</li>
+<li><code>f2b6299e</code> EOT: follow suggestions of reviewer</li>
+<li><code>80f64866</code> Update Source/Orts.Simulation/Common/Commands.cs<br>Co-authored-by: César Benito Lamata <cesarbema2009@hotmail.com></li>
+<li><code>db78287b</code> Update Source/Orts.Simulation/Common/Commands.cs<br>Co-authored-by: César Benito Lamata <cesarbema2009@hotmail.com></li>
+<li><code>d977b699</code> Update Source/Orts.Simulation/Common/Commands.cs<br>Co-authored-by: César Benito Lamata <cesarbema2009@hotmail.com></li>
+<li><code>bfb0d9e5</code> Update Source/Orts.Simulation/Common/Commands.cs<br>Co-authored-by: César Benito Lamata <cesarbema2009@hotmail.com></li>
+<li><code>75bf3a41</code> Management of EOTs: update OR manual</li>
+<li><code>34c0dc34</code> </li></ul></li>
+<li class=''><code>T1.4-431-g76abf4e69</code> Merge pull request #634 from cesarBLG/fix-index-cabs<br>Out of range exception with >= 256 cab controls<ul><li><code>1a44f03f</code> Fix index out of range exception</li></ul></li>
+<li class=''><code>T1.4-429-g9045aba19</code> Merge pull request #626 from cjakeman/timetable-progress-bar<br>Timetable loading bar added<ul><li><code>d294ec86</code> Player train start time stashed<br>Fix for some scenarios where this value gets overwritten and the loader bar disappears.</li>
+<li><code>52c12650</code> Timetable loading bar added</li></ul></li>
+<li class=''><code>T1.4-426-gd95a98c1f</code> Merge pull request #623 from Weter-ORTS/master<br>Russian localization for T 1.4-413 version<ul><li><code>667729b8</code> Merge branch 'openrails:master' into master</li>
+<li><code>0fc6ccb6</code> Uploaded the final version of ru.po<br>Translation of TT-Editor interface seems completed now.</li>
+<li><code>e8793253</code> Added russian localization for Timetable Editor<br>Further translation</li>
+<li><code>9d40c3db</code> Added Russion Localization<br>Just have began translation work for TT editor<br>Wish me success :)</li>
+<li><code>38c52f98</code> Updated Runactivity.po<br>for T-413 version</li>
+<li><code>0558fb98</code> Updated Orts.Simulation.po<br>for T-413 version</li>
+<li><code>ae099e95</code> Updated Menu.po<br>for T-413 version</li></ul></li>
+<li class=''><code>T1.4-418-gef8a5535a</code> Merge pull request #604 from pzgulyas/headlight<br>Fix headlight flickering when switching down from bright to dim<ul><li><code>65acdfef</code> Fix headlight flickering when switching down from bright to dim</li></ul></li>
+<li class=''><code>T1.4-416-gfd1cf1f0f</code> Merge pull request #621 from peternewell/tractive-effort<br>Correct Maximum Tractive Effort<ul><li><code>e574097a</code> Add information for manual, and adjust information message.</li>
+<li><code>7c906006</code> Correct Maximum Tractive Effort</li></ul></li>
+<li class=''><code>T1.4-413-gaf1b35ace</code> Merge pull request #618 from cjakeman/manual-firewall<br>added web-server firewall to Manual<ul><li><code>141ae691</code> Update Source/Documentation/Manual/software-platform.rst<br>Co-authored-by: César Benito Lamata <cesarbema2009@hotmail.com></li>
+<li><code>c56ce46a</code> Update Source/Documentation/Manual/software-platform.rst<br>Co-authored-by: César Benito Lamata <cesarbema2009@hotmail.com></li>
+<li><code>feb1caac</code> added web-server firewall to Manual</li></ul></li>
+<li class=''><code>T1.4-409-g5913d4459</code> Merge pull request #594 from pzgulyas/roslyn<br>ScriptManager migration to the CodeAnalysis class. This is in preparation for the net 6 migration.<ul><li><code>69f86013</code> Removed one more reference to the old compiler</li>
+<li><code>ec2fd858</code> Remove the unused CodeDom package</li>
+<li><code>a6e8147e</code> Compile symbols too for the debug (thanks Cedric!)</li>
+<li><code>12e53b11</code> Column of the error was off by 1</li>
+<li><code>a51ee0b3</code> Cleanup</li>
+<li><code>8270d26f</code> Better error information for signal scripts</li>
+<li><code>f63c5d65</code> Fixed the LoadFolder() method. (Thanks César!)</li>
+<li><code>ecc1b2f0</code> ScriptManager migration to the CodeAnalysis call. LoadFolder() is commented out yet.</li></ul></li>
+<li class=''><code>T1.4-400-g68f4736b8</code> Merge pull request #612 from Csantucci/DP-display-3Dcab<br>https://blueprints.launchpad.net/or/+spec/distributed-power-display-for-3d-cabs<ul><li><code>eb72a02e</code> https://blueprints.launchpad.net/or/+spec/distributed-power-display-for-3d-cabs</li></ul></li>
+<li class=''><code>T1.4-398-gf42899a72</code> Merge pull request #611 from twpol/feature/architecture-2022<br>docs: Current threading and object/class architecture<ul><li><code>a733e846</code> docs: Current threading and object/class architecture</li></ul></li>
+<li class=''><code>T1.4-396-g2751cc84d</code> Merge pull request #599 from cjakeman/menu-option02l<br>02l: Removes web-server option. Now always available.<ul><li><code>28320449</code> adds check for webserver port in use<br>Also adds missing save of webserver port value</li>
+<li><code>9ace46b4</code> Merge branch 'master' into menu-option02l</li>
+<li><code>6b58b42a</code> Merge branch 'master' into menu-option02l</li>
+<li><code>ea11f735</code> Removes web-server option.<br>Now always available.</li></ul></li>
+<li class=''><code>T1.4-391-gdf1b19090</code> Merge pull request #607 from cjakeman/building-instructions<br>Building instructions for developers<ul><li><code>672e374d</code> tweaking the text</li>
+<li><code>f747f5e1</code> add some missing images</li>
+<li><code>e08c088d</code> installing tools for Manual</li>
+<li><code>986b997e</code> installing VS and Demo Model 1</li></ul></li>
+<li class=''><code>T1.4-386-gc2ac0c592</code> Merge pull request #606 from Csantucci/fix-initialize-moving<br>Bug fix for http://www.elvastower.com/forums/index.php?/topic/36021-crash-on-switching-to-autopilot/#entry282465<ul><li><code>4042b595</code> Set CurrentNotch to  -1  when NotchCount = 0</li>
+<li><code>cd42df10</code> Bug fix for http://www.elvastower.com/forums/index.php?/topic/36021-crash-on-switching-to-autopilot/#entry282465</li></ul></li>
+<li class=''><code>T1.4-383-gb93090324</code> Merge pull request #593 from peternewell/diesel-mechanic#2<br>Initial Diesel Mechanic Locomotive Simulation<ul><li><code>d56da76a</code> Change display power in HuD</li>
+<li><code>4858fbf1</code> Add manual information.</li>
+<li><code>98201a41</code> Correct issue with legacy automatic geaboxes not working.</li>
+<li><code>72ec4b1c</code> Correct some issues identified</li>
+<li><code>aa73f61b</code> Correct issue with save/resume not working</li>
+<li><code>c6d79412</code> Initial Diesel Mechanic Locomotive Simulation</li></ul></li>
+<li class=''><code>T1.4-376-g5b89a36e0</code> Merge pull request #602 from cesarBLG/main-reservoir-pipe-enhancement<br>New model for MR pipe air propagation<ul><li><code>03f48e2a</code> Faster air vent if two angle cocks are open</li>
+<li><code>b56195cc</code> New model for MR pipe air propagation</li></ul></li>
+<li class=''><code>T1.4-373-g64ef15de8</code> Merge pull request #614 from cesarBLG/initialize_twin_pipe<br>Initialize EP and twin pipe brakes to correct pressure<ul><li><code>7285d212</code> Initialize EP and twin pipe brakes to correct pressure</li></ul></li>
+<li class=''><code>T1.4-371-g750ead762</code> Merge pull request #603 from mbm-OR/bugfix/Fix-HUD-DPinfo<br>Bug fix for https://bugs.launchpad.net/or/+bug/1961304. HUD - DPI extended page, misaligned.<ul><li><code>7db2d0f8</code> Bug fix for https://bugs.launchpad.net/or/+bug/1961304. HUD - DPI extended page, misaligned.</li></ul></li>
+<li class=''><code>T1.4-369-g88d0be9c7</code> Merge pull request #598 from cjakeman/menu-options02k<br>02k: Removed menu option Override non-electrified route line-voltage<ul><li><code>ecb29546</code> Removed another change left over</li>
+<li><code>7256d393</code> Removed changes left over</li>
+<li><code>67ffd75d</code> Merge branch 'master' into menu-options02k</li>
+<li><code>b336829a</code> Merge branch 'master' into menu-options02k</li>
+<li><code>7693c027</code> Removed commented out code<br>Co-authored-by: Cedric GNIEWEK <gniewek.cedric@free.fr></li>
+<li><code>ea963fc8</code> Removed menu option<br>Can now run electric locos on non-electricified routes.<br>An information message is shown when the pantograph is raised.</li></ul></li>
+<li class=''><code>T1.4-362-ge8acdc84d</code> Merge pull request #592 from cjakeman/menu-options02j<br>02j: Removed menu option ViewDispatcher . Now always available.<ul><li><code>6d154b26</code> Merge branch 'master' into menu-options02j</li>
+<li><code>8e13e5b0</code> Merge remote-tracking branch 'upstream/master' into menu-options02j</li>
+<li><code>f715eccb</code> Removed option ViewDispatcher<br>The MapWindow is now always available but consumes no resources until Ctrl+9 used to make it visible.</li></ul></li>
+<li class=''><code>T1.4-358-gd16ea9682</code> Merge pull request #591 from cjakeman/menu-options02i<br>02i: Removed menu option ConditionalLoadOfDayOrNightTextures. Now always conditional.<ul><li><code>c3e03435</code> Merge branch 'master' into menu-options02i</li>
+<li><code>6e742abc</code> Removed option ConditionalLoadOfDayOrNightTextures</li></ul></li>
+<li class=''><code>T1.4-277-gf5b20855a</code> Merge pull request #567 from cjakeman/64-bit<br>Adds 64-bit compatibility<ul><li><code>c56d0d4a</code> Removed redundant PlatformTargets<br>Also removed Mixed Platforms and x64 from solution file</li>
+<li><code>91eb262f</code> Restore X86\OpenAL32.dll<br>Victim of global search and replace</li>
+<li><code>00ea37a9</code> Replaced x86 with AnyCPU on *.csproj</li>
+<li><code>25656edd</code> Revert "Removed platforms from preSolution which are not AnyCPU"<br>This reverts commit 3b120887ef5151196fc5e566e4db906112666e6f.</li>
+<li><code>3b120887</code> Removed platforms from preSolution which are not AnyCPU</li>
+<li><code>6888dee7</code> Update Source/Contrib/ActivityEditor/ActivityEditor/ActivityEditor.csproj<br>Co-authored-by: Cedric GNIEWEK <gniewek.cedric@free.fr></li>
+<li><code>35035abc</code> Update Source/Contrib/ActivityEditor/AEWizard/AEWizard.csproj<br>Co-authored-by: Cedric GNIEWEK <gniewek.cedric@free.fr></li>
+<li><code>136fbc05</code> Removes Large-Address-Aware option<br>from Menu.exe, Manual.pdf and Build.cmd</li>
+<li><code>686a7a30</code> Update RAM measurements for 64-bit</li>
+<li><code>abd8ccf5</code> Removed train shaking problem when running true 64 bit</li>
+<li><code>3a7becec</code> Corrected zig-zag red path lines in Dispatcher Tab</li>
+<li><code>d7a14055</code> Set RunActivity build from x86 to AnyCPU</li>
+<li><code>07af9312</code> Solved zig-zag display of track layouts in TrackViewer. Taken from perpetualKid.</li>
+<li><code>d7d241da</code> Change sound structures from Explicit to Sequential</li>
+<li><code>b0c8b666</code> Remove projects Launcher64 and ORTS.ExternalDevices</li>
+<li><code>78cb795b</code> Correct Launcher64 build presets</li>
+<li><code>6511d49a</code> True 64-bit Launcher to convince ReShade installer that we are running 64 bit</li>
+<li><code>f806687c</code> Set a bunch of .dll's to AnyCPU as Platform target</li></ul></li>
+<li class=''><code>T1.4-258-g0880b1058</code> Merge pull request #605 from peternewell/curve_speed<br>Fix problem when curve speed dependent not selected<ul><li><code>76640c3f</code> Fix problem when curve speed dependent not selected</li></ul></li>
+<li class=''><code>T1.4-256-g3c6252961</code> Merge pull request #572 from twpol/feature/contributing-2022<br>docs: Improved clarity of making changes requirements<ul><li><code>729c820f</code> docs: Replace DOT with Mermaid</li>
+<li><code>6e9abe9a</code> docs: Rename pull request state to match GitHub documentation</li>
+<li><code>7ad5a934</code> docs: Improved clarity of making changes requirements</li></ul></li>
+<li class=''><code>T1.4-252-gd062ebddf</code> Merge pull request #608 from Csantucci/dynbrakemaxcurrent-copy<br>Copy DynamicBrakeMaxCurrentA to replicas of same locomotive<ul><li><code>e7f20e86</code> Copy DynamicBrakeMaxCurrentA to replicas of same locomotive</li></ul></li>
+<li class=''><code>T1.4-250-gaa9c76bac</code> Merge pull request #581 from mbm-OR/blueprint/TrainDPUinfo-webserver<br>Blueprint https://blueprints.launchpad.net/or/+spec/traindpuinfo-web-server<ul><li><code>bf3331f5</code> Update Source/RunActivity/Viewer3D/WebServices/Web/index.html<br>Fix a typo.<br>Co-authored-by: Chris Jakeman <github@jakeman.plus.com></li>
+<li><code>2c1da3c3</code> Added navigation arrows</li>
+<li><code>515c658d</code> Blueprint https://blueprints.launchpad.net/or/+spec/traindpuinfo-web-server</li></ul></li>
+<li class=''><code>T1.4-246-gfcba3c766</code> Merge pull request #580 from pzgulyas/samplerstates<br>SamplerStates can only be set after the ShaderPasses.Current.Apply().<ul><li><code>a80269a5</code> SamplerStates can only be set after the ShaderPasses.Current.Apply().</li></ul></li>
+<li class=''><code>T1.4-244-gb00b9187c</code> Merge pull request #562 from pzgulyas/tcs-script-fix<br>Remove the locomotive handle from the script, because no interface function can allow access to any internal structure.<ul><li><code>44f35b4b</code> Remove the locomotive handle from the script, because no interface function can allow access to any internal structure.</li></ul></li>
+<li class=''><code>T1.4-242-gf70793e8e</code> Merge pull request #561 from cesarBLG/manual-callon-advanced<br>Manual call-on is reset when passing an advanced signal - https://bugs.launchpad.net/or/+bug/1955907<ul><li><code>36dcd192</code> Allow manual call on from advanced signal</li></ul></li>
+<li class=''><code>T1.4-240-g5008448b7</code> Merge pull request #590 from cjakeman/menu-options02h<br>02h: Removed menu option CircularSpeedGauge. Now always available.<ul><li><code>b4c61d8b</code> Removed mention of this option</li>
+<li><code>2f1cdf2a</code> Equivalent to always being true.<br>Also made changes to Manual missing from previous commit</li></ul></li>
+<li class=''><code>T1.4-237-g278d9f878</code> Merge pull request #596 from mbm-OR/bugfix/Fix-DPU-Diesel-Vacuum<br>Fix for https://bugs.launchpad.net/or/+bug/1960519. Crash, diesel locomotive with vacuum brakes.<ul><li><code>3e469196</code> Fix for https://bugs.launchpad.net/or/+bug/1960519. Crash, diesel locomotive with vacuum brakes.</li></ul></li>
+<li class=''><code>T1.4-235-g3d9089a4c</code> Merge pull request #571 from cjakeman/menu-options01<br>01: Manual entries for Menu > Options corrected<ul><li><code>611ddf1e</code> 2,000 => 2000 etc for non-English readers<br>Also refined the description for  Hot Start</li>
+<li><code>fdd61339</code> Correct abbreviations for tons</li>
+<li><code>f9dc5aac</code> Revert Options.Designer.cs<br>Because clashes with master</li>
+<li><code>ac4e0727</code> Merge remote-tracking branch 'upstream/master' into menu-options01</li>
+<li><code>f81fe9f6</code> Manual entries for Menu > Options corrected<br>and a missing one added</li></ul></li>
+<li class=''><code>T1.4-229-gfda6ff443</code> Merge pull request #600 from twpol/feature/allocation-enum.parse<br>fix: Store DirectX feature level as the enum internally for performance<ul><li><code>8bda67dc</code> fix: Store DirectX feature level as the enum internally for performance<br>This has impact on performance because the Enum.Parse function allocates a lot of memory each time it is called, so instead of calling that repeatedly it is now only called when the feature level is set.<br>This results in a drop of 21% in TOTAL allocations in a simple profiling run (load activity and exit after 1000 frames are rendered), and a drop of 57% (!) in allocations post-loading.</li></ul></li>
+<li class=''><code>T1.4-227-ge8886edc8</code> Merge pull request #589 from cjakeman/menu-options02g<br>02g: Removed menu option LODViewingExtention<ul><li><code>760ba43c</code> Removed option LODViewingExtention</li></ul></li>
+<li class=''><code>T1.4-225-g5aa3629ec</code> Merge pull request #588 from cjakeman/menu-options02e<br>02ef: Removed menu option Tunnel&Wind-Dependent Resistance<ul><li><code>db5e115c</code> Removed option Wind-Dependent Resistance</li>
+<li><code>b28f7cb1</code> Removes unused variables</li>
+<li><code>03ba35eb</code> Removed option Tunnel-Dependent Resistance<br>This is now always calculated, but for the player's train only.</li></ul></li>
+<li class=''><code>T1.4-221-gef435e5be</code> Merge pull request #587 from cjakeman/menu-options02d<br>02d: Removed menu option Curve-Dependent Resistance<ul><li><code>5d5394f4</code> Removed option Cureve-Dependent Resistance</li></ul></li>
+<li class=''><code>T1.4-219-gbb833f367</code> Merge pull request #601 from cjakeman/video-ram-bugfix<br>Video-RAM message to logfile fails under VMWare<ul><li><code>7e68b230</code> Change to suit VMWare</li></ul></li>
+<li class=''><code>T1.4-217-g84cd5e184</code> Merge pull request #585 from cjakeman/menu-options02b<br>02b: Removed menu option checkFastFullScreenAltTab<ul><li><code>9d8f392a</code> Removed option Cab 2D Stretch.</li>
+<li><code>48f7111f</code> Removed option checkFastFullScreenAltTab.<br>Also finalised previous commit for MSTSBinSound.</li></ul></li>
+<li class=''><code>T1.4-214-g5ad4c624e</code> Merge pull request #597 from Csantucci/fix-walking-people<br>Bug fix for http://www.elvastower.com/forums/index.php?/topic/35981-walking-people-dont-walk-well/<ul><li><code>4bf7a3f8</code> Bug fix for http://www.elvastower.com/forums/index.php?/topic/35981-walking-people-dont-walk-well/</li></ul></li>
+<li class=''><code>T1.4-212-g10c2adb4b</code> Merge pull request #584 from cjakeman/menu-options02a<br>02a: Removed option MSTSBin. Its sound events are now permanently active.<ul><li><code>8bdde674</code> Restore stray comment</li>
+<li><code>e4274171</code> Removed option MSTSBin. Its sound events are now permanently active.</li></ul></li>
+<li class=''><code>T1.4-209-g0dc5a2cb4</code> Merge pull request #564 from Sharpe49/tcs-parameters-in-consist<br>Added TCS parameters file path in consist files (+ refactoring and code cleanup)<ul><li><code>609e1927</code> Fixed consists being reversed wrongly in timetable mode</li>
+<li><code>2ce2855b</code> Fix for disrupted train after restore</li>
+<li><code>af9e9aec</code> Added TCS parameters file path in consist files (+ refactoring and code cleanup)<br>https://blueprints.launchpad.net/or/+spec/consist-tcs-parameters</li></ul></li>
+<li class=''><code>T1.4-205-gf644d0c9c</code> Merge pull request #595 from Csantucci/engine-brake-zero-when-starting-at-speed<br>Release locomotive brake when player train enters game with speed > 0<ul><li><code>e36ed26c</code> Update Source/Orts.Simulation/Simulation/RollingStocks/MSTSLocomotive.cs<br>Co-authored-by: Cedric GNIEWEK <gniewek.cedric@free.fr></li>
+<li><code>a5dd9cc1</code> Release locomotive brake when player train enters game with speed > 0</li></ul></li>
+<li class=''><code>T1.4-202-gc21e8aeca</code> Merge pull request #545 from Sharpe49/fix-vram-usage<br>Fix VRAM usage<ul><li><code>3f57012c</code> Mark freight animations' shapes</li>
+<li><code>f6deb33a</code> Dispose unmarked shapes' buffers</li>
+<li><code>0929cdec</code> Add null check for loading screen texture in the Dispose function</li>
+<li><code>4c58d621</code> Optimizing the material, shape and signal type manager<br>(let's not destroy a Dictionary every cycle)</li>
+<li><code>0be4ea2f</code> Fixed unloaded signal lights not being reloaded when needed</li>
+<li><code>838cb63e</code> Fixed loading screen not being disposed<br>The Viewer object and its texture manager doesn't exist during the loading phase so cleanup must be done manually</li>
+<li><code>5d0c86f9</code> Fix 3D cabview renderer not marking its shapes and textures</li>
+<li><code>84dcb4cd</code> Fix textures not being removed from VRAM when Texture2D object is destroyed by GC</li></ul></li>
+<li class=''><code>T1.4-193-g4b00b1057</code> Merge pull request #579 from mbm-OR/bugfix/Fix-DPU-Load-values-burst<br>Fix for https://bugs.launchpad.net/or/+bug/1959336.<ul><li><code>18ff7343</code> Fix improved by Sharpe49</li>
+<li><code>c2856781</code> Fix for https://bugs.launchpad.net/or/+bug/1959336.<br>Train DPU info, the Load values are unstable</li></ul></li>
+<li class=''><code>T1.4-190-ge549403b8</code> Merge pull request #583 from Csantucci/ORTS_SIGNED_TRACTION_BRAKING-glitch-fix<br>Bug fix for https://bugs.launchpad.net/or/+bug/1959660 Glitch in ORTS_SIGNED_TRACTION_BRAKING<ul><li><code>6a66eb29</code> Bug fix for https://bugs.launchpad.net/or/+bug/1959660 Glitch in ORTS_SIGNED_TRACTION_BRAKING</li></ul></li>
+<li class=''><code>T1.4-188-g0dc339264</code> Merge pull request #582 from Csantucci/two-colour-bar-fix<br>Bug fix for https://bugs.launchpad.net/or/+bug/1959617 Positive bars can't have two colours<ul><li><code>404028a4</code> Bug fix for https://bugs.launchpad.net/or/+bug/1959617 Positive bars can't have two colours</li></ul></li>
+<li class=''><code>T1.4-186-gee96e6ab8</code> Merge pull request #578 from Csantucci/Fix-wrong-locale-file-IDs<br>https://bugs.launchpad.net/or/+bug/1959084 Wrong locale file IDs for pt-PT and pt-BR<ul><li><code>19649415</code> Fix wrong internal  language ID for pt-BR files</li>
+<li><code>95617640</code> Bug fix for https://bugs.launchpad.net/or/+bug/1959084 pt_PT.po is a wrong locale name</li></ul></li>
+<li class=''><code>T1.4-183-g93b9017fe</code> Merge pull request #524 from Weter-ORTS/master<br>Further Russian strings translation<ul><li><code>07460f31</code> Translated RunActivity strings</li>
+<li><code>6e463446</code> Translated Simulation strings</li>
+<li><code>7161cb03</code> Translated Common strings</li>
+<li><code>04309473</code> Translation of contrib strings</li>
+<li><code>c33e484c</code> Menu entries translation</li>
+<li><code>47fdf9c8</code> Merge branch 'openrails:master' into master</li>
+<li><code>db91918b</code> chore(locales): revert pot changes that only bumped timestamps</li>
+<li><code>1591cda5</code> Add files via upload</li>
+<li><code>b4db9a63</code> Merge branch 'openrails:master' into master</li>
+<li><code>8873f569</code> Merge branch 'openrails:master' into master</li>
+<li><code>8cb345f5</code> Delete ru.po</li>
+<li><code>a1665f96</code> Delete ru.po</li>
+<li><code>73be9b45</code> Add files via upload</li></ul></li>
+<li class=''><code>T1.4-169-g8b269d842</code> Merge pull request #533 from cjakeman/fix-for-hidden-shapes<br>fix for shapes hidden by animations( 0 )<ul><li><code>ce89a063</code> LINQ for simpler syntax</li>
+<li><code>62a1c271</code> fix for shapes hidden by animations( 0 )<br>See https://bugs.launchpad.net/or/+bug/1951677</li></ul></li>
+<li class=''><code>T1.4-166-g7881a1a84</code> Merge pull request #576 from cjakeman/daylight-offset-hours<br>DaylightOffsetHrs control: Fix for offset not effective soon after midnight<ul><li><code>1a0ee617</code> Removed commented out code</li>
+<li><code>ddb9b595</code> Applied feature to MSTSSky.cs<br>In addition to Sky.cs. They share the relevant code</li>
+<li><code>867233d0</code> Fix for offset not effective soon after midnight<br>Also code was difficult to read.</li></ul></li>
+<li class=''><code>T1.4-162-g8d428b8cb</code> Merge pull request #577 from Csantucci/Fix-webserver-HUD<br>Bug fix for https://bugs.launchpad.net/or/+bug/1959081 Webserver HUD has misaligned tabs<ul><li><code>92d09264</code> Bug fix for https://bugs.launchpad.net/or/+bug/1959081 Webserver HUD has misaligned tabs</li></ul></li>
+<li class=''><code>T1.4-160-g2c8f098cd</code> Merge pull request #575 from peternewell/derailment-manual<br>Correct information in manual<ul><li><code>a712a696</code> Correct information in manual</li></ul></li>
+<li class=''><code>T1.4-158-g0c860a305</code> Merge pull request #573 from cesarBLG/fix-battery-button<br>Fix wrong variable used in battery button<ul><li><code>6ff61f5e</code> Fix wrong variable used in battery button</li></ul></li>
+<li class=''><code>T1.4-156-g71c4e89ab</code> Merge pull request #560 from Csantucci/cabview-control-label<br>https://blueprints.launchpad.net/or/+spec/label-for-cab-controls , by Jindrich<ul><li><code>666e94fa</code> Update Source/RunActivity/Viewer3D/RollingStock/SubSystems/ETCS/DriverMachineInterface.cs<br>Co-authored-by: Cedric GNIEWEK <gniewek.cedric@free.fr></li>
+<li><code>9537e75e</code> Update Source/RunActivity/Viewer3D/RollingStock/MSTSLocomotiveViewer.cs<br>Co-authored-by: Cedric GNIEWEK <gniewek.cedric@free.fr></li>
+<li><code>ac7506d4</code> Replace a getter with a property</li>
+<li><code>c5d0a1f6</code> Rename "Label" to "ORTSLabel"</li>
+<li><code>46a143d1</code> Blueprint https://blueprints.launchpad.net/or/+spec/label-for-cab-controls</li></ul></li>
+<li class=''><code>T1.4-150-gfe0ca526f</code> Merge pull request #565 from peternewell/steam-tractive-effort#2<br>Correct Steam locomoti starting tractive effort.<ul><li><code>ebcd9e87</code> Correct Steam locomoti starting tractive effort.</li></ul></li>
+<li class=''><code>T1.4-148-ge5d8f1cf2</code> Merge pull request #559 from Csantucci/Distributed-power-cab-display<br>https://blueprints.launchpad.net/or/+spec/distributed-power: Distributed power cab display and controls<ul><li><code>c7f1150b</code> Distributed power: consider also Loco Brake in the value of BC</li>
+<li><code>11fd74b5</code> Distributed power: update OR manual</li>
+<li><code>83ed063e</code> Distributed Power: compress UoM strings of load</li>
+<li><code>e24a796e</code> Distributed power: manage yellow colour for dynamic brake display</li>
+<li><code>7ff949bb</code> Distributed Power: use ORTS_SIGNED_TRACTION_BRAKING to compute load</li>
+<li><code>394972a3</code> Distributed power: remove wrong Flow field and correct wrong load field, by mbm_OR</li>
+<li><code>3d3e37af</code> Distributed Power: pass LoadUnits to GetDPuStatus()</li>
+<li><code>6dd7738d</code> Distributed power: cleanup scaling issues and make DP screen page background transparent</li>
+<li><code>9e80053e</code> Update Source/Documentation/Manual/cabs.rst : improve text<br>Co-authored-by: Cedric GNIEWEK <gniewek.cedric@free.fr></li>
+<li><code>37a83884</code> Distributed power: added missing picture</li>
+<li><code>aaeb2517</code> Distributed power: improve typo fix</li>
+<li><code>ef03f09c</code> Distributed power: fix typo in usings</li>
+<li><code>26bd936f</code> Distributed power: cabview display and controls</li></ul></li>
+<li class=''><code>T1.4-134-gf1451af10</code> Merge pull request #551 from pzgulyas/timetable-or<br>> @cjakeman, @twpol, could you please explain the reason of discrepancy between the two above linked descriptions?<br>Sharpe49 is quite correct.<br>The Open Rails Triage delivers a report of the active submissions for James to monitor. I don't think it takes any action.<br>The process for peer-reviewers is set out in Contributing.md<br>Hope that helps,<br>Chris<ul><li><code>0aa1e46c</code> Make handling the timetable-or extension consistent.</li></ul></li>
+<li class=''><code>T1.4-132-g8ed228436</code> Merge pull request #566 from mbm-OR/bugfix/Fix-F5causesORtocrash<br>Fix for https://bugs.launchpad.net/or/+bug/1956262. F5 causes OR crash.<ul><li><code>04d1bb7c</code> Fix improved</li>
+<li><code>b022de2d</code> Fix for https://bugs.launchpad.net/or/+bug/1956262. F5 causes OR crash.</li></ul></li>
+<li class=''><code>T1.4-129-g950f1a1b1</code> Merge pull request #568 from openrails/release/1.4<br>Merge pull request #556 from twpol/feature/detailed-memory-usage<ul><li><code>c113a5dc</code> Merge pull request #556 from twpol/feature/detailed-memory-usage<br>Improve memory statistics for CPU and GPU</li></ul></li>
+<li class=''><code>T1.4-124-g7347a801e</code> Merge pull request #554 from Csantucci/fix-change-screenpage-crash-after-cabchange<br>Bug fix for Crash when switching cabs and changing screen page  https://bugs.launchpad.net/or/+bug/1955575<ul><li><code>33291687</code> Bug fix for Crash when switching cabs and changing screen page  https://bugs.launchpad.net/or/+bug/1955575</li></ul></li>
+<li class=''><code>T1.4-122-ge3e322f19</code> Merge pull request #557 from YoRyan/manual-vscode-dev<br>Add support for the building the manual with a Visual Studio Code development container<ul><li><code>f931073e</code> build(manual): add support for building the manual with a vs code dev container</li></ul></li>
+<li class=''><code>T1.4-120-g7badf9c3d</code> Merge pull request #563 from peternewell/eames-brake#1<br>Correct a timing issue in Eames brakes<ul><li><code>59a0e1cf</code> Change parameter suffix from S to PSIpS</li>
+<li><code>9f1cd642</code> Correct a timing issue in Eames brakes</li></ul></li>
+<li class=''><code>T1.4-117-gfeff30916</code> Merge pull request #542 from cjakeman/website-versions<br>adds new webpage, moves Testing out of Download/Programs<ul><li><code>83320edd</code> adds new webpage, moves Testing out of Download/Programs<br>See https://blueprints.launchpad.net/or/+spec/website-versions</li></ul></li>
+<li class=''><code>T1.4-115-gda94ec49a</code> Merge pull request #543 from cjakeman/website-roadmap<br>adds Discover > Roadmap webpage<ul><li><code>5b0121cc</code> adds Discover > Roadmap webpage</li></ul></li>
+<li class=''><code>T1.4-113-g361cc1940</code> Merge pull request #558 from cjakeman/website-contribute<br>Revised Visual Studio version<ul><li><code>68a87007</code> Revised Visual Studio version<br>from 2017 and 2019 to just 2022 in anticipation of moving to .NET 6</li></ul></li>
+<li class=''><code>T1.4-111-ge198ab39f</code> Merge pull request #548 from cjakeman/website-siskiyou<br>Links to dead Siskiyou site removed<ul><li><code>eb4b5608</code> Links to dead Siskiyou site removed</li></ul></li>
+<li class=''><code>T1.4-109-g84864e0fd</code> Merge pull request #552 from cesarBLG/fix-3d-cabs<br>Fix out of range index when changing cabs.<ul><li><code>e6405b0f</code> Fix out of range index in 3D cabs</li></ul></li>
+<li class=''><code>T1.4-107-gba578cd94</code> Merge pull request #550 from peternewell/diesel-fuel<br>Adjust diesel fuel consumption<ul><li><code>52eab219</code> Fix indentation</li>
+<li><code>b5051fc3</code> Remove reliance on MainPowerSupply for fuel supply</li>
+<li><code>9d86129a</code> Correct bracket placement</li>
+<li><code>a1162847</code> Adjust fuel consumption so that it will operate whilever the diesel engine is running</li></ul></li>
+<li class=''><code>T1.4-102-g30f7ec8e5</code> Merge pull request #547 from cesarBLG/etcs-dual-screen<br>Add support for dual-screen ETCS DMI<ul><li><code>84211853</code> Add support for dual-screen ETCS DMI</li></ul></li>
+<li class=''><code>T1.4-100-g6a8df6d84</code> Merge pull request #549 from Csantucci/3d-Cab-animation-for-generic-items<br>Generic items: optional internal 3DCab animation linked to them<ul><li><code>7c55924a</code> Generic items: update manual</li>
+<li><code>b8e93427</code> Generic items: optional internal 3DCab animation linked to them</li></ul></li>
+<li class=''><code>T1.4-97-g55f3ff8b3</code> Merge pull request #546 from Csantucci/Multiple-screens-official<br>Blueprint https://blueprints.launchpad.net/or/+spec/multiple-screen-pages in 2D and 3D cabs<ul><li><code>3be63540</code> Merge branch 'master' into Multiple-screens-official and resolve conflicts</li>
+<li><code>97fed6b9</code> Blueprint https://blueprints.launchpad.net/or/+spec/multiple-screen-pages in 2D and 3D cabs</li></ul></li>
+<li class=''><code>T1.4-94-g6a56c0de8</code> Merge pull request #544 from Csantucci/generic-controls-official<br>Blueprint https://blueprints.launchpad.net/or/+spec/cabview-controls-for-generic-items<ul><li><code>6bf8ab29</code> Generic items: fix typos in manual</li>
+<li><code>81172506</code> Blueprint https://blueprints.launchpad.net/or/+spec/cabview-controls-for-generic-items</li></ul></li>
+<li class=''><code>T1.4-91-g6e47ce883</code> Merge pull request #531 from Csantucci/dynbrake-display-fix<br>Bug fix for https://bugs.launchpad.net/or/+bug/1950578 Dyn Brake setup state not disappearing in cab<ul><li><code>b2affac4</code> Bug fix for https://bugs.launchpad.net/or/+bug/1950578 Dyn Brake set up state not disappearing in cab</li></ul></li>
+<li class=''><code>T1.4-89-g1f77ce374</code> Merge pull request #538 from pzgulyas/preprocesspaths<br>Delete binary paths if the ascii version or the tdb was modified. Blueprint: https://blueprints.launchpad.net/or/+spec/binary-timetable-paths<ul><li><code>d079b3ec</code> Update note in Manual about out of date binary paths</li>
+<li><code>57e51434</code> Don't clone AIPath objects at loading time.</li>
+<li><code>c457f11c</code> Delete binary paths if the ascii version or the tdb was modified</li>
+<li><code>c3fd44a5</code> No train path cloning at route pre-precess phase</li></ul></li>
+<li class=''><code>T1.4-84-g4dced6b1d</code> Merge pull request #532 from Csantucci/distributed-power-official<br>Distributed power american style. Blueprint https://blueprints.launchpad.net/or/+spec/distributed-power<ul><li><code>758e2f8d</code> Distributed power: update OR manual</li>
+<li><code>6f74e033</code> Distributed power: recalculate locomotive groups after coupling and uncoupling</li>
+<li><code>7ecca2d5</code> Distributed Power: add DPU Info window, by mbm_OR</li>
+<li><code>4e4df5ed</code> Distributed Power: further fix to incorrect key assignment list in manual</li>
+<li><code>aa0aa58c</code> Distributed power: fix to incorrect key assignments list in manual</li>
+<li><code>6229fbaa</code> Distributed power: adaptation to Miletic's cabs</li>
+<li><code>a215a71c</code> Cleanup of AcceptMUSignals variable</li>
+<li><code>71966556</code> Blueprint https://blueprints.launchpad.net/or/+spec/distributed-power : Fixes, refinements and improvements after first community tests</li>
+<li><code>acf84b8b</code> Blueprint https://blueprints.launchpad.net/or/+spec/distributed-power : manual rebase from Peter Gulyas' work plus change of key assignments</li></ul></li>
+<li class=''><code>T1.4-74-gf93a4dcae</code> Merge pull request #539 from peternewell/steam-tractive-effort<br>Correct starting tractive force of steam locomotive<ul><li><code>fd04274d</code> Correct starting tractive force of steam locomotive due to steam pressure variation.</li></ul></li>
+<li class=''><code>T1.4-72-gebdff935d</code> Merge pull request #540 from peternewell/timetable-effects#1<br>Correct issue created in timetable mode<ul><li><code>8711c47f</code> Correct issue created in timetable mode</li></ul></li>
+<li class=''><code>T1.4-70-g7e9519ab2</code> Merge pull request #534 from cjakeman/delete-RunActivityLAA<br>deletes RunActivityLAA.* post-build<ul><li><code>ba3f85a0</code> deletes RunActivityLAA.* post-build<br>To prevent old version of RunActivityLAA.exe being used accidentally</li></ul></li>
+<li class=''><code>T1.4-68-g723f722c7</code> Merge pull request #536 from pzgulyas/ttype<br>Gently handle a track sound crash. Fixes bug https://bugs.launchpad.net/or/+bug/1754805<ul><li><code>5fdf9aa4</code> Gently handle a track sound crash</li></ul></li>
+<li class=''><code>T1.4-66-g11692f38e</code> Merge pull request #535 from Csantucci/manual-correction<br>Correction of OR manual<ul><li><code>ba59ef19</code> Correction of manual: improve clarity</li>
+<li><code>bca2ceb7</code> Correction of OR manual, see http://www.elvastower.com/forums/index.php?/topic/35676-game-time-acceleration-in-dispatcher-window/page__view__findpost__p__278145</li></ul></li>
+<li class=''><code>T1.4-63-g48302179e</code> Merge pull request #480 from Csantucci/3dCab-digitals-alignment<br>Blueprint https://blueprints.launchpad.net/or/+spec/digital-alignment-in-3dcabs<ul><li><code>7815b899</code> Create separate enum and update manual.</li>
+<li><code>6bc94a99</code> Blueprint https://blueprints.launchpad.net/or/+spec/digital-alignment-in-3dcabs , Alignment of digitals in 3D cabs</li></ul></li>
+<li class=''><code>T1.4-60-g99a9aa79a</code> Merge pull request #526 from Csantucci/disappearing-AI<br>Bug fix for https://bugs.launchpad.net/or/+bug/1949292 AI train disappears after coupling and reversing<ul><li><code>2bfe6849</code> Bug fix for https://bugs.launchpad.net/or/+bug/1949292 AI train disappears after coupling and reversing</li></ul></li>
+<li class=''><code>T1.4-58-g30f6ab8a8</code> Merge pull request #530 from peternewell/steam_adhesion<br>Steam adhesion not applied to all locomotives in the player train.<ul><li><code>ea547dab</code> Correct developer comment</li>
+<li><code>71aa390e</code> Steam adhesion not applied to all locomotives in the player train.</li></ul></li>
+<li class=''><code>T1.4-55-g04375e6bf</code> Merge pull request #528 from cjakeman/website-update-learn<br>Updated link to Siskiyou Route site<ul><li><code>212eba12</code> Updated link to Siskiyou Route site<br>Replaced by a link to the Wayback Machine now that the site has died.</li></ul></li>
+<li class=''><code>T1.4-53-g6361b0910</code> Merge pull request #529 from cjakeman/manual-cover<br>Replace manual cover image<ul><li><code>78482973</code> Replace manual cover image<br>117 KiB => 839 KiB</li></ul></li>
+<li class=''><code>T1.4-51-g5f5f6da70</code> Merge pull request #519 from cjakeman/website-release-1.4<br>Website changes for Release v1.4<ul><li><code>94c46379</code> added recommendation based on user feedback<br>Don't have a known minimum, just that 03GB was not enough for MonoGame in v1.4</li>
+<li><code>fec5a892</code> Correct bad date on home page</li>
+<li><code>619ce90f</code> Website changes for Release v1.4</li></ul></li>
+<li class=''><code>T1.4-47-g7b73c484d</code> Merge pull request #522 from peternewell/tender-water#1<br>Correct issue with tender water mass<ul><li><code>46b388f9</code> Correct spelling mistake</li>
+<li><code>78c046c9</code> Correct issue with tender water mass</li></ul></li>
+<li class=''><code>T1.4-44-gf92b5fa09</code> Merge pull request #523 from Sharpe49/fix_speed_signals_sig_feature<br>Fix sig_feature function always returning true for SPEED signals<ul><li><code>236aebf5</code> Fix sig_feature function always return true for SPEED signals<br>https://bugs.launchpad.net/or/+bug/1949001</li></ul></li>
+<li class=''><code>T1.4-42-ga4628ab16</code> Merge pull request #520 from peternewell/brake-fix#4<br>Add checks for AirBrakeMaxMainResPipePressure.<ul><li><code>d6e23e19</code> Format output</li>
+<li><code>82fdd3f2</code> Add checks for AirBrakeMaxMainResPipePressure.</li></ul></li>
+<li class=''><code>T1.4-39-g1dae11d70</code> Merge pull request #503 from peternewell/derailment#2<br>Update derailment functionality<ul><li><code>0e9a259c</code> Further tuning of derailment capability.</li>
+<li><code>918960c8</code> Add buff force coupler angle calculation</li>
+<li><code>780b0e8c</code> Adjustments to derail algorithim</li>
+<li><code>8a7c2af9</code> Add documentation for manual</li>
+<li><code>a2845f81</code> Correct NaN issue</li>
+<li><code>69a70cb7</code> Adjust Train Driver Window to line up with HuD operation of derailment window.</li>
+<li><code>562fe42c</code> Further adjustments to derail</li>
+<li><code>06a57351</code> Add input checking for angles.</li>
+<li><code>f0c670c1</code> correct calculation issue</li>
+<li><code>a78797f2</code> Update derailment functionality</li></ul></li>
+<li class=''><code>T1.4-28-g98f46f681</code> Merge pull request #516 from twpol/feature/unstable-debug<br>feat: Build Unstable Version as debug<ul><li><code>14985833</code> feat: Build Unstable Version as debug</li></ul></li>
+<li class=''><code>T1.4-26-g325d2e210</code> Merge pull request #517 from cjakeman/contributing1<br>Strengthen Contributing guidance<ul><li><code>dc566d59</code> Strengthen Contributing guidance<br>Ensure community discussion of new features by requiring forum thread prior to ORMT approval.</li></ul></li>
+<li class=''><code>T1.4-24-ge94de6895</code> Merge pull request #518 from cjakeman/key_assignments<br>Added rules to policy page on website<ul><li><code>59424c1d</code> Added rules to policy page on website<br>See http://openrails.org/contribute/team-policies/</li></ul></li>
+<li class=''><code>T1.4-22-g883b49b52</code> Merge pull request #512 from Sharpe49/fix-hill-start<br>Fixed dynamic brake being applied during standstill when dynamic brake blending is enabled<ul><li><code>b76931fd</code> Use absolute value since SpeedMpS can be negative</li>
+<li><code>3aae6406</code> Fixed dynamic brake being applied during standstill when dynamic brake blending is enabled<br>(which blocks throttle during hill start)<br>https://bugs.launchpad.net/or/+bug/1945886</li></ul></li>
+<li class=''><code>T1.4-19-g6e1e7dc78</code> Merge pull request #514 from mbm-OR/bugfix/Strings-not-for-pot-file<br>Bug fix for https://bugs.launchpad.net/or/+bug/1946373. The keywords should not be translated.<ul><li><code>383d2a03</code> Update RunActivity.pot file.</li>
+<li><code>8bf4a096</code> Bug fix for https://bugs.launchpad.net/or/+bug/1946373. The keywords should not be translated.</li></ul></li>
+<li class=''><code>T1.4-16-g97553e489</code> Merge pull request #508 from Csantucci/odometer-official<br>Blueprint https://blueprints.launchpad.net/or/+spec/odometer-cabview-controls<ul><li><code>21fb5e91</code> Odometer: adhere to requirements of reviewer</li>
+<li><code>9d6f01ed</code> ORTS_ODOMETER: enables also display of decimal values</li>
+<li><code>ed80ad6b</code> Blueprint https://blueprints.launchpad.net/or/+spec/odometer-cabview-control Cabview controls for odometer</li></ul></li>
+<li class=''><code>T1.4-12-gfab59f576</code> Merge pull request #515 from peternewell/brake-fix#2<br>Correct issue with compressor not turning off<ul><li><code>cd8e29f9</code> Correct issue with compressor not turning off</li></ul></li>
