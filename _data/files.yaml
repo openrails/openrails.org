@@ -11,9 +11,9 @@ testing_build:
   date: 2023-07-14
   bytes: 95919746
 testing_source:
-  url: http://openrails.org/files/OpenRails-Testing-Source.zip
-  date: 2023-02-03
-  bytes: 147063174
+  url: https://github.com/openrails/openrails-testing/releases/download/T1.5.1-507-gebafd5dad/Open.Rails.T1.5.1-507-gebafd5dad.Source.zip
+  date: 2023-07-14
+  bytes: 147275265
 testing_manual:
   url: http://openrails.org/files/OpenRails-Testing-Manual.pdf
   date: 2023-02-03
