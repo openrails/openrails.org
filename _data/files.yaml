@@ -1,9 +1,9 @@
 stable_installer:
-  url: http://openrails.org/files/OpenRails-1.5.1-Setup.exe
+  url: https://static.openrails.org/files/OpenRails-1.5.1-Setup.exe
   date: 2022-11-27
   bytes: 85092792
 stable_source:
-  url: http://openrails.org/files/OpenRails-1.5.1-Source.zip
+  url: https://static.openrails.org/files/OpenRails-1.5.1-Source.zip
   date: 2022-11-27
   bytes: 112062082
 testing_build:
@@ -15,7 +15,7 @@ testing_source:
   date: 2023-07-28
   bytes: 147277360
 testing_manual:
-  url: http://openrails.org/files/OpenRails-Testing-Manual.pdf
+  url: https://static.openrails.org/files/OpenRails-Testing-Manual.pdf
   date: 2023-02-03
   bytes: 36504088
 unstable_build:
@@ -27,11 +27,11 @@ unstable_source:
   date: tbd
   bytes: tbd
 doc_install_en:
-  url: /assets/files/installation_guide_en.pdf
+  url: https://static.openrails.org/files/OpenRails-Testing-Installation%20Guide%20En.pdf
   date: 2020-09-01
   bytes: 993137
 doc_install_es:
-  url: /assets/files/installation_guide_es.pdf
+  url: https://static.openrails.org/files/OpenRails-Testing-Installation%20Guide%20Es.pdf
   date: 2020-09-01
   bytes: 501541
 doc_german_keyboards:
