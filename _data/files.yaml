@@ -30,7 +30,7 @@ doc_install_en:
   url: https://static.openrails.org/files/OpenRails-Testing-Installation%20Guide%20En.pdf
   date: 2020-09-01
   bytes: 993137
-doc_install_es:
+doc_install_es: # This file does not exist yet. The previous Es is much too old to be helpful.
   url: https://static.openrails.org/files/OpenRails-Testing-Installation%20Guide%20Es.pdf
   date: 2020-09-01
   bytes: 501541
