@@ -7,13 +7,13 @@ stable_source:
   date: 2022-11-27
   bytes: 112062082
 testing_build:
-  url: https://github.com/openrails/openrails-testing/releases/download/T1.5.1-535-g2f57132ee/Open.Rails.T1.5.1-535-g2f57132ee.zip
-  date: 2023-07-28
-  bytes: 95776361
+  url: https://github.com/openrails/openrails-testing/releases/download/T1.5.1-553-g4b9199858/Open.Rails.T1.5.1-553-g4b9199858.zip
+  date: 2023-08-25
+  bytes: 95782232
 testing_source:
-  url: https://github.com/openrails/openrails-testing/releases/download/T1.5.1-535-g2f57132ee/Open.Rails.T1.5.1-535-g2f57132ee.Source.zip
-  date: 2023-07-28
-  bytes: 147277360
+  url: https://github.com/openrails/openrails-testing/releases/download/T1.5.1-553-g4b9199858/Open.Rails.T1.5.1-553-g4b9199858.Source.zip
+  date: 2023-08-25
+  bytes: 147277976
 testing_manual:
   url: https://static.openrails.org/files/OpenRails-Testing-Manual.pdf
   date: 2023-02-03
@@ -30,7 +30,7 @@ doc_install_en:
   url: https://static.openrails.org/files/OpenRails-Testing-Installation%20Guide%20En.pdf
   date: 2020-09-01
   bytes: 993137
-doc_install_es: # This file does not exist yet. The previous Es is much too old to be helpful.
+doc_install_es:
   url: https://static.openrails.org/files/OpenRails-Testing-Installation%20Guide%20Es.pdf
   date: 2020-09-01
   bytes: 501541
