@@ -1,0 +1,37 @@
+---
+layout: default
+section: Discover
+title: News
+---
+
+<div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-5">
+    {%- for item in site.data.news -%}
+        <h2>
+            {{ item.date | date: "%b %Y" }}
+            {% if item.title %}
+            - {{ item.title }}
+            {%- endif -%}
+        </h2>
+        {%- for para in item.text -%}
+        <p>{{ para }}</p>
+        {%- endfor -%}
+        {%- unless forloop.last -%}
+        <hr>
+        {%- endunless -%}
+    {%- endfor -%}
+    </div>
+    <div class="col-md-1"></div>
+    <div class="col-md-4">
+<h2>Recent Code Changes</h2>
+    <ul>
+        <!-- TODO
+        <?php include "../../api/update/testing/changelog.html" ?>
+        -->
+    </ul>
+    <p><a href='../../download/changes/'>See more code changes</a></p>
+    <div class="col-md-1">
+</div>
+</div>
+</div>

@@ -7,5 +7,13 @@ ul.accordion > li a {
 	text-decoration: none !important;
 }
 div.accordion_body {
-  display: none;
+  display: none; 
+}
+h2.accordion_head {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+h3.accordion_head {
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
