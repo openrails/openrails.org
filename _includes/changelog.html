@@ -1,12 +1,46 @@
-<li class=''><code>T1.5.1-585-g2be1faa5d</code> Merge pull request #863 from Csantucci/alternate-3DCab-preset-viewpoints<br>Alternate preset 3D cabviewpoints<ul><li><code>516825f0</code> Fix 3D cab switching when there is no front 3D cab</li>
-<li><code>a34b857b</code> Fix bug in interpreting presence of a rear 3D cab</li>
-<li><code>fe901d32</code> Alternate preset 3D cabviewpoints, see TrelloBox https://trello.com/c/iDr0POSw/532-multiple-preset-viewpoints-for-3d-cabs</li></ul></li>
-<li class=''><code>T1.5.1-581-g43c9bc157</code> Merge pull request #864 from SteelFill/undesired-emergency-fixes<br>Fixes for Undesired Emergency Applications<ul><li><code>e71bc5a6</code> Improve backwards compatibility</li>
-<li><code>18c54814</code> Reduce chance of static consists going to emergency, add check for unrealistic aux res charging rates</li>
-<li><code>2fed4b9c</code> Fix an issue that snuck in from previous commit</li>
-<li><code>7d0f3277</code> Tweak to emergency res behavior</li>
-<li><code>cfdada3b</code> Preventing some runaway conditions for quick service that could lead to stuck emergency applications</li>
-<li><code>60d7a3f3</code> Adding support for air piped systems and EOTs</li>
-<li><code>96e2cb16</code> Adding gradual anglecock opening, smoothed detection of emergency application, better emergency application behavior</li></ul></li>
-<li class=''><code>T1.5.1-573-g9a8e6af15</code> Merge pull request #871 from cesarBLG/fix-dispatcher-aspects<br>Signal aspects are multiplied when reopening Dispatcher Window<ul><li><code>c2388e69</code> Signal aspects are multiplied when reopening Dispatcher Window</li></ul></li>
-<li class=''><code>T1.5.1-571-gfa79925df</code> Merge pull request #872 from SteelFill/retainer-state-fix<br>Fix Retainer State Disappearing from HUD on Restore<ul><li><code>00c5b8b6</code> Save retainer debug state so it isn't lost during load from savegame</li></ul></li>
+<li class=''><code>T1.5.1-638-g096ac9838</code> Merge pull request #873 from cesarBLG/reduce-allocations<br>Reduce allocations in signal script<ul><li><code>cf0ed998</code> Reduce allocations in signal script</li></ul></li>
+<li class=''><code>T1.5.1-636-g370920ecf</code> Merge pull request #757 from cesarBLG/perpetualkid-raildriver<br>Unify RailDriver code implementations<ul><li><code>98dd1a7d</code> Add documentation</li>
+<li><code>d9d75f4f</code> Fix raildriver not activated by button</li>
+<li><code>2388225c</code> Solve issues with merging</li>
+<li><code>35c176c5</code> Merge branch 'master' into perpetualkid-raildriver</li>
+<li><code>31428b44</code> Fix wipers not working with raildriver</li>
+<li><code>cc6264e5</code> Allow several buttons associated to a single command</li>
+<li><code>384e1941</code> Fix first RD blue button not working</li>
+<li><code>406f3297</code> Fix bell behaviour</li>
+<li><code>b1910d98</code> Add proper handling of emergency brakes</li>
+<li><code>7d41c805</code> Fix bad logic for error checking</li>
+<li><code>86644941</code> Further fixes</li>
+<li><code>b669613d</code> Fix problem with RD version</li>
+<li><code>3c3a0886</code> Port of @perpetualKid and @CSantucci RailDriver code</li></ul></li>
+<li class=''><code>T1.5.1-622-g317d38541</code> Merge pull request #831 from sweiland-openrails/SwitchPanel<br>poor mans switch panel on tablet<ul><li><code>f6ca1e1e</code> type</li>
+<li><code>82d3be2f</code> review cesarBLG: Use correct case for all public methods</li>
+<li><code>fc943648</code> review cesarBLG: Changed IsUp/IsDown into IsPressed/IsReleased</li>
+<li><code>f13aba13</code> review cesarBLG: abstract away call SwitchPanelModule.IsUp into UserInput</li>
+<li><code>3e672a89</code> Merge branch 'SwitchPanel' of https://github.com/sweiland-openrails/openrails into SwitchPanel</li>
+<li><code>69d51d5f</code> Added retainers switch</li>
+<li><code>61bbf439</code> Next station window button always enabled, too difficult to determine if window has valid information</li>
+<li><code>19dc7446</code> Added some switchpanel buttons for steam locomotives</li>
+<li><code>6a3f72b2</code> From UserCommand.cs removed the second description and moved this functionality to the SwitchPanel code</li>
+<li><code>9417e1b4</code> Solve merge problem with PR 751</li>
+<li><code>91d69f8e</code> merge conflict</li>
+<li><code>e919abf6</code> Added controls for steam engine: direction, handbrake and brake hose connect</li>
+<li><code>c466c51a</code> Catch errors in getting status as they might block the Switch Panel. Now there is just an empty button and a log message.</li>
+<li><code>f5d692ae</code> Added brake hose control</li>
+<li><code>4bf28ff4</code> Added handbrake control</li>
+<li><code>436d2cbe</code> changes, mainly regarding translations</li>
+<li><code>271b7c4f</code> - replaced IsDown with IsPressed and IsUp with IsReleased to be more inline with rest of the OR code. Except in the html/javascript part.<br>- added some code to make translations possible, not 100% yet, to be done in the next iteration</li>
+<li><code>c8927a4f</code> enhancements</li>
+<li><code>c45c9933</code> Merge branch 'master' into SwitchPanel</li>
+<li><code>10aa2f3d</code> minor changes and added traction cut-off relay support for diesel engines</li>
+<li><code>6a319a89</code> preliminary version</li></ul></li>
+<li class=''><code>T1.5.1-599-g782e611d5</code> Merge pull request #866 from SteelFill/0-axle-articulation-fix<br>Fix Articulation For 0-Axle Train Cars<ul><li><code>c15333ed</code> Fix edge case with 1 axle rail vehicles</li>
+<li><code>a6cbc520</code> Allowing train cars with 0 axles to become articulated</li></ul></li>
+<li class=''><code>T1.5.1-596-gd7b38a5e4</code> Merge pull request #870 from cesarBLG/fix-water-restore<br>Fix water restore<ul><li><code>5cb32faf</code> Fix water restore</li></ul></li>
+<li class=''><code>T1.5.1-594-g5f7e60929</code> Merge pull request #841 from Csantucci/animate-trainset-windows<br>https://blueprints.launchpad.net/or/+spec/animating-trainset-windows<ul><li><code>ce3bc1f9</code> Update Source/Documentation/Manual/features-rollingstock.rst<br>Co-authored-by: César Benito Lamata <cesarbema2009@hotmail.com></li>
+<li><code>410a585d</code> Fix http://www.elvastower.com/forums/index.php?/topic/37347-reproducible-audio-crash-in-unstable/page__pid__299135#entry299135</li>
+<li><code>1bdb7dfd</code> Merge branch 'master' into animate-trainset-windows</li>
+<li><code>abc52aac</code> Add documentation for carriage windows animation</li>
+<li><code>ad736fab</code> Merge branch 'master' into animate-trainset-windows</li>
+<li><code>ed601b5d</code> Windows animation for wagon windows</li>
+<li><code>bc1ffd8f</code> Update OR manual about trainset windows animation</li>
+<li><code>65eeaa74</code> https://blueprints.launchpad.net/or/+spec/animating-trainset-windows</li></ul></li>
