@@ -1,5 +1,27 @@
-<li class='recent text-primary'><code>T1.5.1-638-g096ac9838</code> Merge pull request #873 from cesarBLG/reduce-allocations<br>Reduce allocations in signal script<ul><li><code>cf0ed998</code> Reduce allocations in signal script</li></ul></li>
-<li class='recent text-primary'><code>T1.5.1-636-g370920ecf</code> Merge pull request #757 from cesarBLG/perpetualkid-raildriver<br>Unify RailDriver code implementations<ul><li><code>98dd1a7d</code> Add documentation</li>
+<li class='recent text-primary'><code>T1.5.1-664-gd39447273</code> Merge pull request #877 from peternewell/duplex_engines_initial<br>Initail build of duplex steam<ul><li><code>55f9ddd4</code> Correct indent</li>
+<li><code>a76c45bd</code> Improve code style</li>
+<li><code>a0bd9ec7</code> Style changes and iput key corrected</li>
+<li><code>ce3490b7</code> Correct parameter name as per recommendation.</li>
+<li><code>c567eba3</code> Initail build of duplex steam - addition of control commands only</li></ul></li>
+<li class='recent text-primary'><code>T1.5.1-658-g66411058c</code> Merge pull request #857 from SteelFill/air-flow-meter<br>Adding Air Flow Meters<ul><li><code>9afc8c35</code> Update flowmeters on trailing locomotives to prevent stuck indications when changing cabs</li>
+<li><code>cb3f1c0a</code> Adding liters per minute as a cabview unit</li>
+<li><code>076c77a7</code> Adding CUBIC_M_S as valid cabview unit, documentation improvements</li>
+<li><code>22312be6</code> Fixing minor style issues, and adding support for both spellings of 'liter'</li>
+<li><code>7931a52d</code> Removing some unneeded 'using' statements that appeared unexpectedly</li>
+<li><code>14d79c7e</code> Initial addition of air flow meters</li></ul></li>
+<li class='recent text-primary'><code>T1.5.1-651-g45d8b7ff4</code> Merge pull request #853 from sweiland-openrails/OutOfFocus<br>Notify out of focus<ul><li><code>d05f5817</code> Bugfix: when changing to full screen the out-of-focus red rectangle is now taking acount of the change</li>
+<li><code>a9760ec2</code> Replaced the option OutOfFocus" with check on option SuppressConfirmations</li>
+<li><code>36736cee</code> Solved Codacy issue</li>
+<li><code>52a513dd</code> Solved the saving bug</li>
+<li><code>8357922c</code> set default "out of focus" option to true</li>
+<li><code>c8f02ad1</code> Solved merge conflict?</li>
+<li><code>7b58e773</code> Might fix the last Codacy error</li>
+<li><code>00060a8a</code> Some "Codacy Static Code Analysis — 4 new issues (0 max.) of at least minor severity." solved</li>
+<li><code>d4518c6e</code> "CodeFactor — 1 issue found." solved</li>
+<li><code>0afa5877</code> Notify out of focus</li></ul></li>
+<li class='recent text-primary'><code>T1.5.1-640-g3d7b05457</code> Merge pull request #855 from cjakeman/website-news01<br>Adds new route from TrainSimulations<ul><li><code>b39e5d86</code> Adds new route from TrainSimulations</li></ul></li>
+<li class=''><code>T1.5.1-638-g096ac9838</code> Merge pull request #873 from cesarBLG/reduce-allocations<br>Reduce allocations in signal script<ul><li><code>cf0ed998</code> Reduce allocations in signal script</li></ul></li>
+<li class=''><code>T1.5.1-636-g370920ecf</code> Merge pull request #757 from cesarBLG/perpetualkid-raildriver<br>Unify RailDriver code implementations<ul><li><code>98dd1a7d</code> Add documentation</li>
 <li><code>d9d75f4f</code> Fix raildriver not activated by button</li>
 <li><code>2388225c</code> Solve issues with merging</li>
 <li><code>35c176c5</code> Merge branch 'master' into perpetualkid-raildriver</li>
@@ -12,7 +34,7 @@
 <li><code>86644941</code> Further fixes</li>
 <li><code>b669613d</code> Fix problem with RD version</li>
 <li><code>3c3a0886</code> Port of @perpetualKid and @CSantucci RailDriver code</li></ul></li>
-<li class='recent text-primary'><code>T1.5.1-622-g317d38541</code> Merge pull request #831 from sweiland-openrails/SwitchPanel<br>poor mans switch panel on tablet<ul><li><code>f6ca1e1e</code> type</li>
+<li class=''><code>T1.5.1-622-g317d38541</code> Merge pull request #831 from sweiland-openrails/SwitchPanel<br>poor mans switch panel on tablet<ul><li><code>f6ca1e1e</code> type</li>
 <li><code>82d3be2f</code> review cesarBLG: Use correct case for all public methods</li>
 <li><code>fc943648</code> review cesarBLG: Changed IsUp/IsDown into IsPressed/IsReleased</li>
 <li><code>f13aba13</code> review cesarBLG: abstract away call SwitchPanelModule.IsUp into UserInput</li>
@@ -33,10 +55,10 @@
 <li><code>c45c9933</code> Merge branch 'master' into SwitchPanel</li>
 <li><code>10aa2f3d</code> minor changes and added traction cut-off relay support for diesel engines</li>
 <li><code>6a319a89</code> preliminary version</li></ul></li>
-<li class='recent text-primary'><code>T1.5.1-599-g782e611d5</code> Merge pull request #866 from SteelFill/0-axle-articulation-fix<br>Fix Articulation For 0-Axle Train Cars<ul><li><code>c15333ed</code> Fix edge case with 1 axle rail vehicles</li>
+<li class=''><code>T1.5.1-599-g782e611d5</code> Merge pull request #866 from SteelFill/0-axle-articulation-fix<br>Fix Articulation For 0-Axle Train Cars<ul><li><code>c15333ed</code> Fix edge case with 1 axle rail vehicles</li>
 <li><code>a6cbc520</code> Allowing train cars with 0 axles to become articulated</li></ul></li>
-<li class='recent text-primary'><code>T1.5.1-596-gd7b38a5e4</code> Merge pull request #870 from cesarBLG/fix-water-restore<br>Fix water restore<ul><li><code>5cb32faf</code> Fix water restore</li></ul></li>
-<li class='recent text-primary'><code>T1.5.1-594-g5f7e60929</code> Merge pull request #841 from Csantucci/animate-trainset-windows<br>https://blueprints.launchpad.net/or/+spec/animating-trainset-windows<ul><li><code>ce3bc1f9</code> Update Source/Documentation/Manual/features-rollingstock.rst<br>Co-authored-by: César Benito Lamata <cesarbema2009@hotmail.com></li>
+<li class=''><code>T1.5.1-596-gd7b38a5e4</code> Merge pull request #870 from cesarBLG/fix-water-restore<br>Fix water restore<ul><li><code>5cb32faf</code> Fix water restore</li></ul></li>
+<li class=''><code>T1.5.1-594-g5f7e60929</code> Merge pull request #841 from Csantucci/animate-trainset-windows<br>https://blueprints.launchpad.net/or/+spec/animating-trainset-windows<ul><li><code>ce3bc1f9</code> Update Source/Documentation/Manual/features-rollingstock.rst<br>Co-authored-by: César Benito Lamata <cesarbema2009@hotmail.com></li>
 <li><code>410a585d</code> Fix http://www.elvastower.com/forums/index.php?/topic/37347-reproducible-audio-crash-in-unstable/page__pid__299135#entry299135</li>
 <li><code>1bdb7dfd</code> Merge branch 'master' into animate-trainset-windows</li>
 <li><code>abc52aac</code> Add documentation for carriage windows animation</li>
