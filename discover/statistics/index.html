@@ -1,0 +1,89 @@
+---
+layout: default
+section: Discover
+title: Statistics
+---
+
+<div class="row">
+    <div class="col-md-6">
+        <h2>Monthly Users</h2>
+        <div class="graph">
+            <div id="graph-monthly-users"></div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <h2>Monthly Versions</h2>
+        <div class="graph">
+            <div id="graph-monthly-versions"></div>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <h3>About these statistics</h3>
+        <p>"Monthly Users" and "Monthly Versions" count up the number of unique IP addresses* seen by the update
+            server* over each 28 day period*.</p>
+        <ul>
+            <li>This will under-count shared internet connections all using Open Rails, and over-count users on
+                frequently-changing IP addresses.</li>
+            <li>Open Rails checks for updates once per day, but only when opened.</li>
+            <li>Rather than actual months, which vary in length and don't align to weekdays/weekends.</li>
+        </ul>
+    </div>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js" charset="utf-8"></script>
+    <script>
+        var date = Math.floor(Date.now() / 86400000);
+        var layout = {
+            margin: {
+                l: 40,
+                r: 40,
+                t: 20,
+                b: 40
+            },
+            xaxis: {
+                range: [
+                    new Date(Date.now() - 1000 * 60 * 60 * 24 * 365 * 2),
+                    new Date(Date.now() - 1000 * 60 * 60 * 24 * 28),
+                ],
+            },
+            paper_bgcolor: '#ffe',
+            plot_bgcolor: '#ffe'
+        };
+        var options = {
+            displayModeBar: false
+        };
+
+        function unpack(rows, key) {
+            return rows.slice(1).map(function (row) {
+                return String(row[key]);
+            });
+        }
+
+        Plotly.d3.csv('https://static.openrails.org/stats/monthly-users.csv?_=' + date, function (error, rows) {
+            var users = {
+                type: 'scatter',
+                fill: 'tonexty',
+                x: unpack(rows, 'Date'),
+                y: unpack(rows, 'Count')
+            };
+
+            Plotly.newPlot('graph-monthly-users', [users], layout, options);
+        });
+
+        Plotly.d3.csv('https://static.openrails.org/stats/monthly-versions.csv?_=' + date, function (error, rows) {
+            var versions = Object.keys(rows[0])
+                .slice(1)
+                .sort(function (a, b) {
+                    return rows[1][a] - rows[1][b];
+                })
+                .map(function (version) {
+                    return {
+                        name: version,
+                        stackgroup: 'Version',
+                        x: unpack(rows, 'Date'),
+                        y: unpack(rows, version)
+                    };
+                });
+
+            Plotly.newPlot('graph-monthly-versions', versions, layout, options);
+        });
+    </script>
+</div>
