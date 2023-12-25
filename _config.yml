@@ -18,15 +18,12 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
-email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   This is the official home of Open Rails with news and links to content, vendors and the community.
   Open Rails is a totally free train simulator that supports the world's largest range of rail content.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://openrails.org" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+content_browser_url: "http://127.0.0.1:5500/"
 
 # Build settings
 theme: minima

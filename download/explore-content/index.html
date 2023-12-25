@@ -1,0 +1,27 @@
+---
+layout: default
+section: Download
+title: Explore content
+---
+
+<a href="{{ site.content_browser_url }}" role="button" target="_blank" class="btn new-tab">Open the Content Browser in a New Tab</a>
+<iframe id="content-explorer" src="{{ site.content_browser_url }}?embedded=true"></iframe>
+
+<style>
+	#content-explorer {
+		width: 100%;
+		height: 100vh;
+		overflow: hidden;
+		border: none;
+		--light: hsl(60, 100%, 97%);
+	}
+
+	.new-tab {
+		color: black;
+		text-decoration: none;
+		background-color: #7dc243;
+		white-space: normal;
+		margin-bottom: 6px;
+		float: right;
+	}
+</style>
