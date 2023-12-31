@@ -150,8 +150,8 @@ input::placeholder {
 	flex-direction: column;
 	gap: 2em;
 	max-width: 700px;
-    margin: 2em auto 0.5em;
-    accent-color: var(--accent-ui);
+	margin: 2em auto 0.5em;
+	accent-color: var(--accent-ui);
 	line-height: 1.4;
 }
 
@@ -201,7 +201,7 @@ input::placeholder {
 
 .item h3 {
 	margin: 0;
-    color: var(--primary);
+	color: var(--primary);
 }
 
 .item .author {
@@ -226,7 +226,7 @@ input::placeholder {
 	font-family: monospace;
 	padding: 0.1em 0.2em;
 	background-color: var(--tertiary);
-    font-size: 0.9em;
+	font-size: 0.9em;
 }
 
 .item .size-badge {
