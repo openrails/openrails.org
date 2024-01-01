@@ -121,45 +121,87 @@ ul {
 	text-shadow: 1px 1px 1px black;
 }
 
-.top_left_footer {
-	border-top-left-radius: 1em;
-	border-bottom-left-radius: 1em;
-}
-
-.top_right_footer {
-	border-top-right-radius: 1em;
-	border-bottom-right-radius: 1em;
-}
-
-.footer_column {
+.footer {
+	display: flex;
+	gap: 2em;
 	margin-top: 2em;
-	margin-bottom: 15px;
+	margin-bottom: 1em;
 	padding: 1em;
 	background-image: linear-gradient(to bottom, #444 0, #111 100%);
 	color: white;
-	height: 230px;
+	border-radius: 1em;
+	height: 235px;
 }
 
-.footer_column a {
-	color: white;
+.footer-ohloh {
+	position: relative;
+	width: 40%;
 }
 
-.footer_column ul {
+.footer-group {
+	display: flex;
+	gap: 2em;
+	width: 60%;
+}
+
+.footer-item {
+	width: 50%;
+}
+
+@media (max-width: 900px) {
+	.footer {
+		height: auto;
+	}
+
+	.footer-group {
+		flex-direction: column;
+		width: 40%;
+	}
+
+	.footer-ohloh {
+		width: 60%;
+	}
+
+	.footer-item {
+		width: 100%;
+	}
+}
+
+@media (max-width: 600px) {
+	.footer {
+		flex-direction: column;
+	}
+
+	.footer-ohloh,
+	.footer-group {
+		width: 100%;
+	}
+
+	.footer-ohloh {
+		height: 235px;
+	}
+}
+
+.footer a {
+	color: inherit;
+}
+
+.footer ul {
 	list-style-type: none;
 	padding-left: 0;
 }
 
-.footer_column ul li {
+.footer ul li {
 	padding-bottom: 5px;
 }
 
-.footer_column ul li a {
+.footer ul li a {
 	color: white !important;
 	text-decoration: none !important;
 	font-size: 11px;
 }
 
-.footer_column ul li a:hover {
+.footer ul li a:hover {
 	text-decoration: underline !important;
 }
 
@@ -213,24 +255,20 @@ p img {
 	color: black;
 }
 
-.ohloh_tall {
-	width: 334px;
-	height: 190px;
-	background-color: white;
-}
-
-.ohloh_short {
-	width: 334px;
-	height: 148px;
-	background-color: white;
-}
-
-.next_snippet {
+#next-snippet-btn {
 	position: absolute;
-	margin-top: 30px;
-	margin-left: 300px;
+	top: 15px;
+	right: 20px;
 	color: rgb(125, 194, 67);
-	text-shadow: 1px 1px 1px black;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+#next-snippet-btn:hover {
+	opacity: 0.7;
+}
+
+#next-snippet-btn:active {
+	opacity: 0.9;
 }
 
 summary {
