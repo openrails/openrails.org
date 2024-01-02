@@ -110,6 +110,11 @@ button:hover {
 	z-index: -1;
 }
 
+.selection[disabled] {
+    opacity: 0.2;
+    pointer-events: none;
+}
+
 .selection-inside {
 	position: absolute;
 	bottom: 0.2em;
