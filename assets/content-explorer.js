@@ -4,7 +4,7 @@
 const listContainer = document.getElementById('list-container');
 const COMPENSATION_TEXTS = { free: 'Download (free)', donation: 'Download (donation-ware)', commercial: 'Buy (commercial)' };
 
-const _routes = await fetch('https://raw.githubusercontent.com/openrails/content/main/routes.json');
+const _routes = await fetch('https://static.openrails.org/content/routes.json');
 const routes = (await _routes.json()).map((item, index) => ({ index, ...item }));
 
 let selectedCard = 'routes';
