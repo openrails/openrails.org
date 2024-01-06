@@ -31,6 +31,8 @@ toc:
         url: /download/changes/
       - page: Content
         url: /download/content/
+      - page: Content Browser
+        url: /download/explore-content/
   - title: Learn
     subfolderitems:
       - page: FAQ

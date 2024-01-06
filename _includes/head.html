@@ -24,4 +24,7 @@
   {%- if page.use_iframe -%}
   <link rel="stylesheet" href="{{ "/assets/iframe.css" | relative_url }}" >
   {%- endif -%}
+  {%- if page.content_explorer -%}
+  <link rel="stylesheet" href="{{ "/assets/content-explorer.css" | relative_url }}" >
+  {%- endif -%}
 </head>
