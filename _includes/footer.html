@@ -1,38 +1,42 @@
 <div class="row">
-	<div class="col-md-12 footer">
-		<div class="col-md-5 footer_column top_left_footer">{% include ohloh.html %}</div>
-		<div class="col-md-3 footer_column">
-			<p>&copy; 2009-{{ "now" | date: "%Y" }} &nbsp;Open Rails</p>
-			<a href="http://www.gnu.org/licenses/licenses.html" target="_blank">
-				<img src="/assets/logos/gplv3_logo.png" alt="GPLv3 logo" style="padding-bottom: 0.5em" />
-			</a>
-			<p>You use Open Rails entirely at your own risk. It is intended for entertainment purposes only and is not suitable for professional applications.</p>
-		</div>
-		<div class="col-md-4 footer_column top_right_footer">
-			<ul>
-				<li>
-					<a href="http://www.getbootstrap.com/" target="_blank" title="The most popular front-end framework for developing responsive, mobile-first projects on the web.">
-						<img src="/assets/logos/bootstrap.png" alt="Bootstrap logo" /> &nbsp; Built with Bootstrap </a
-					><br />
-				</li>
-				<li>
-					<a href="http://validator.w3.org/" target="_blank" title="W3C Markup Validation Service">
-						<img src="/assets/logos/valid-html.png" alt="Valid HTML logo" /> &nbsp; Validated with W3C
+	<div class="col-md-12">
+		<div class="footer">
+			<div class="footer-ohloh">{% include ohloh.html %}</div>
+			<div class="footer-group">
+				<div class="footer-item">
+					<p>&copy; 2009-{{ "now" | date: "%Y" }} &nbsp;Open Rails</p>
+					<a href="http://www.gnu.org/licenses/licenses.html" target="_blank">
+						<img src="/assets/logos/gplv3_logo.png" alt="GPLv3 logo" style="padding-bottom: 0.5em" />
 					</a>
-				</li>
-				<li>
-					<a href="http://website-link-checker.online-domain-tools.com/" target="_blank" title="Link checking service"> Links checked with Online Domain Tools </a>
-				</li>
-				<li>
-					<a href="http://www.internetmarketingninjas.com/online-spell-checker.php" target="_blank" title="Spell checker"> Spelling checked with Internet Marketing Ninjas </a>
-				</li>
-				<li>
-					<a href="http://tools.pingdom.com/fpt/" target="_blank" title="Webpage performance tools"> Speed checked with Pingdom Tools </a>
-				</li>
-				<li>
-					<a href="http://cssminifier.com/" target="_blank" title="CSS Minifier"> CSS minified with CSS Minifier </a>
-				</li>
-			</ul>
+					<p>You use Open Rails entirely at your own risk. It is intended for entertainment purposes only and is not suitable for professional applications.</p>
+				</div>
+				<div class="footer-item">
+					<ul>
+						<li>
+							<a href="http://www.getbootstrap.com/" target="_blank" title="The most popular front-end framework for developing responsive, mobile-first projects on the web.">
+								<img src="/assets/logos/bootstrap.png" alt="Bootstrap logo" /> &nbsp; Built with Bootstrap </a
+							><br />
+						</li>
+						<li>
+							<a href="http://validator.w3.org/" target="_blank" title="W3C Markup Validation Service">
+								<img src="/assets/logos/valid-html.png" alt="Valid HTML logo" /> &nbsp; Validated with W3C
+							</a>
+						</li>
+						<li>
+							<a href="http://website-link-checker.online-domain-tools.com/" target="_blank" title="Link checking service"> Links checked with Online Domain Tools </a>
+						</li>
+						<li>
+							<a href="http://www.internetmarketingninjas.com/online-spell-checker.php" target="_blank" title="Spell checker"> Spelling checked with Internet Marketing Ninjas </a>
+						</li>
+						<li>
+							<a href="http://tools.pingdom.com/fpt/" target="_blank" title="Webpage performance tools"> Speed checked with Pingdom Tools </a>
+						</li>
+						<li>
+							<a href="http://cssminifier.com/" target="_blank" title="CSS Minifier"> CSS minified with CSS Minifier </a>
+						</li>
+					</ul>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
@@ -86,6 +90,3 @@
 		});
 	});
 </script>
-{% if page.use_accordion %}
-<script src="{{ '/assets/accordion/accordion.js' | relative_url }}"></script>
-{% endif %}

@@ -1,12 +1,17 @@
-<a href="#" title="Click for another snippet">
-	<span class="glyphicon glyphicon-chevron-right next_snippet"></span>
-	<iframe src="https://www.openhub.net/p/or/widgets/project_factoids" seamless style="width: 100%; height: 100%; border: none; border-radius: 0.5em; background-color: white">
-	</iframe>
-</a>
+<a href="#" title="Click for another snippet" id="next-snippet-btn"><span class="glyphicon glyphicon-chevron-right next_snippet"></span></a>
+<iframe
+	src="https://www.openhub.net/p/or/widgets/project_factoids"
+	id="openhub-iframe"
+	seamless
+	style="width: 100%; height: 100%; border: none; border-radius: 0.5em; background-color: white"
+>
+</iframe>
+
 <script type="text/javascript">
 	(function () {
-		const another = document.currentScript.previousSibling;
-		const iframe = another.getElementsByTagName('iframe')[0];
+		const nextSnippetBtn = document.getElementById('next-snippet-btn');
+		const iframe = document.getElementById('openhub-iframe');
+
 		let session;
 		try {
 			session = sessionStorage;
@@ -22,28 +27,24 @@
 				return v === null ? 0 : parseInt(v);
 			}
 		};
+
+		const widgetTypes = ['factoids', 'basic_stats', 'cocomo'];
+
 		const show = () => {
-			switch (current()) {
-				case 0:
-				default:
-					iframe.src = 'https://www.openhub.net/p/or/widgets/project_factoids';
-					break;
-				case 1:
-					iframe.src = 'https://www.openhub.net/p/or/widgets/project_basic_stats';
-					break;
-				case 2:
-					iframe.src = 'https://www.openhub.net/p/or/widgets/project_cocomo';
-					break;
-			}
+			iframe.src = `https://www.openhub.net/p/or/widgets/project_${widgetTypes[current()]}`;
 		};
+
 		const next = () => {
 			if (session !== undefined) session.setItem('or_ohloh_snippet', (current() + 1) % 3);
 		};
 
-		another.addEventListener('click', (e) => {
-			show();
-			next();
-			e.preventDefault();
+		// Events beside "click" needed for mobile (https://stackoverflow.com/a/22799137)
+		['click', 'tap', 'touchstart'].forEach((event) => {
+			nextSnippetBtn.addEventListener(event, (e) => {
+				show();
+				next();
+				e.preventDefault();
+			});
 		});
 
 		show();
