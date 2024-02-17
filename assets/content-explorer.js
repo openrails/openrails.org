@@ -4,7 +4,13 @@
 const listContainer = document.getElementById('list-container');
 const COMPENSATION_TEXTS = { free: 'Download (free)', donation: 'Download (donation-ware)', commercial: 'Buy (commercial)' };
 
-const _routes = await fetch('https://static.openrails.org/content/routes.json');
+const _routes = await fetch('https://static.openrails.org/content/routes.json').catch((e) => {
+	listContainer.innerHTML = `
+        <div style="text-align: center; color: red;">
+            <strong>Sorry, there was an error while loading content.</strong>
+            <p>${e}</p>
+        </div>`;
+});
 const routes = (await _routes.json()).map((item, index) => ({ index, ...item }));
 
 let selectedCard = 'routes';
