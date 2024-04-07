@@ -19,11 +19,11 @@ testing_manual:
   date: 2023-02-03
   bytes: 36504088
 unstable_build:
-  url: https://github.com/openrails/openrails-unstable/releases/download/U2024.04.07-1337/Open.Rails.U2024.04.07-1337.zip
+  url: https://github.com/openrails/openrails-unstable/releases/download/U2024.04.07-1737/Open.Rails.U2024.04.07-1737.zip
   date: 2024-04-07
-  bytes: 44436845
+  bytes: 44437090
 unstable_source:
-  url: https://github.com/openrails/openrails-unstable/releases/download/U2024.04.07-1337/Open.Rails.U2024.04.07-1337.Source.zip
+  url: https://github.com/openrails/openrails-unstable/releases/download/U2024.04.07-1737/Open.Rails.U2024.04.07-1737.Source.zip
   date: 2024-04-07
   bytes: 89869864
 doc_install_en:
