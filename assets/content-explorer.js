@@ -4,7 +4,7 @@
 const listContainer = document.getElementById('list-container');
 const COMPENSATION_TEXTS = { free: 'Download (free)', donation: 'Download (donation-ware)', commercial: 'Buy (commercial)' };
 
-const _routes = await fetch('https://static.openrails.org/content/routes.json').catch((e) => {
+const _routes = await fetch('https://static.openrails.org/api/content/routes.json').catch((e) => {
 	listContainer.innerHTML = `
         <div style="text-align: center; color: red;">
             <strong>Sorry, there was an error while loading content.</strong>
