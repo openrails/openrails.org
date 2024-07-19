@@ -1,38 +1,27 @@
-<li class=''><code>T1.5.1-1046-g364357342</code> Merge pull request #960 from cesarBLG/tcs-fix<br>Fix draw state name in scripts<ul><li><code>c8e2a280</code> Fix draw state logic</li></ul></li>
-<li class=''><code>T1.5.1-1044-g217ca3b74</code> Merge pull request #912 from SteelFill/triplevalve-improvements-2<br>New Triple Valve Features Vol. 2<ul><li><code>359cfee5</code> Tweaks to animation implementation</li>
-<li><code>93050625</code> Tweak brake cylinder animations to work within the limits of .s files</li>
-<li><code>cda1d74e</code> Fix initialization of aux res pressure when MR pipe charging is incorrectly enabled</li>
-<li><code>df43405f</code> Fix broken CylSource comparisons</li>
-<li><code>0cb07c2d</code> Naming and style changes</li>
-<li><code>982afb65</code> Fix missing function input parameter</li>
-<li><code>5f5f1f54</code> Add load/empty tokens for relay valve and inshot</li>
-<li><code>56abfa26</code> Bugfixes and support for brake rigging animations</li>
-<li><code>939e17a5</code> Add support for accelerated release reservoir, rewrite quick service to be more accurate</li>
-<li><code>596a03a4</code> Improve interaction between high speed reducing valve, quick action, and graduated release triple valves</li>
-<li><code>e626a4f1</code> Fix initialization not working correctly after first pass</li>
-<li><code>6b9fca47</code> Code cleanup, robustness, and better variable naming</li>
-<li><code>19700580</code> Improved consistency of quick action, added automatic calculation of brake cylinder piping volume</li>
-<li><code>4e2f2d5b</code> Added a missing engine supply res token</li>
-<li><code>c9184d2f</code> Merge branch 'openrails:master' into triplevalve-improvements-2</li>
-<li><code>06dd27d5</code> Added advanced brake cylinder simulation, supply res for locomotives, bugfixes, and minor feature requests</li>
-<li><code>f7b85e4b</code> Small brake cylinder syntax change</li>
-<li><code>8da28022</code> Add documentation for "per minute" pressure units</li>
-<li><code>eba95f14</code> Merge branch 'master' into triplevalve-improvements-2</li>
-<li><code>a8ba1e38</code> Add some new brake cylinder tokens in preparation for brake cylinder enhancements (also added to vacuum brakes for consistency)</li>
-<li><code>b08d6f9e</code> Add psi per minute and bar per minute as supported units, add weeping port simulation</li>
-<li><code>64e06370</code> Fix a bug in dynamic brake blending</li>
-<li><code>a332d681</code> Minor tweaks, and adding an alternate option for inshot behavior</li>
-<li><code>d5957039</code> More initialization tweaks</li>
-<li><code>fc4146c4</code> Add relay valve option for two stage brakes, add inshot, and fix an oversight in initialization</li>
-<li><code>3112a51a</code> Add supply reservoir simulation</li>
-<li><code>659396ee</code> Undo bail off change<br>Removing the change to bail off rate, will add the change back in a subsequent pull request</li>
-<li><code>8106ea1c</code> Fixing some style issues CodeFactor complained about</li>
-<li><code>9a12fbe5</code> First round of new improvements</li></ul></li>
-<li class=''><code>T1.5.1-1014-g0ffaa28ae</code> Merge pull request #956 from sweiland-openrails/mapSettingsSaved<br>Map settings saved<ul><li><code>406cba6a</code> When starting the Map (Game Multi Player Dispatcher) focus goes back to main window. Starting the map by pressing Ctrl-9 key or when starting a saved game with Map enabled. Also in the mape is populated hwne the game is in Pause mode.</li>
-<li><code>2f0ce277</code> Map window saved/restored, map resolution now correct after startup</li>
-<li><code>6adc5a3a</code> Merge branch 'mapSettingsSaved' of https://github.com/sweiland-openrails/openrails into mapSettingsSaved</li>
-<li><code>e2c128c6</code> Integrating two exit conditions into one if</li>
-<li><code>6346a252</code> Solve merge conflicts</li>
-<li><code>1e86e92f</code> Solve merge conflicts</li>
-<li><code>a0565751</code> Solve merge conflicts</li>
-<li><code>1c7285d2</code> Form map settings (state checkboxes, size, etc) saved and restored at startup</li></ul></li>
+<li class=''><code>T1.5.1-1076-g60df6ba81</code> Merge pull request #967 from SteelFill/light_reverse_fix<br>Fix AI Lights After Reversing Points<ul><li><code>a799e20d</code> Remove lighting check for AI train lead locomotive as it produces different behavior from previous versions</li></ul></li>
+<li class=''><code>T1.5.1-1074-g3f93a3779</code> Merge pull request #963 from cesarBLG/dynamic_brake_force<br>Fix dynamic brake force indicator<ul><li><code>2d5a67d4</code> Fix dynamic brake force indicator</li></ul></li>
+<li class=''><code>T1.5.1-1072-g3c01d6200</code> Merge pull request #949 from peternewell/oil-burner#1<br>Oil Burning Locomotive<ul><li><code>8fdc42b6</code> Suggested reviewer changes</li>
+<li><code>da7663bd</code> Add sound triggers to manual</li>
+<li><code>72ddad85</code> Add manual information</li>
+<li><code>0037ba20</code> Correct a parameter</li>
+<li><code>f2fff296</code> Add extra fuel types to activity initialisation</li>
+<li><code>d73de81f</code> Add correction for oil burning parameters</li>
+<li><code>a4a44b58</code> Further adjustments for multiple fuels</li>
+<li><code>624f7954</code> Adjust fuel masses in steam locomotive</li>
+<li><code>8e14b454</code> Correct water consumption rate for wood fired</li>
+<li><code>2a3bfc55</code> Change to resolve conflict</li>
+<li><code>3af1460b</code> Add sound triggers for water pumps</li>
+<li><code>0306d754</code> Correct bug with water motion pump</li>
+<li><code>e375e561</code> Add water motion pump</li>
+<li><code>d29622b2</code> Add some defaults parameters</li>
+<li><code>aac0de8e</code> Add wood combustion rate</li>
+<li><code>ce2bbe11</code> Add some wood parameters</li>
+<li><code>5026de68</code> Switch to turn oil heating on/off</li>
+<li><code>33a3e1c0</code> Add model for calculating the amount of steam used to heat fuel oil in the tender</li>
+<li><code>1985cbe4</code> Adjust combustion times</li>
+<li><code>956a8ec0</code> Turn off steam stoker steam usage values when not coal fired.</li>
+<li><code>e1d8f1f9</code> Adjustments to display</li>
+<li><code>df12eb4a</code> Set mechanical stoker always true</li>
+<li><code>8ddd645a</code> Allow use of oil input parameters</li>
+<li><code>c2a5d32d</code> Fix conflict</li>
+<li><code>ee539e32</code> Initial addition of changes for oil burning steam locomotive.</li></ul></li>
