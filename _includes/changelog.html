@@ -1,2 +1,70 @@
-<li class=''><code>T1.5.1-1204-g8bc1d8293</code> Merge pull request #985 from peternewell/chuff_bug<br>Correct bug with steam locomotive chuffing sound<ul><li><code>6b79e537</code> Adjust code based upon feedback.</li>
-<li><code>4f429958</code> Correct bug with steam locomotive chuffing sound</li></ul></li>
+<li class=''><code>T1.5.1-1284-gca636331f</code> Merge pull request #983 from sweiland-openrails/SwitchPanelDpu<br>WEB based Switch Panel bug: DPU window<ul><li><code>202316e8</code> bugfix: The DPU window opened from the WEB based Switch Panel enhancement does not cycle between it's variants</li></ul></li>
+<li class=''><code>T1.5.1-1282-g336a70013</code> Merge pull request #799 from twpol/feature/one-true-wind<br>Consolidated wind simulation<ul><li><code>dfc715e5</code> feat: Make precipitation response to camera movement</li>
+<li><code>6a55f3ba</code> fix: Correct cloud movements against camera</li>
+<li><code>1a70945a</code> fix: Move daylight offset entirely into Viewer</li>
+<li><code>0daa2d48</code> Merge branch 'master' into feature/one-true-wind</li>
+<li><code>dc038507</code> feat: Make precipitation respond to instantaneous wind speed and direction</li>
+<li><code>3bce3955</code> feat: Remove precipitation customisation</li>
+<li><code>eb92d81e</code> style: Format precipitation code</li>
+<li><code>99f50877</code> feat: Make particles respond to instantaneous wind speed and direction</li>
+<li><code>920870a9</code> feat: Make clouds respond to average wind speed and direction</li>
+<li><code>39e75c4a</code> feat: Define average and instantaneous wind speed and direction with updates</li>
+<li><code>39abd77e</code> style: Format physics wind code</li>
+<li><code>1e6d6767</code> refactor: Clean up HUD wind resistance information</li>
+<li><code>097b97c6</code> refactor: Improved field names and removed unused field</li>
+<li><code>546b4c8d</code> refactor: Fix spelling</li>
+<li><code>aadcd83b</code> style: Format weather simulation and viewer code</li></ul></li>
+<li class=''><code>T1.5.1-1266-g14405bf42</code> Merge pull request #962 from cesarBLG/pantograph-fix<br>Fix pantographs on unpowered cars<ul><li><code>46d0472f</code> Fix pantographs on unpowered cars</li></ul></li>
+<li class=''><code>T1.5.1-1264-g041e55a65</code> Merge pull request #885 from cjakeman/add-menu-notifications<br>feat: Add notifications to Menu<ul><li><code>45ca50d5</code> Adds adjustment for display scaling != 100%</li>
+<li><code>7490f2c2</code> Resolves review points</li>
+<li><code>8f473cef</code> Merge branch 'master' into add-menu-notifications</li>
+<li><code>816b7bc2</code> Merge branch 'master' into add-menu-notifications</li>
+<li><code>d98ac26a</code> Merge branch 'master' into add-menu-notifications</li>
+<li><code>efef86cd</code> Merge branch 'add-menu-notifications' of https://github.com/cjakeman/openrails into add-menu-notifications</li>
+<li><code>0917bdc7</code> switches to use real data source</li>
+<li><code>65ac2698</code> adjusted to suit System > Display > Scale = 125% as well as 100%</li>
+<li><code>54174f77</code> uses Panel in place of Page.Panel</li>
+<li><code>f1bca8b9</code> some re-factoring</li>
+<li><code>318043ad</code> adds PageTracking. Corrects Retry</li>
+<li><code>067662ef</code> adds NotificationPageAlert()</li>
+<li><code>a9b02aca</code> adds sort by date and include only notifications that pass checks</li>
+<li><code>9c6c13f2</code> adds Arrow class</li>
+<li><code>03ecdd98</code> refactor AddArrow</li>
+<li><code>6426c6f9</code> add next & previous controls</li>
+<li><code>e267870a</code> After tidying</li>
+<li><code>6cf52723</code> Handles all test cases in Notifications.docx</li>
+<li><code>20514b03</code> Handles minimal notification</li>
+<li><code>2728d6da</code> Merge branch 'master' into add-menu-notifications</li>
+<li><code>56c17fb0</code> restores chat_icon to Menu\MainForm.resx</li>
+<li><code>885a176a</code> Merge branch 'logic-processing' into add-menu-notifications</li>
+<li><code>c6e02ed0</code> merge master into branch</li>
+<li><code>d83e8101</code> adds CheckNotContains()</li>
+<li><code>c153b9d8</code> refines CheckConstraints to ignore empty constraints</li>
+<li><code>0a956f54</code> Adds IncludesAllOf() and ExcludesAnyOf().<br>Adds local menu_test.json for testing changes.</li>
+<li><code>96eff087</code> Refactoring, respects userSettings, adds read from file for testing menu.json</li>
+<li><code>fb6b8120</code> Fix for bug in CheckExcludes() and CheckIncludes()</li>
+<li><code>42092cbf</code> Change "New Version" to "Latest Version".<br>Fetch from /notifications/menu.json instead of /notifications.json</li>
+<li><code>03d4a525</code> Change New Version to report "already updated" when up to date</li>
+<li><code>dcd4f7de</code> Change New Version to report "none" when up to date</li>
+<li><code>1465b28e</code> Change New Version to report "none" when up to date</li>
+<li><code>68029a67</code> fix for IndexOf bug</li>
+<li><code>753cba5d</code> adds Operating System as a possible check.<br>Also makes checks case-insensitive</li>
+<li><code>d714b11e</code> removes redundant labels for What's New and Update Check Failed</li>
+<li><code>0f6de51b</code> handles fetch errors for Update and Notifications</li>
+<li><code>55dfb283</code> adds notificationManager</li>
+<li><code>eec888a8</code> takes JSON from remote URL</li>
+<li><code>4067ed2e</code> Refine ReplaceParameters() to support parameters embedded in text</li>
+<li><code>aeef5b23</code> add IncludesAnyOf constraint</li>
+<li><code>c311e43a</code> add ExcludesAllOf constraint</li>
+<li><code>59d70763</code> Merge branch 'master' into add-menu-notifications</li>
+<li><code>90acfdf3</code> to clear working space</li>
+<li><code>79ddb23c</code> Merge branch 'master' into add-menu-notifications</li>
+<li><code>4b4dbee6</code> adds JSON reader</li>
+<li><code>ec2350eb</code> Merge branch 'master' into add-menu-notifications</li>
+<li><code>8f943336</code> Tidy code</li>
+<li><code>b8fe0ce1</code> Replaces Update links with a single Notification - unfinished</li>
+<li><code>06b8a9e1</code> Adds Notification class with NDetail elements shown in the panel</li>
+<li><code>f70d0aa5</code> Merge branch 'master' into add-menu-notifications</li>
+<li><code>d9ce84bb</code> Adds icon to count new notifications<br>No content yet. Just a dummy arrangement to see how it looks.</li>
+<li><code>74466d96</code> fix: Menu update label positioned statically<br>Was right-aligned by code and could also be partly hidden by "What's new?" label.</li>
+<li><code>c81447bd</code> Adds Notifications icon and toggle behaviour</li></ul></li>
