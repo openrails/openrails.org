@@ -45,6 +45,8 @@ toc:
         url: /learn/physics/
       - page: Activities
         url: /learn/activities/
+      - page: Documents
+        url: /learn/docs-list/
   - title: Share
     subfolderitems:
       - page: Community
