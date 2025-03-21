@@ -7,13 +7,13 @@ stable_source:
   date: 2022-11-27
   bytes: 112062082
 testing_build:
-  url: https://github.com/openrails/openrails-testing/releases/download/T1.5.1-1600-gee9c56d91/Open.Rails.T1.5.1-1600-gee9c56d91.zip
-  date: 2025-03-14
-  bytes: 113551252
+  url: https://github.com/openrails/openrails-testing/releases/download/T1.5.1-1627-g90cae11a5/Open.Rails.T1.5.1-1627-g90cae11a5.zip
+  date: 2025-03-21
+  bytes: 114034118
 testing_source:
-  url: https://github.com/openrails/openrails-testing/releases/download/T1.5.1-1600-gee9c56d91/Open.Rails.T1.5.1-1600-gee9c56d91.Source.zip
-  date: 2025-03-14
-  bytes: 164610861
+  url: https://github.com/openrails/openrails-testing/releases/download/T1.5.1-1627-g90cae11a5/Open.Rails.T1.5.1-1627-g90cae11a5.Source.zip
+  date: 2025-03-21
+  bytes: 165094518
 testing_manual:
   url: https://static.openrails.org/files/OpenRails-Testing-Manual.pdf
   date: 2023-02-03
