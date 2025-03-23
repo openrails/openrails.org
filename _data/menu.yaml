@@ -36,7 +36,7 @@ toc:
   - title: Learn
     subfolderitems:
       - page: Manual & Documents
-        url: /learn/docs-list/
+        url: /learn/documents/
       - page: FAQ
         url: /learn/faq/
       - page: Tutorials
