@@ -19,13 +19,13 @@ testing_manual:
   date: 2023-02-03
   bytes: 36504088
 unstable_build:
-  url: https://github.com/openrails/openrails-unstable/releases/download/U2025.04.01-1922/Open.Rails.U2025.04.01-1922.zip
-  date: 2025-04-01
-  bytes: 41462197
+  url: https://github.com/openrails/openrails-unstable/releases/download/U2025.04.02-0337/Open.Rails.U2025.04.02-0337.zip
+  date: 2025-04-02
+  bytes: 41462156
 unstable_source:
-  url: https://github.com/openrails/openrails-unstable/releases/download/U2025.04.01-1922/Open.Rails.U2025.04.01-1922.Source.zip
-  date: 2025-04-01
-  bytes: 101644074
+  url: https://github.com/openrails/openrails-unstable/releases/download/U2025.04.02-0337/Open.Rails.U2025.04.02-0337.Source.zip
+  date: 2025-04-02
+  bytes: 101643370
 doc_install_en:
   url: https://static.openrails.org/files/OpenRails-Testing-Installation%20Guide%20En.pdf
   date: 2020-09-01
