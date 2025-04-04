@@ -1,4 +1,60 @@
-<li class='recent text-primary'><code>T1.5.1-1630-gf3424409b</code> Merge pull request #1047 from cjakeman/docs-add-online-only<br>Docs: adds translation docs<ul><li><code>eb8027bf</code> Fix bad weblink</li>
+<li class='recent text-primary'><code>T1.5.1-1689-g72674c98d</code> Merge pull request #1015 from cesarBLG/electrical-braking-enhancement<br>Enhancements for EP brakes<ul><li><code>1ade99e0</code> Disable triple valve inhibition if emergency braking is detected</li>
+<li><code>14c132b3</code> Do not release EP brakes if holding wire is active</li>
+<li><code>3ee3108b</code> Merge branch 'master' into electrical-braking-enhancement</li>
+<li><code>514a0464</code> Set brake equipment strings from copied locomotive</li>
+<li><code>284e804a</code> Fix null value for equipment</li>
+<li><code>266e9cac</code> Update docs</li>
+<li><code>5859cc9e</code> Implement EP_single_pipe brake</li>
+<li><code>2759c595</code> Enhancements for EP brakes</li></ul></li>
+<li class='recent text-primary'><code>T1.5.1-1680-g0cd8cb893</code> Merge pull request #1063 from SteelFill/error_messages<br>Better Missing Track Section Error Message<ul><li><code>6c231916</code> Make tsection.dat error more descriptive</li></ul></li>
+<li class='recent text-primary'><code>T1.5.1-1678-gf88b8b9b1</code> Merge pull request #961 from cesarBLG/powersupply-scripts<br>Improvements for Power Supplies<ul><li><code>ffccb2e8</code> Merge branch 'master' into powersupply-scripts</li>
+<li><code>4148bea7</code> Force RPM at simulation start to circunvent gearbox bug<br>https://www.elvastower.com/forums/index.php?/topic/36560-msts-diesel-mechanical-bug/</li>
+<li><code>eb9c6014</code> Improve battery voltage handling</li>
+<li><code>55db46fe</code> Add docs for missing cabview controls</li>
+<li><code>8a9c8f9b</code> Use quick power on for AI trains</li>
+<li><code>dfe18e66</code> Demand reduced throttle by power supply</li>
+<li><code>705ec652</code> Fix null pointer when saving selectors</li>
+<li><code>ac836f15</code> Include reverser information in power supply script</li>
+<li><code>386b83c8</code> Update docs for battery voltage</li>
+<li><code>d5ae4a7b</code> Fix bug with service retention cancellation</li>
+<li><code>c064a550</code> Add useful train information to all scripts</li>
+<li><code>47e77328</code> Add entries for the manual</li>
+<li><code>5823f2e9</code> Signal events for AI trains</li>
+<li><code>3186040e</code> Add battery subsystem</li>
+<li><code>6559a095</code> Add information about available power</li>
+<li><code>00a89a02</code> Handle power limitation for diesels</li>
+<li><code>9aecb146</code> PushButtons traction cut off relay</li>
+<li><code>fecb56fa</code> Null pointer check</li>
+<li><code>b79f4080</code> Max throttle percent allowed by power supply</li>
+<li><code>b5d21b48</code> Send TCS pantograph orders via power supply events</li>
+<li><code>46bf8a61</code> Get circuit breaker closing authorization</li>
+<li><code>3d90668a</code> Handle diesel engine hot startup via QuickPowerOn mechanism</li>
+<li><code>c577bbb9</code> Electric train supply power</li>
+<li><code>3a4bb19d</code> Individual pantograph state</li>
+<li><code>889d53f8</code> Configurable minimum RPM for auxiliaries</li>
+<li><code>4150185d</code> Signal events from non-leading locomotives</li>
+<li><code>b58156ab</code> Reduce allocations</li>
+<li><code>de17c568</code> Signal power converter status when auxiliary power is on</li>
+<li><code>d94f4b6c</code> Voltage selector initialized to line voltage</li>
+<li><code>b281a8b9</code> Better handling of QuickPowerOn for circuit breaker</li>
+<li><code>e3231239</code> Access custom buttons from all power supply scripts</li>
+<li><code>c34b9ee9</code> SteamEngine cleanup</li>
+<li><code>9d38fe28</code> Generic power supply buttons</li>
+<li><code>16a53ea8</code> Support brake for neutral sections</li>
+<li><code>a7afc7e3</code> Handle power on for passenger supply</li>
+<li><code>882a33ff</code> Allow limiting max dynamic brake power</li>
+<li><code>ae3ff179</code> Add built-in scripts for standard selectors</li>
+<li><code>01d07b7a</code> Fixed conflict in the event IDs</li>
+<li><code>4f4c5e89</code> Fixed incomplete INI parameter file path for power supplies</li>
+<li><code>3694956c</code> Added separated voltmeters for AC and DC pantograph voltages</li>
+<li><code>5d5aa838</code> Added pantograph voltage to circuit breakers</li>
+<li><code>b0327391</code> Added service retention active variable to power supplies</li>
+<li><code>a15e6184</code> Added INI parameters file for power supplies</li>
+<li><code>5f575267</code> Refactored the power supplies in order to use the same design pattern as the C# signal scripts (compatible with current scripts)</li>
+<li><code>895aab67</code> Added an event for the power supply to be able to request to open the battery switch when service retention is cancelled<br>(usable only when the battery relay is controlled by push buttons)</li>
+<li><code>b2474a3c</code> Small change in order to use the service retention button both as a switch and a push button</li>
+<li><code>041bca23</code> Added voltage and pantograph selectors</li></ul></li>
+<li class=''><code>T1.5.1-1630-gf3424409b</code> Merge pull request #1047 from cjakeman/docs-add-online-only<br>Docs: adds translation docs<ul><li><code>eb8027bf</code> Fix bad weblink</li>
 <li><code>b7152dc2</code> Docs: adds translation docs<br>These are added to the /Online sub-folder so they appear on the website but not the Menu > Documents drop-down.</li></ul></li>
 <li class=''><code>T1.5.1-1627-g90cae11a5</code> Merge pull request #1059 from mbm-OR/bugfix/Fix-F9-powersupply-crashes<br>Fix F9 powersupply crashes<ul><li><code>313f7951</code> Fix F9 powersupply crashes</li></ul></li>
 <li class=''><code>T1.5.1-1625-g383755b0b</code> Merge pull request #1061 from mbm-OR/bugfix/Fix-F9-Webpage-conflict<br>Fix F9 Web-page conflict.<ul><li><code>f75dc71b</code> Fix F9 Web-page conflict.</li></ul></li>
