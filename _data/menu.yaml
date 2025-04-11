@@ -35,16 +35,18 @@ toc:
         url: /download/explore-content/
   - title: Learn
     subfolderitems:
+      - page: Manual & Documents
+        url: /learn/documents/
       - page: FAQ
         url: /learn/faq/
-      - page: Manual and Tutorials
-        url: /learn/manual-and-tutorials/
-      - page: Build Your Own Route
+      - page: Tutorials
+        url: /learn/tutorials/
+      - page: Tutorial - Build Your Own Route
         url: /learn/build-route/
+      - page: Tutorial - Activities
+        url: /learn/activities/
       - page: OR Physics
         url: /learn/physics/
-      - page: Activities
-        url: /learn/activities/
   - title: Share
     subfolderitems:
       - page: Community
