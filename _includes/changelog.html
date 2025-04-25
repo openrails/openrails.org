@@ -1,4 +1,32 @@
-<li class=''><code>T1.5.1-1695-gade019506</code> Merge pull request #1065 from cesarBLG/pantograph-toggle<br>Fix for PantographToggle sound event<ul><li><code>409064d1</code> Modify manual</li>
-<li><code>eb49b255</code> Move PantographToggle sound event to the right place</li></ul></li>
-<li class=''><code>T1.5.1-1692-g8b2dd97c0</code> Merge pull request #1068 from twpol/feature/build-online-documentation<br>Build for online-only documentation files<ul><li><code>d6e1f836</code> feat: Add build for online-only documentation files</li>
-<li><code>af08e2c8</code> feat: Improve build directory creation and clean-up</li></ul></li>
+<li class=''><code>T1.5.1-1732-gfdbea15ea</code> DMI in 3D cab + two more dials<br>Merge pull request #900 from pzgulyas/dmi280<ul><li><code>46297363</code> Doc changes</li>
+<li><code>b54024be</code> Added documentation</li>
+<li><code>b3679baa</code> Add some antialiasing</li>
+<li><code>a4b1aa5f</code> Changed to be configured via the cvf file</li>
+<li><code>fb94fb54</code> Added a scale of 150</li>
+<li><code>f5eef670</code> Make the 3d texture actually working. Usage in s file e.g.: image ( screens/etcs_dmi,maxspeed=280,maxvisiblespeed=280,units=kmph,displayunits=0 )</li>
+<li><code>c27f32d9</code> Some clean up</li>
+<li><code>42ea7ad2</code> Added a scale of 280 km/h used in Switzerland</li></ul></li>
+<li class=''><code>T1.5.1-1723-g959de2385</code> Merge pull request #1000 from cesarBLG/control-car-controls<br>Locomotive operation from control car<ul><li><code>d8d97094</code> Set receivers for control car</li>
+<li><code>4263b21f</code> Add locomotive status to driving info</li>
+<li><code>b429cf5a</code> Cab controls from active locomotive in control car</li>
+<li><code>902506cd</code> Initial support for power supplies on control cars</li></ul></li>
+<li class=''><code>T1.5.1-1718-gda57f73bd</code> Merge pull request #1029 from SteelFill/multi_track_profiles<br>Superelevation Follow Up Fixes<ul><li><code>248b8d54</code> Clean up gravity calculations and fix gradient display in rear cab</li>
+<li><code>92c74ef5</code> Clean up DecomposeStaticSuperElevation, improve support for unusual track shapes</li>
+<li><code>31fd7d24</code> Stop bogies from rotating while on a turntable</li>
+<li><code>94cc8db1</code> Force limit on complexity of dynamic track sections to prevent overflow errors</li>
+<li><code>ac798e99</code> Fix superelevation animating when it shouldn't on some rolling stock</li>
+<li><code>759b1a18</code> Add support for DynaTrax</li></ul></li>
+<li class=''><code>T1.5.1-1711-g44e59199a</code> Merge pull request #1045 from rwf-rr/explore-start-time<br>Bugfix: Empty Start Time for Explore, and other issues loading from Menu Selection and Content Routes<ul><li><code>cc4d53c0</code> Fix typo, minor formatting change.</li>
+<li><code>f9cf2e87</code> Fix loading from Menu Selection and Content Routes.<br>More fixes and more refactoring.</li>
+<li><code>a9316c71</code> Use ContentRoute settings only for Explore in Activity Mode.</li>
+<li><code>606e6bd5</code> Refactor to make more readable.</li>
+<li><code>1f21bdba</code> Fix for start time field.</li></ul></li>
+<li class=''><code>T1.5.1-1705-g95e36ea99</code> Merge pull request #896 from Csantucci/AI-Train-Sound-official<br>First implementation of https://blueprints.launchpad.net/or/+spec/specific-sounds-for-ai-trains<ul><li><code>335f9981</code> Update documentation</li>
+<li><code>f1681df5</code> Add end of loco being lead of an AI train</li>
+<li><code>801ad4a1</code> Extend to all timetable mode setting of specific sound triggers</li>
+<li><code>db032e7b</code> Extend checks to state what triggers are enabled</li>
+<li><code>838c3140</code> Redefine sound triggers after selection of a new player train</li>
+<li><code>26f569b8</code> Bypass merge conflict</li>
+<li><code>9ca77b6c</code> Add documentation in OR manual</li>
+<li><code>71e21a6e</code> Add first hooks for Timetable Mode</li>
+<li><code>e2dd24ec</code> Rebasing...</li></ul></li>
