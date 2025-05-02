@@ -1,4 +1,47 @@
-<li class='recent text-primary'><code>T1.5.1-1732-gfdbea15ea</code> DMI in 3D cab + two more dials<br>Merge pull request #900 from pzgulyas/dmi280<ul><li><code>46297363</code> Doc changes</li>
+<li class='recent text-primary'><code>T1.5.1-1783-g77a649f09</code> Merge pull request #1077 from cesarBLG/sme-regression-fix<br>Fix SME brakes not working<ul><li><code>7e73abd7</code> Fix SME brakes not working</li></ul></li>
+<li class='recent text-primary'><code>T1.5.1-1781-g39c44377f</code> Mouse wheel control only with Alt – Followup for #1051<ul><li><code>99fc9ac2</code> Slowed down further</li>
+<li><code>3f153f0f</code> Slowed down wheel movement</li>
+<li><code>ffd1af4d</code> Mouse wheel control only with Alt</li></ul></li>
+<li class='recent text-primary'><code>T1.5.1-1777-ga440b33f8</code> Merge pull request #1049 from cjakeman/docs-move-online<br>Re-organise document storage and access<ul><li><code>6a0c4716</code> Update Source/Documentation/Use this folder to store.txt<br>Co-authored-by: James Ross <twpol@users.noreply.github.com></li>
+<li><code>4dd8c4ff</code> Adds separator to dropdown</li>
+<li><code>bf324119</code> Merge remote-tracking branch 'upstream/master' into docs-move-online</li>
+<li><code>f3b41bb6</code> Adds action to open website page</li>
+<li><code>2ed071ed</code> Merge remote-tracking branch 'upstream/master' into docs-move-online</li>
+<li><code>14ebc8d0</code> Move files<br>The intended use of each folder is also documented</li></ul></li>
+<li class='recent text-primary'><code>T1.5.1-1770-g9295cb971</code> Merge pull request #1071 from cjakeman/manual-update-cover-image<br>Change cover image for v1.6<ul><li><code>722dd3f9</code> Replace photo with contributed simulation</li>
+<li><code>40c988b1</code> Change cover image for v1.6</li></ul></li>
+<li class='recent text-primary'><code>T1.5.1-1767-g9a00900d9</code> Merge pull request #1080 from cjakeman/adjust-menu-for-russian-text2<br>arranges Options > System tab for longer texts<ul><li><code>a637cb87</code> arranges Options > System tab for longer texts<br>Update Mode texts now have more room for length Russian translations</li></ul></li>
+<li class='recent text-primary'><code>T1.5.1-1765-g5e2423cb7</code> Merge pull request #1052 from rwf-rr/content-manager-more<br>Content Manager: Add axle count, and lowest derail force<ul><li><code>3b5cb904</code> Make changes discussed in PR.<br>Add continuous tractive effort, and use it in tons-per calculations.<br>Other minor changes.</li>
+<li><code>79cd5f89</code> Update calculation of Operative Brakes and Tons per Operative Brake.<br>Brake Force alone is not sufficient to determine if the car has<br>operative brakes. BrakeValve (BrakeEquipmentType) does not work well for<br>the Content Manager, and even some newer rollingstock has it incorrect.<br>Thus BrakeSystem (BrakeSystemType) not being "just a pipe" or manual<br>braking seems to work best.<br>Also corrected TpOP to only use trailing tonnage (as defined by BNSF).</li>
+<li><code>5bbc476e</code> Clarify where the summing of Drive and Idle Axles comes from.<br>No code changed.</li>
+<li><code>d3f00a1a</code> Delete accidentially commited json file.</li>
+<li><code>17c8d181</code> Made Axle Count corrections suggested in the PR review.<br>The axle count now reflects what the simulation is actually using. The<br>code is the same as in the simulation classes MSTSWagon and<br>MSTSLocomotive.<br>There is a special condition for Steam engines that is not practical to<br>correctly reproduce (WheelAxles array). Thus the count may be off for<br>some steam engines. It matches the sim for the Flying Scottsman, but not<br>for the Gölsdorf 380. I don't have other steam engines to test.</li>
+<li><code>382ea6dd</code> Add TpEPA and TpEDBA, when units are imperial.<br>TpEPA = Tons per Equivalent Powered Axles.<br>TpEDBA = Tons per Equivalent Dynamic Brake Axles.<br>These metrics are more accurate than HP per Ton, as they are based on<br>tractive effort.<br>The calculations are based on Union Pacific practices. UP uses a<br>standard axle of 10'000 lbf tractive effort or dynamic brake force.<br>For example a GP40-2 is 5.0 EPA, an SD40-2 is 7.1 EPA. Both have the<br>same HP (and thus result in the same HP-per-Ton).</li>
+<li><code>6e1bdffa</code> Add Max Dynamic Brake Force to consist info.<br>And minor name-change for TPOP -> TpOP. TOP is often used.</li>
+<li><code>232abeee</code> Add paths under the route category (after the activities).</li>
+<li><code>35839a7a</code> Fix calculation of axles for mic of ORTS Axles and MSTS Wheels.</li>
+<li><code>792d23ad</code> Add number of axles. Also lowest derail force (wheel load).</li></ul></li>
+<li class='recent text-primary'><code>T1.5.1-1754-gd06e05d36</code> Merge pull request #1030 from rwf-rr/refactor-user-settings-location<br>Refactor settings, in prep for settings exporter<ul><li><code>d3ae4a2a</code> Fix bug in refactoring of user settings.<br>Will be cherry-picked into refactor-user-settings-location.</li>
+<li><code>c279fd86</code> Merge branch 'master' into refactor-user-settings-location<br>Resolve conflict caused by<br>* migration of some functionality into the base class<br>* addition of Telemetry settings</li>
+<li><code>e50068dd</code> Minor syntax change (linter, not impact).</li>
+<li><code>8d762254</code> Merge branch 'master' into refactor-user-settings-location</li>
+<li><code>26955237</code> Merge branch 'master' into refactor-user-settings-location</li>
+<li><code>25800de9</code> Make path expansion consistent.</li>
+<li><code>c5d4667e</code> Changes needed for exporter.</li>
+<li><code>fdc6f2bf</code> Allow settings location to be changed before objects are created.</li>
+<li><code>f618a85f</code> Add methods to change the settings store.</li>
+<li><code>03a2f7a8</code> Identify that this intentionally hides the member in the base class.<br>Fixes a compiler warning, cause by moving SettingsFilePath from<br>UserSettings to SettingsBase.</li>
+<li><code>1ba13bdf</code> Move refernces to RegistryKey and SettingsFilePath to SettingsBase.<br>This completes the refactoring of the Settings, so that the other<br>settings no longer depend on UserSettings.<br>There are no behaviour changes so far.</li>
+<li><code>fda08305</code> Refactor UserSettings and SettingsBase.<br>The settings store related parts are better defined in SettingsBase, as<br>they are also used by other settings classes (via the fact that they are<br>static).<br>This is in prep for allowing the store to be changed (for the export<br>tool).</li></ul></li>
+<li class='recent text-primary'><code>T1.5.1-1741-gf80cfb5d1</code> Merge pull request #1007 from Weter-ORTS/master<br>Russian localization up to 2025 Jan 3-rd<ul><li><code>d230655a</code> Merge remote-tracking branch 'upstream/master'</li>
+<li><code>ad603149</code> Updated Common strings<br>in "Key assignments", Cruise control commands have designated as SAUT - System of Automatic Traction&Brakes Control</li>
+<li><code>b9ffac22</code> Updated Menu strings<br>Auto-save and Content installer entries</li>
+<li><code>4ae3ec57</code> Merge branch 'openrails:master' into master</li>
+<li><code>60c60ce0</code> Updated RunActivity up to 2024 Dec 1-st<br>Derail coeff, memory allocation and vacuum brakes are not translated</li>
+<li><code>b0a57d30</code> ORTS.Simulation locale updated up to 2024 Dec 1-st<br>Speed violation in curve warnings corrected, but steam cylinders, vacuum brakes and water scoop strings are still unclear to translate right.</li>
+<li><code>101db215</code> Update Menu with new Superelevation.<br>Some content strings have flaws:<br>45, 51, 161</li>
+<li><code>c0785d27</code> Updated translations up to 2024 Nov 2-nd</li></ul></li>
+<li class=''><code>T1.5.1-1732-gfdbea15ea</code> DMI in 3D cab + two more dials<br>Merge pull request #900 from pzgulyas/dmi280<ul><li><code>46297363</code> Doc changes</li>
 <li><code>b54024be</code> Added documentation</li>
 <li><code>b3679baa</code> Add some antialiasing</li>
 <li><code>a4b1aa5f</code> Changed to be configured via the cvf file</li>
@@ -6,22 +49,22 @@
 <li><code>f5eef670</code> Make the 3d texture actually working. Usage in s file e.g.: image ( screens/etcs_dmi,maxspeed=280,maxvisiblespeed=280,units=kmph,displayunits=0 )</li>
 <li><code>c27f32d9</code> Some clean up</li>
 <li><code>42ea7ad2</code> Added a scale of 280 km/h used in Switzerland</li></ul></li>
-<li class='recent text-primary'><code>T1.5.1-1723-g959de2385</code> Merge pull request #1000 from cesarBLG/control-car-controls<br>Locomotive operation from control car<ul><li><code>d8d97094</code> Set receivers for control car</li>
+<li class=''><code>T1.5.1-1723-g959de2385</code> Merge pull request #1000 from cesarBLG/control-car-controls<br>Locomotive operation from control car<ul><li><code>d8d97094</code> Set receivers for control car</li>
 <li><code>4263b21f</code> Add locomotive status to driving info</li>
 <li><code>b429cf5a</code> Cab controls from active locomotive in control car</li>
 <li><code>902506cd</code> Initial support for power supplies on control cars</li></ul></li>
-<li class='recent text-primary'><code>T1.5.1-1718-gda57f73bd</code> Merge pull request #1029 from SteelFill/multi_track_profiles<br>Superelevation Follow Up Fixes<ul><li><code>248b8d54</code> Clean up gravity calculations and fix gradient display in rear cab</li>
+<li class=''><code>T1.5.1-1718-gda57f73bd</code> Merge pull request #1029 from SteelFill/multi_track_profiles<br>Superelevation Follow Up Fixes<ul><li><code>248b8d54</code> Clean up gravity calculations and fix gradient display in rear cab</li>
 <li><code>92c74ef5</code> Clean up DecomposeStaticSuperElevation, improve support for unusual track shapes</li>
 <li><code>31fd7d24</code> Stop bogies from rotating while on a turntable</li>
 <li><code>94cc8db1</code> Force limit on complexity of dynamic track sections to prevent overflow errors</li>
 <li><code>ac798e99</code> Fix superelevation animating when it shouldn't on some rolling stock</li>
 <li><code>759b1a18</code> Add support for DynaTrax</li></ul></li>
-<li class='recent text-primary'><code>T1.5.1-1711-g44e59199a</code> Merge pull request #1045 from rwf-rr/explore-start-time<br>Bugfix: Empty Start Time for Explore, and other issues loading from Menu Selection and Content Routes<ul><li><code>cc4d53c0</code> Fix typo, minor formatting change.</li>
+<li class=''><code>T1.5.1-1711-g44e59199a</code> Merge pull request #1045 from rwf-rr/explore-start-time<br>Bugfix: Empty Start Time for Explore, and other issues loading from Menu Selection and Content Routes<ul><li><code>cc4d53c0</code> Fix typo, minor formatting change.</li>
 <li><code>f9cf2e87</code> Fix loading from Menu Selection and Content Routes.<br>More fixes and more refactoring.</li>
 <li><code>a9316c71</code> Use ContentRoute settings only for Explore in Activity Mode.</li>
 <li><code>606e6bd5</code> Refactor to make more readable.</li>
 <li><code>1f21bdba</code> Fix for start time field.</li></ul></li>
-<li class='recent text-primary'><code>T1.5.1-1705-g95e36ea99</code> Merge pull request #896 from Csantucci/AI-Train-Sound-official<br>First implementation of https://blueprints.launchpad.net/or/+spec/specific-sounds-for-ai-trains<ul><li><code>335f9981</code> Update documentation</li>
+<li class=''><code>T1.5.1-1705-g95e36ea99</code> Merge pull request #896 from Csantucci/AI-Train-Sound-official<br>First implementation of https://blueprints.launchpad.net/or/+spec/specific-sounds-for-ai-trains<ul><li><code>335f9981</code> Update documentation</li>
 <li><code>f1681df5</code> Add end of loco being lead of an AI train</li>
 <li><code>801ad4a1</code> Extend to all timetable mode setting of specific sound triggers</li>
 <li><code>db032e7b</code> Extend checks to state what triggers are enabled</li>
