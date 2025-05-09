@@ -1,17 +1,35 @@
-<li class='recent text-primary'><code>T1.5.1-1783-g77a649f09</code> Merge pull request #1077 from cesarBLG/sme-regression-fix<br>Fix SME brakes not working<ul><li><code>7e73abd7</code> Fix SME brakes not working</li></ul></li>
-<li class='recent text-primary'><code>T1.5.1-1781-g39c44377f</code> Mouse wheel control only with Alt – Followup for #1051<ul><li><code>99fc9ac2</code> Slowed down further</li>
+<li class='recent text-primary'><code>T1.5.1-1806-g5522fc5fa</code> Merge pull request #1078 from cesarBLG/steam-locomotive-script<br>Default PowerSupply script for steam locomotives<ul><li><code>9ab642ec</code> Default script for steam locomotives</li></ul></li>
+<li class='recent text-primary'><code>T1.5.1-1804-g4fdacd539</code> Merge pull request #1070 from pzgulyas/scriptfix<br>Fix a NullReferenceException in TCS scripts<ul><li><code>f818e40d</code> Try to fix it at another place</li>
+<li><code>3a665975</code> Fix a NullReferenceException in TCS scripts</li></ul></li>
+<li class='recent text-primary'><code>T1.5.1-1801-g0e66a4f52</code> Merge pull request #1083 from sweiland-openrails/MenuRouteNameClash<br>Menu contents route name clash<ul><li><code>fc8adf75</code> Empty manual form fixes.</li>
+<li><code>6d0e99cd</code> Determine unique name for the last row also</li>
+<li><code>dee7900a</code> Leading and traling spaces removed from route when leaving the field</li>
+<li><code>7e6fb604</code> During upgrade OR from 1.5.1 to 1.6 automatic routes are imported. Name clashes can occur with local routes. This update renames the manual added route appending (1), (2) etc. This update does the same when automatic routes are added.</li>
+<li><code>6380c71b</code> When in the "Manual Installed" tab a route is added or changed for which the route name is the same as an "Auto Installed" route, the manual name is changed by adding (1), (2) etc.</li>
+<li><code>4b5b7ab8</code> Create unique route name by adding (1), (2) etc to the name. This is for adding or changing a route.</li>
+<li><code>0237cdab</code> Added Cancel functionality for adding "Manual Installed" tab entries</li>
+<li><code>1a402dc5</code> Message box pops up after pressing the cancel button or closing the form: "Cancel: changes made in the 'Manually Installed' tab will not be saved, are you sure?". Saving will only be done when pressing the Ok button.</li>
+<li><code>9aedc7cd</code> Removed buttonCancel.enabled from "Auto Installed" tab</li>
+<li><code>2c050313</code> Cancel button only enabled when changes made in the "Manually Installed" tab. Implemented for deleting a row.</li>
+<li><code>b4ac31a7</code> Removed cancel button from the "Auto Installed" tab. On the "Manually Installed" tab pushing the cancel button undoes the changes. However on the "Auto Installed" tab undoing a route installed or undoing updates to a route is not possible or logical.</li></ul></li>
+<li class='recent text-primary'><code>T1.5.1-1789-gf7ec8097c</code> Merge pull request #1079 from cjakeman/translate-po<br>Adds Polish transations<ul><li><code>592e054f</code> Merge remote-tracking branch 'upstream/master' into translate-po</li>
+<li><code>5e37059b</code> Build updates .pot files</li>
+<li><code>fe65f085</code> Adds Polish translations</li></ul></li>
+<li class='recent text-primary'><code>T1.5.1-1785-ga4b51ce87</code> Merge pull request #1066 from rwf-rr/log-derailment-and-more<br>Log derailment, using TraceInformation.<ul><li><code>62c89c1d</code> Log derailment, using TraceWarning.<br>Initial version, using distance travelled. May be updated to use<br>milepost.</li></ul></li>
+<li class=''><code>T1.5.1-1783-g77a649f09</code> Merge pull request #1077 from cesarBLG/sme-regression-fix<br>Fix SME brakes not working<ul><li><code>7e73abd7</code> Fix SME brakes not working</li></ul></li>
+<li class=''><code>T1.5.1-1781-g39c44377f</code> Mouse wheel control only with Alt – Followup for #1051<ul><li><code>99fc9ac2</code> Slowed down further</li>
 <li><code>3f153f0f</code> Slowed down wheel movement</li>
 <li><code>ffd1af4d</code> Mouse wheel control only with Alt</li></ul></li>
-<li class='recent text-primary'><code>T1.5.1-1777-ga440b33f8</code> Merge pull request #1049 from cjakeman/docs-move-online<br>Re-organise document storage and access<ul><li><code>6a0c4716</code> Update Source/Documentation/Use this folder to store.txt<br>Co-authored-by: James Ross <twpol@users.noreply.github.com></li>
+<li class=''><code>T1.5.1-1777-ga440b33f8</code> Merge pull request #1049 from cjakeman/docs-move-online<br>Re-organise document storage and access<ul><li><code>6a0c4716</code> Update Source/Documentation/Use this folder to store.txt<br>Co-authored-by: James Ross <twpol@users.noreply.github.com></li>
 <li><code>4dd8c4ff</code> Adds separator to dropdown</li>
 <li><code>bf324119</code> Merge remote-tracking branch 'upstream/master' into docs-move-online</li>
 <li><code>f3b41bb6</code> Adds action to open website page</li>
 <li><code>2ed071ed</code> Merge remote-tracking branch 'upstream/master' into docs-move-online</li>
 <li><code>14ebc8d0</code> Move files<br>The intended use of each folder is also documented</li></ul></li>
-<li class='recent text-primary'><code>T1.5.1-1770-g9295cb971</code> Merge pull request #1071 from cjakeman/manual-update-cover-image<br>Change cover image for v1.6<ul><li><code>722dd3f9</code> Replace photo with contributed simulation</li>
+<li class=''><code>T1.5.1-1770-g9295cb971</code> Merge pull request #1071 from cjakeman/manual-update-cover-image<br>Change cover image for v1.6<ul><li><code>722dd3f9</code> Replace photo with contributed simulation</li>
 <li><code>40c988b1</code> Change cover image for v1.6</li></ul></li>
-<li class='recent text-primary'><code>T1.5.1-1767-g9a00900d9</code> Merge pull request #1080 from cjakeman/adjust-menu-for-russian-text2<br>arranges Options > System tab for longer texts<ul><li><code>a637cb87</code> arranges Options > System tab for longer texts<br>Update Mode texts now have more room for length Russian translations</li></ul></li>
-<li class='recent text-primary'><code>T1.5.1-1765-g5e2423cb7</code> Merge pull request #1052 from rwf-rr/content-manager-more<br>Content Manager: Add axle count, and lowest derail force<ul><li><code>3b5cb904</code> Make changes discussed in PR.<br>Add continuous tractive effort, and use it in tons-per calculations.<br>Other minor changes.</li>
+<li class=''><code>T1.5.1-1767-g9a00900d9</code> Merge pull request #1080 from cjakeman/adjust-menu-for-russian-text2<br>arranges Options > System tab for longer texts<ul><li><code>a637cb87</code> arranges Options > System tab for longer texts<br>Update Mode texts now have more room for length Russian translations</li></ul></li>
+<li class=''><code>T1.5.1-1765-g5e2423cb7</code> Merge pull request #1052 from rwf-rr/content-manager-more<br>Content Manager: Add axle count, and lowest derail force<ul><li><code>3b5cb904</code> Make changes discussed in PR.<br>Add continuous tractive effort, and use it in tons-per calculations.<br>Other minor changes.</li>
 <li><code>79cd5f89</code> Update calculation of Operative Brakes and Tons per Operative Brake.<br>Brake Force alone is not sufficient to determine if the car has<br>operative brakes. BrakeValve (BrakeEquipmentType) does not work well for<br>the Content Manager, and even some newer rollingstock has it incorrect.<br>Thus BrakeSystem (BrakeSystemType) not being "just a pipe" or manual<br>braking seems to work best.<br>Also corrected TpOP to only use trailing tonnage (as defined by BNSF).</li>
 <li><code>5bbc476e</code> Clarify where the summing of Drive and Idle Axles comes from.<br>No code changed.</li>
 <li><code>d3f00a1a</code> Delete accidentially commited json file.</li>
@@ -21,7 +39,7 @@
 <li><code>232abeee</code> Add paths under the route category (after the activities).</li>
 <li><code>35839a7a</code> Fix calculation of axles for mic of ORTS Axles and MSTS Wheels.</li>
 <li><code>792d23ad</code> Add number of axles. Also lowest derail force (wheel load).</li></ul></li>
-<li class='recent text-primary'><code>T1.5.1-1754-gd06e05d36</code> Merge pull request #1030 from rwf-rr/refactor-user-settings-location<br>Refactor settings, in prep for settings exporter<ul><li><code>d3ae4a2a</code> Fix bug in refactoring of user settings.<br>Will be cherry-picked into refactor-user-settings-location.</li>
+<li class=''><code>T1.5.1-1754-gd06e05d36</code> Merge pull request #1030 from rwf-rr/refactor-user-settings-location<br>Refactor settings, in prep for settings exporter<ul><li><code>d3ae4a2a</code> Fix bug in refactoring of user settings.<br>Will be cherry-picked into refactor-user-settings-location.</li>
 <li><code>c279fd86</code> Merge branch 'master' into refactor-user-settings-location<br>Resolve conflict caused by<br>* migration of some functionality into the base class<br>* addition of Telemetry settings</li>
 <li><code>e50068dd</code> Minor syntax change (linter, not impact).</li>
 <li><code>8d762254</code> Merge branch 'master' into refactor-user-settings-location</li>
@@ -33,7 +51,7 @@
 <li><code>03a2f7a8</code> Identify that this intentionally hides the member in the base class.<br>Fixes a compiler warning, cause by moving SettingsFilePath from<br>UserSettings to SettingsBase.</li>
 <li><code>1ba13bdf</code> Move refernces to RegistryKey and SettingsFilePath to SettingsBase.<br>This completes the refactoring of the Settings, so that the other<br>settings no longer depend on UserSettings.<br>There are no behaviour changes so far.</li>
 <li><code>fda08305</code> Refactor UserSettings and SettingsBase.<br>The settings store related parts are better defined in SettingsBase, as<br>they are also used by other settings classes (via the fact that they are<br>static).<br>This is in prep for allowing the store to be changed (for the export<br>tool).</li></ul></li>
-<li class='recent text-primary'><code>T1.5.1-1741-gf80cfb5d1</code> Merge pull request #1007 from Weter-ORTS/master<br>Russian localization up to 2025 Jan 3-rd<ul><li><code>d230655a</code> Merge remote-tracking branch 'upstream/master'</li>
+<li class=''><code>T1.5.1-1741-gf80cfb5d1</code> Merge pull request #1007 from Weter-ORTS/master<br>Russian localization up to 2025 Jan 3-rd<ul><li><code>d230655a</code> Merge remote-tracking branch 'upstream/master'</li>
 <li><code>ad603149</code> Updated Common strings<br>in "Key assignments", Cruise control commands have designated as SAUT - System of Automatic Traction&Brakes Control</li>
 <li><code>b9ffac22</code> Updated Menu strings<br>Auto-save and Content installer entries</li>
 <li><code>4ae3ec57</code> Merge branch 'openrails:master' into master</li>
