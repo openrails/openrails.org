@@ -1,7 +1,7 @@
 toc:
   - title: Discover
     subfolderitems:
-      - page: Get Started
+      - page: Getting Started
         url: /discover/get-started/
       - page: Open Rails
         url: /discover/open-rails/
