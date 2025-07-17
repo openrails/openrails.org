@@ -9,3 +9,7 @@ body {
     left: 0;
     top: 0;
 }
+
+.section-not-to-print {
+    display: none;
+}
