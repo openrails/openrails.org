@@ -9,74 +9,88 @@ title: Getting Started
 	<div class="col-md-12 section-to-print">
 		<h2>Getting Started with Open Rails (version 1.6 or above).</h2>
 		<br>
-		<p>This "Getting Started" describes how to install, download content and start a train driven by a diesel locomotive 
-			running on one specific route for Open Rails (abbreviated OR furtheron). 
-			Running a train on this route will learn you the basics of Open Rails. Once you've experienced this you definitively want more...</p>
+		<p>This "Getting Started" describes how to install, download content and start a train pulled by a diesel locomotive 
+			running on one specific route for Open Rails (abbreviated OR from now on). 
+			Running a train on this route will show you the basics of Open Rails. Once you've experienced this you'll definitely want more...</p>
 		<ul>
-  			<li><a href="/download/program/">Download</a> the Open Rails (1.6 or higher) installer and install in the usual way on a Windows system. 
-				You have now installed the OR program. 
-				Content to be downloaded in the next step.</li>
+			<li>Download the Open Rails installer and install in the usual way on a Windows system.</li>
+		</ul>
+		<div class="col-md-12 text-center">
+			<a  href="{% include file_url.html file="stable_installer" %}" class="btn download_button">
+			<h2><span class='glyphicon glyphicon-download'></span> &nbsp; Download the installer</h2></a>
+		</div>
+		<style>li { padding-top: 10px; }</style>
+		<ul>
+			<li>Now you have installed the OR program;
+				content will be downloaded in the next step.</li>
+		</ul>
+		<div class="col-md-12 text-center">
+			<style>img { padding-bottom: 10px; }</style>
+			<img width="600" src="/assets/waverley.jpg"/>
+		</div>
+		<ul>
   			<li>Start OR. The "Content" form pops up.
 				Highlight the route called "Demo Model 1". 
 				The rest of this "Getting started" document will be based on this route.
 				Change the "Install Path" if needed.
-				Diskspace needed for this route is approximately 600 MB. Click button "Install". </li>
-  			<li>After the route is installed, press button "OK" to leave the "Content" form.</li>
-			<li>Click button "Start". A "Windows Defender Firewall" window might popup.
+				Storage space needed for this route is approximately 600 MB. Click button "Install". </li>
+  			<li>After the route is downloaded and installed, a dialog box opens, so press button "OK" 
+				and again to leave the "Content" form and arrive at the main menu.</li>
+			<li>Click button "Start". A "Windows Defender Firewall" window might pop up.
 				Allow access for Private networks. 
 				OR will start in full screen mode. Keys &lt;Alt + Enter&gt; toggle between full screen and windowed mode. 
 				You can always stop OR by pressing the keys &lt;Alt + F4&gt;.
-				This will bring you back into the menu.</li>
-			<li>OR starts with the Pause Menu. Key &lt;Esc&gt; will start OR. 
+				This will bring you back to the main menu.</li>
+			<li>OR starts with the Pause Menu visible. Key &lt;Esc&gt; will start the simulation. 
 				You're sitting at the train driver's chair in a diesel locomotive. 
 				Since the engine has already been started, you can hear it now.</li>
 			<li>Press key &lt;2&gt; to see the locomotive from the outside. 
 				Press key &lt;h&gt; twice for switching the headlights on and keys &lt;Shift + h&gt; for switching them off again. 
 				See, you are really in command of this locomotive. 
 				Arrow keys can be used to move around in this view. 
-				As is the mouse in combination with it's right key. And also try the mouse wheel. 
-				Press key &lt;1&gt; to get you back in the drivers seat.</li>
-			<li>Press key &lt;F4&gt; to have the "Track Monitor" window popup. 
+				As can the mouse in combination with its right key. And also try the mouse wheel. 
+				Press key &lt;1&gt; to get you back in the driver's seat.</li>
+			<li>Press key &lt;F4&gt; to make the "Track Monitor" window pop up. 
 				Drag it to a convenient place. 
-				OR will remember the place for all such windows between startups. 
+				OR will remember the place for all such windows between sessions. 
 				This window gives track info, such as signals, speed limit, etc.</li>
-			<li>Press key &lt;F5&gt; to have the "Train Driving Info" popup. 
+			<li>Press key &lt;F5&gt; to make the "Train Driving Info" pop up. 
 				Engine is running. 
 				Important lines for now are Speed, Direction and Train Brake.</li>
-			<li>It is possible to handle the throttle and the brake by clicking the mouse pointer on the appropriate handle on the screen. 
-				But it's difficult to do this properly. 
-				So recommended is using the keys on the keyboard.</li>
+			<li>It is possible to control the throttle and the brake by clicking the mouse pointer on the appropriate handle on the screen. 
+				But it's difficult to do this properly,
+				so it is recommended to use the keys on the keyboard.</li>
 			<li>Let's switch the direction to forward by pressing the key &lt;w&gt;. 
-				See the direction change in the Train Driving Window. 
+				See the direction change in the "Train Driving" window. 
 				Press key &lt;s&gt; for Neutral and Reverse.</li>
-			<li>Press and hold down key &lt;;&gt; until the Train brake is released. 
-				All those numbers in bar and psi in the "Train Driving Info" popup are not that important now. 
-				Only when BC (Brake Cylinder) has reached 0 bar the brakes are released and you are ready to go.</li>
+			<li>Press and hold down key &lt;;&gt; until the Train Brake is released. 
+				All those numbers in bar and psi in the "Train Driving Info" window are not that important now. 
+				Once the BC (Brake Cylinder) has reached 0 bar the brakes are released and you are ready to go.</li>
 			<li>Notice the green signal outside, in the UK on the left side of the track. 
 				Press key &lt;d&gt; twice to have the throttle moved to 25%. 
 				It's rolling... Speed limit is 20 mph. 
-				When the actual speed reaches this limit the tracks in the Track Monitor window color orange as a warning.
-				When seriously over speeding they color red. Key &lt;a&gt; is for throttling down.</li>
-			<li>Press key &lt;4&gt; to act as a trainspotter who very fast hops from place to place. 
+				When the actual speed reaches this limit the tracks in the "Track Monitor" window change to orange as a warning.
+				When seriously over speeding they change to red. Key &lt;a&gt; is for throttling down.</li>
+			<li>Press key &lt;4&gt; to act as a trainspotter who hops quickly from place to place. 
 				Key &lt;3&gt; gives you a view of the end of the train.</li>
-			<li>It's a bit boring to run all the way to Glasgow. 
-				Therefore suggested is to press the keys &lt;Alt + F4&gt; to stop OR at some time.</li>
-			<li>You'll get back into the menu.
-				Go to the drop down list Activiy and choose "0930 Edingburgh-Glasgow Queen Street".
+			<li>It's a bit boring to run all the way to Glasgow,
+				so we suggest you press the keys &lt;Alt + F4&gt; to stop OR at some time.</li>
+			<li>You'll get back into the main menu, where you can try driving to a schedule.
+				Go to the drop down list "Activity" and choose "0930 Edinburgh-Glasgow Queen Street".
 				And press the button "Start".</li>
 			<li>Next to &lt;F4&gt; and &lt;F5&gt; press key &lt;F10&gt;. You will also be asked to do so by an "Activity Events" window. 
 				You will now see the "Next Station" with the train schedule you have to meet as a driver. 
-				It's not that easy. When you want to see how this is done switch to autopilot mode by pressing key &lt;Alt + a&gt;. 
-				It's a toggle switch, pressing again switches autopilot mode off. 
-				Autopilot mode is acting a bit nervous, but anyway it does it's job.</li>
+				It's not that easy to meet the schedule. If you want to see how this is done, switch to "Autopilot" mode by pressing key &lt;Alt + a&gt;. 
+				It's a toggle switch, pressing again switches "Autopilot" mode off. 
+				Autopilot mode drives the train for you, although it may act a bit nervously, but anyway it does its job.</li>
 		</ul>
 		<br>
-		You have now seen how to run Open Rails. There is plenty more to explore: electric locomotives, steam locomotives, turn around's, demanding schedules, shunting wagons...
+		You have now seen how to run Open Rails. There is plenty more to explore: electric locomotives, steam locomotives, turntables, demanding schedules, shunting wagons...
 		<br><br>
 		Have fun!
 		<br><br>
+		<input type="button" value="Print the above 'Getting Started'" onclick="printPage()" />
 	</div>
-	<input type="button" value="Print the above 'Getting Started'" onclick="printPage()" />
 </div>
 
 <link href="/assets/print.css" media="print" rel="stylesheet" />
