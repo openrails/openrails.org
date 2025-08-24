@@ -1,78 +1,54 @@
 ---
 layout: default
 section: Download
-title: Content
+title: Explore content
+content_explorer: true
 ---
 
-      <div class="row">
-        <div class="col-md-2"></div>
-        <div class="col-md-8">
-<h1>Routes</h1>              
-<p>Next to the "Demo Model 1" route presented in the <a href=/discover/get-started/index.html>Getting Started</a> we recommend two other routes 
-which you can find in the <a href=/download/explore-content/index.html>Content Browser</a>.</p>
-<h2>BNSF Starter Route</h2>
-<br/>
-<p>{%- include slideshow.html height="62" unit="%" duration="nil" route="scenic" -%}</p>
-<br/>
-<br/>
-<p>
-  This is a free starter route, created by <a href=https://www.trainsimulations.net>TrainSimulations</a>. 
-  It comes with trainsets and activities based on the BNSF Scenic Subdivision in the Pacific Northwest Region of the United States.
-</p>
-<p>
-  This route can be installed in OR via the menu Content --> "Auto Installed" form. It starts with the activity "What goes up...". 
-  In this activity you are driving a freight train with 4 BNSF C44-9W diesel locomotives and more then 60 wagons!
-</p>
+<div class="content-explorer-container">
+	<div class="row">
+		<p>This catalogue lists free and pay routes from all over the world. Use the search and filter options to find ones that suit your interests.</p>
+		<p>
+			Note that these routes are currently limited to those that a self-contained and require no other files. This makes them easy to install<!-- and Open Rails includes an Install Content button to download and install a route for you. -->.
+			We plan to extend this catalogue to include other routes, Train Cars and Trains.
+		</p>
+		<p>If you wish to add an entry to the catalogue, then 
+			<a href="mailto:help@open-rails.helpscoutapp.com?subject=Message for ORMT&body=Hi ORMT, Please add the following to the content catalogue."
+				title="Opens a new email to help@open-rails.helpscoutapp.com. &#013;Most PCs are configured to do this when the link is clicked.">
+				send us a message
+			</a>.
+		</p>
+	</div>
+	<div class="selection-container">
+		<div class="selection selected" data-card="routes" style="--image: url(https://d3i6fh83elv35t.cloudfront.net/static/2022/06/GettyImages-915441550-1024x683.jpg)">
+			<div class="gradient"></div>
+			<div class="selection-inside">Routes</div>
+		</div>
+		<div
+			class="selection"
+			data-card="train-cars"
+			style="--image: url(https://www.nps.gov/subjects/steamtownlocomotivesexhibit/images/Boston-Maine-Railroad-locomotive-number-3713-cms.jpg)"
+			disabled="true"
+		>
+			<div class="gradient"></div>
+			<div class="selection-inside">Train cars</div>
+		</div>
+		<div class="selection" data-card="train-sets" style="--image: url(https://mediarail.files.wordpress.com/2022/03/long-train.jpg)" disabled="true">
+			<div class="gradient"></div>
+			<div class="selection-inside">Train sets</div>
+		</div>
+	</div>
+	<div class="filter-container">
+		<input id="search" type="text" placeholder="Search (route name, author, description, etc...)" />
+		<div class="button-group">
+			<button class="filter-btn" data-type="commercial" data-secondary>Commercial</button>
+			<button class="filter-btn" data-type="donation" data-secondary>Donation</button>
+			<button class="filter-btn" data-type="free" data-secondary>Free</button>
+		</div>
+	</div>
+	<div id="list-container">
+		<em style="text-align: center">Please wait, loading content...</em>
+	</div>
+</div>
 
-<br/>
-<h3>Great Zig Zag Railway - New South Wales</h3>
-<br/>
-<p>{%- include slideshow.html height="62" unit="%" duration="nil" route="zigzag" -%}</p>
-<br/>
-<br/>
-<p>
-  This route, now a heritage line, comes with 7 tutorial activities which introduce you progressively to the challenges of
-  managing a steam-hauled train.
-</p>
-<p>
-  Has to be installed manually. See "Install Zig Railway Route Content" on webpage 
-  <a href=https://www.zigzag.coalstonewcastle.com.au/route/route-install/>Great Zig Zag Railway</a>.
-</p>
-
-<h1>Stand-alone Content</h1>
-<p>
-  Some content relies on the presence of files from MSTS, such as sound files and cab interiors.
-  This is usually the case for free content downloaded from forums, so installing this content can be tricky.
-</p>
-<p>
-  Content which has no such dependence (typically labelled as "stand-alone" or "mini-route") is easy to install.
-  All the content in the <a href=/download/explore-content/index.html>Content Browser</a> is currently stand-alone.
-</p>
-
-<h1>Specific to Open Rails</h1>
-<p>
-  Although Open Rails will run any routes made for MSTS, many features and refinements are only available in content made 
-  specially for Open Rails. Here are some examples.
-</p><p>
-  The Spanish websites <a href="http://viajerosaltren.es">Viajeros al Tren</a> and <a href="http://www.spaintrainzrutas.com/">Spain Trainz Rutas</a> are some of the first to offer Open Rails-specific products.
-  </p><p>
-  <a href="https://dekogames.com/wordpress/csx-mainline-power/">Deko Games</a> offer SD60M and SD40-2 locos with 3D cabs exclusively for Open Rails.
-  </p><p>
-  Some Australian routes (New South Wales) have been packaged by Peter Newell to work just with Open Rails:
-  </p>
-  <ul>
-  <li><a href="http://www.burrinjuck.coalstonewcastle.com.au/">Burrinjuck Railway</a></li>
-  <li><a href="http://www.craven.coalstonewcastle.com.au/">Craven Timber Railway</a></li>
-  <li><a href="http://www.manning-river.coalstonewcastle.com.au/">Manning River Breakwall Railway</a></li>
-  <li><a href="http://www.tweed.coalstonewcastle.com.au/">Tweed Railway</a></li>
-  </ul>
-
-
-<p>
-  See <a href="/trade">our Trade page</a> for links to commercial vendors.
-</p>
-<br/>
-              </div>
-              <div class="col-md-2"></div>
-            </div>
-          </div>
+<script src="{{ '/assets/content-explorer.js' | relative_url }}" type="module"></script>
