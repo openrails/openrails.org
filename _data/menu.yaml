@@ -5,8 +5,6 @@ toc:
         url: /discover/get-started/
       - page: Open Rails
         url: /discover/open-rails/
-      - page: Mission
-        url: /discover/our-mission/
       - page: Roadmap
         url: /discover/roadmap/
       - page: Version 1.5
@@ -23,16 +21,14 @@ toc:
     subfolderitems:
       - page: Program
         url: /download/program/
+      - page: Content
+        url: /download/content/
       - page: Versions
         url: /download/versions/
       - page: Source
         url: /download/source/
       - page: Changes
         url: /download/changes/
-      - page: Content
-        url: /download/content/
-      - page: Content Browser
-        url: /download/explore-content/
   - title: Learn
     subfolderitems:
       - page: Manual & Documents
