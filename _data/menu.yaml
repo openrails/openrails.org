@@ -65,5 +65,10 @@ toc:
         url: /contribute/credits
   - title: Trade
     url: /trade/
+    subfolderitems:
+    - page: Products
+      url: /trade/products/
+    - page: Commissions
+      url: /trade/commissions/
   - title: Contact
     url: /contact/
