@@ -1,11 +1,54 @@
-<li class='recent text-primary'><code>T1.5.1-2012-g2eb7441b0</code> Merge pull request #1143 from sweiland-openrails/WorkOrdersStatusDoneFix<br>Status in Work Orders popup set too fast<ul><li><code>36327c4e</code> removed the check on first and last wagon as it will block too many activities</li>
+<li class='recent text-primary'><code>T1.5.1-2057-gfe3b901f2</code> Merge pull request #1086 from rwf-rr/refactor-user-settings-loc/export-settings<br>Add Settings Exporter tool (copy settings to INI, etc)<ul><li><code>d8d61ebd</code> Add inffo that OpenRails must be closed for export.<br>Includes an unrelated change. The check for an INI file path was<br>inconsistent, using EndsWith for input and Contains for output.</li>
+<li><code>e10390b0</code> Update user manual for Settings Exporter.</li>
+<li><code>862913ed</code> Fix minor formatting issues.</li>
+<li><code>f34a04cf</code> Merge branch 'master' into refactor-user-settings-loc/export-settings<br>Included manual resolution of conflict in Source/ORTS.sln.</li>
+<li><code>57abd7bc</code> Fix bug in refactoring of user settings.<br>Will be cherry-picked into refactor-user-settings-location.</li>
+<li><code>bb16c92b</code> Merge branch 'refactor-user-settings-location' into refactor-user-settings-loc/export-settings</li>
+<li><code>52c2523f</code> Add more error handling and info.</li>
+<li><code>e275f68a</code> Merge branch 'refactor-user-settings-location' into refactor-user-settings-loc/export-settings</li>
+<li><code>88838fb8</code> Merge branch 'refactor-user-settings-location' into refactor-user-settings-loc/export-settings</li>
+<li><code>802ff4ca</code> Merge branch 'refactor-user-settings-location' into refactor-user-settings-loc/export-settings</li>
+<li><code>defd9fd0</code> Merge branch 'refactor-user-settings-location' into refactor-user-settings-loc/export-settings</li>
+<li><code>ccd1b486</code> Add SettingsExporter (contrib).</li>
+<li><code>5cb9f463</code> Make path expansion consistent.</li>
+<li><code>76ec9e27</code> Changes needed for exporter.</li></ul></li>
+<li class='recent text-primary'><code>T1.5.1-2042-ga2a9bbcc8</code> Merge pull request #1104 from cesarBLG/simple-adhesion-axle<br>Handle simple adhesion within the axle module<ul><li><code>79192435</code> Merge branch 'master' into simple-adhesion-axle</li>
+<li><code>9fdade00</code> Fix incorrect brake fraction assignment</li>
+<li><code>ccc5c4dd</code> Set AdhesionConditions when starting</li>
+<li><code>87cdd9fa</code> Add TODO messages indicating that variables should never be NaN</li>
+<li><code>ee453241</code> Further hiding</li>
+<li><code>86d38a2e</code> Hide NaNs</li>
+<li><code>0017b1a5</code> Merge branch 'master' into simple-adhesion-axle</li>
+<li><code>fd2cabbf</code> Include axle friction in total friction<br>This over-estimates a bit the friction force (this has happened for a while), as Davis A and B already include rolling friction</li>
+<li><code>9c7cdbfb</code> Yet another try to overcome micro-slips respecting ramp up rates</li>
+<li><code>6ef735bd</code> Adjustement for Full slip control</li>
+<li><code>1f7af77d</code> Workaround to avoid oscillations due to SlipPercent</li>
+<li><code>e0dbb206</code> Drive force is different from axle in force</li>
+<li><code>c039a260</code> Correctly parse AntiSlip() token</li>
+<li><code>f15bb6bf</code> Use slip control also for dynamic braking</li>
+<li><code>03ccdc6e</code> Use DynamicBrake variable instead of force</li>
+<li><code>128520db</code> Reimplement legacy slip control systems</li>
+<li><code>f9691cf7</code> Reimplement legacy anti slip but using tractive force instead of physical throttle</li>
+<li><code>f40920a4</code> Do not wheelslip if steam locomotive and simple adhesion</li>
+<li><code>dc485c5d</code> Increase adhesion multiplier for simple adhesion</li>
+<li><code>dc2a9077</code> Another usage of axle speed</li>
+<li><code>de4bf82b</code> Remove unneeded variables</li>
+<li><code>e7bad634</code> Simple and semi-simple adhesion</li>
+<li><code>43a12f43</code> Non-driven axles</li>
+<li><code>bcdce8b4</code> Remove unneeded variable</li>
+<li><code>f333c34a</code> Calculate power inside axle</li>
+<li><code>c19d9ac8</code> Slip control fixes</li>
+<li><code>dd102c8e</code> Separate motive and friction axle out forces</li>
+<li><code>4222a2e7</code> Adhesion refactoring</li>
+<li><code>b4382d5c</code> Manage simple adhesion from Axle</li></ul></li>
+<li class=''><code>T1.5.1-2012-g2eb7441b0</code> Merge pull request #1143 from sweiland-openrails/WorkOrdersStatusDoneFix<br>Status in Work Orders popup set too fast<ul><li><code>36327c4e</code> removed the check on first and last wagon as it will block too many activities</li>
 <li><code>36d87c32</code> - functtion matchesConsistNoOrder now returns train when train contains the wagons of the activity drop off wagonlist<br>- Some actvity lists may only contain the first and last wagon. Check that first and last wagon match with those two wagons in the activity list.<br>- check if drop off train is a STATIC one</li>
 <li><code>ba9e40a2</code> If the Work Orders list in the Help from (F1) is larger than the form and scroll bar was used to scroll down, status changes make the Work Orders tab go to the top again. Disturbing... This fix makes the form stay at the current scroll position. Also the case when switching tabs.</li>
 <li><code>84f72b8d</code> Some lists may only contain the first and last wagon. Undone the previous change in matchesConsistNoOrder.</li>
 <li><code>1ad59d77</code> Fix on previous fix. Now siding check is done on wagons dropped. And amount of wagos dropped has to be exactly the amount on the activity asked list.</li>
 <li><code>71e57d23</code> status in Work Orders popup set too fast, see https://bugs.launchpad.net/or/+bug/2118776</li></ul></li>
-<li class='recent text-primary'><code>T1.5.1-2005-gede96ba17</code> Merge pull request #1152 from twpol/feature/data-logger-columns<br>fix: Clean up multiple issues with data logger<ul><li><code>66dfd096</code> fix: Clean up multiple issues with data logger<br>- Add explicit setting for steam power curve data<br>- Label and make steam data options properly exclusive<br>- Correct mismatched columns (multiple)<br>- Fix memory column</li></ul></li>
-<li class='recent text-primary'><code>T1.5.1-2003-gae57adebf</code> Merge pull request #1155 from cjakeman/fix-for-illegal-characters-in-reference-to-Shape-file<br>fix for illegal characters in refeerence to Shape file<ul><li><code>40f8c342</code> fix for illegal characters in refeerence to Shape file</li></ul></li>
+<li class=''><code>T1.5.1-2005-gede96ba17</code> Merge pull request #1152 from twpol/feature/data-logger-columns<br>fix: Clean up multiple issues with data logger<ul><li><code>66dfd096</code> fix: Clean up multiple issues with data logger<br>- Add explicit setting for steam power curve data<br>- Label and make steam data options properly exclusive<br>- Correct mismatched columns (multiple)<br>- Fix memory column</li></ul></li>
+<li class=''><code>T1.5.1-2003-gae57adebf</code> Merge pull request #1155 from cjakeman/fix-for-illegal-characters-in-reference-to-Shape-file<br>fix for illegal characters in refeerence to Shape file<ul><li><code>40f8c342</code> fix for illegal characters in refeerence to Shape file</li></ul></li>
 <li class=''><code>T1.5.1-2001-ga5be12922</code> Merge pull request #1153 from rwf-rr/fix-tritems-in-track-viewer<br>Fix TrItems in track viewer (events were over-writing mileposts)<ul><li><code>d2f2a025</code> Add path name to Chart Window title.<br>Appends to the default title from the properties.</li>
 <li><code>b6baa4c9</code> Remove unnecessary code that counts the events.</li>
 <li><code>eadd0820</code> Fix adding events to the standard TrItems array.<br>This fix collects the events in a list, and at the end resizes the array<br>and adds the events.<br>The existing code already counts the number of events (in cnt). Thus the<br>array could be extended before the second loop over activities, and the<br>events added directly.</li></ul></li>
