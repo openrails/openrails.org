@@ -13,13 +13,13 @@ stable_source:
 stable_version:
   1.6
 testing_build:
-  url: https://github.com/openrails/openrails-testing/releases/download/T1.5.1-2068-g0d2de70b7/Open.Rails.T1.5.1-2068-g0d2de70b7.zip
-  date: 2025-10-10
-  bytes: 111662823
+  url: https://github.com/openrails/openrails-testing/releases/download/T1.5.1-2098-g7915033ac/Open.Rails.T1.5.1-2098-g7915033ac.zip
+  date: 2025-10-24
+  bytes: 111675917
 testing_source:
-  url: https://github.com/openrails/openrails-testing/releases/download/T1.5.1-2068-g0d2de70b7/Open.Rails.T1.5.1-2068-g0d2de70b7.Source.zip
-  date: 2025-10-10
-  bytes: 169801309
+  url: https://github.com/openrails/openrails-testing/releases/download/T1.5.1-2098-g7915033ac/Open.Rails.T1.5.1-2098-g7915033ac.Source.zip
+  date: 2025-10-24
+  bytes: 169808481
 testing_manual:
   url: https://static.openrails.org/files/OpenRails-Testing-Manual.pdf
   date: 2023-02-03
@@ -27,9 +27,9 @@ testing_manual:
 testing_version:
   T1.5.1-2098-g7915033ac
 unstable_build:
-  url: https://github.com/openrails/openrails-unstable/releases/download/U2025.10.11-0308/Open.Rails.U2025.10.11-0308.zip
-  date: 2025-10-11
-  bytes: 44578529
+  url: https://github.com/openrails/openrails-unstable/releases/download/U2025.10.27-0253/Open.Rails.U2025.10.27-0253.zip
+  date: 2025-10-27
+  bytes: 44928329
 unstable_source:
   url: https://github.com/openrails/openrails-unstable/releases/download/U2025.10.11-0308/Open.Rails.U2025.10.11-0308.Source.zip
   date: 2025-10-11
