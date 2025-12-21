@@ -11,7 +11,7 @@ stable_source:
   date: 2025-09-09
   bytes: 146240942
 stable_version:
-  1.6
+  1.6.1
 testing_build:
   url: https://github.com/openrails/openrails-testing/releases/download/T1.5.1-2098-g7915033ac/Open.Rails.T1.5.1-2098-g7915033ac.zip
   date: 2025-10-24
