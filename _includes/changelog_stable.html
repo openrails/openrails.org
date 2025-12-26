@@ -1,8 +1,13 @@
-<li class='recent text-primary'><code>T1.5.1-2139-g21d9ada29</code> Merge pull request #1167 from rwf-rr/bugfix-runactivity-slow-exit<br>Fix: RunActivity slow to terminate because of long sleep in Host Process<ul><li><code>d5c0d641</code> Use interruptable sleep.<br>Was suggested in PR review. Avoids the extra counter.</li>
+<li class='recent text-primary'><code>T1.5.1-2149-ga85c72073</code> Merge pull request #1182 from openrails/release/1.6<br>Merge pull request #1179 from twpol/feature/add-pr-1167<ul><li><code>2db9eebc</code> Merge pull request #1181 from twpol/feature/add-pr-1171<br>Lift #1171 into 1.6.1 release</li>
+<li><code>d09515e4</code> Merge pull request #1180 from twpol/feature/add-pr-1168<br>Lift #1168 into 1.6.1 release</li>
+<li><code>b60415c1</code> Merge pull request #1179 from twpol/feature/add-pr-1167<br>Lift #1167 into 1.6.1 release</li></ul></li>
+<li class='recent text-primary'><code>T1.5.1-2142-gcff3244bf</code> Merge pull request #1183 from twpol/feature/contributing-2025<br>docs: Add code guidelines for translations<ul><li><code>41911f14</code> docs: Add code guidelines for translations</li>
+<li><code>ab3c6ccd</code> fix: Correctly find particular string attributes with matching context<br>This function is unused but is useful</li></ul></li>
+<li class=''><code>T1.5.1-2139-g21d9ada29</code> Merge pull request #1167 from rwf-rr/bugfix-runactivity-slow-exit<br>Fix: RunActivity slow to terminate because of long sleep in Host Process<ul><li><code>d5c0d641</code> Use interruptable sleep.<br>Was suggested in PR review. Avoids the extra counter.</li>
 <li><code>115325f9</code> Fix typo in variable name.</li>
 <li><code>2c028a4c</code> Reduce sleep to respond to terminate more quickly.</li></ul></li>
-<li class='recent text-primary'><code>T1.5.1-2135-g8951c4e76</code> Merge pull request #1177 from cjakeman/fix/avoid-type-initialization-exception<br>Fix: Avoid fatal type-initialization exception at start-up<ul><li><code>f1881285</code> Fix: Avoid fatal type-initialization exception at start-up</li></ul></li>
-<li class='recent text-primary'><code>T1.5.1-2133-g9962874dd</code> Merge pull request #1130 from mbm-OR/bugfix/Fix-F9-CarId-bug<br>Fix F9 points to an incorrect car ID.<ul><li><code>d517b5b6</code> Attempts to fix failures during build.</li>
+<li class=''><code>T1.5.1-2135-g8951c4e76</code> Merge pull request #1177 from cjakeman/fix/avoid-type-initialization-exception<br>Fix: Avoid fatal type-initialization exception at start-up<ul><li><code>f1881285</code> Fix: Avoid fatal type-initialization exception at start-up</li></ul></li>
+<li class=''><code>T1.5.1-2133-g9962874dd</code> Merge pull request #1130 from mbm-OR/bugfix/Fix-F9-CarId-bug<br>Fix F9 points to an incorrect car ID.<ul><li><code>d517b5b6</code> Attempts to fix failures during build.</li>
 <li><code>6b0f1dae</code> Merge branch 'master' into bugfix/Fix-F9-CarId-bug</li>
 <li><code>ad19b305</code> Restored colour of the large handbrake pictures</li>
 <li><code>0f4342d3</code> Merge branch 'master' into bugfix/Fix-F9-CarId-bug</li>
@@ -14,20 +19,20 @@
 <li><code>fb8a24dc</code> Fix F9 window turns black, selecting the last car of a large train.</li>
 <li><code>736c3f51</code> Fix bug when switching from cab camera to camera 2.</li>
 <li><code>251a6774</code> Fix F9 points to an incorrect car ID.</li></ul></li>
-<li class='recent text-primary'><code>T1.5.1-2120-g1c0dfc6fa</code> Merge pull request #1174 from openrails/release/1.6<br>Merge pull request #1172 from twpol/feature/add-pr-1163<ul><li><code>23281b95</code> Merge pull request #1173 from twpol/feature/add-pr-1164<br>Lift #1164 into 1.6.1 release</li>
+<li class=''><code>T1.5.1-2120-g1c0dfc6fa</code> Merge pull request #1174 from openrails/release/1.6<br>Merge pull request #1172 from twpol/feature/add-pr-1163<ul><li><code>23281b95</code> Merge pull request #1173 from twpol/feature/add-pr-1164<br>Lift #1164 into 1.6.1 release</li>
 <li><code>6a78178f</code> Merge pull request #1172 from twpol/feature/add-pr-1163<br>Lift #1163 into 1.6.1 release</li></ul></li>
-<li class='recent text-primary'><code>T1.5.1-2115-gf00dec792</code> Merge pull request #1171 from sweiland-openrails/no_internet_no_manually_installed<br>no internet connection is available, not possible to open the Menu Content Form<ul><li><code>50efb5bc</code> Error message changed to "Failed to access the content repository (check Internet connection); automatic download not available. Error: {0}" As sugested by Roger (rwf-rr)</li>
+<li class=''><code>T1.5.1-2115-gf00dec792</code> Merge pull request #1171 from sweiland-openrails/no_internet_no_manually_installed<br>no internet connection is available, not possible to open the Menu Content Form<ul><li><code>50efb5bc</code> Error message changed to "Failed to access the content repository (check Internet connection); automatic download not available. Error: {0}" As sugested by Roger (rwf-rr)</li>
 <li><code>8fd2066c</code> When no internet connection is available, trying to start the Menu Content form gives an error message.</li></ul></li>
-<li class='recent text-primary'><code>T1.5.1-2112-gc78746b34</code> Merge pull request #1170 from rwf-rr/bugfix-command-log-time-zero<br>Fix Command Log Time for Commands that had it at 0 (zero).<ul><li><code>83a049e7</code> Fix Command Log Time for commands that had it at 0 (zero).<br>Bug #2128993.<br>This may not be a complete fix. I fixed the commands that I have found<br>to have the wrong time.</li></ul></li>
-<li class='recent text-primary'><code>T1.5.1-2110-g84be72cd5</code> Merge pull request #1157 from cesarBLG/dynamic-brake-authorization<br>Dynamic brake authorization by TCS<ul><li><code>39cd994e</code> Dynamic brake cut for default TCS</li>
+<li class=''><code>T1.5.1-2112-gc78746b34</code> Merge pull request #1170 from rwf-rr/bugfix-command-log-time-zero<br>Fix Command Log Time for Commands that had it at 0 (zero).<ul><li><code>83a049e7</code> Fix Command Log Time for commands that had it at 0 (zero).<br>Bug #2128993.<br>This may not be a complete fix. I fixed the commands that I have found<br>to have the wrong time.</li></ul></li>
+<li class=''><code>T1.5.1-2110-g84be72cd5</code> Merge pull request #1157 from cesarBLG/dynamic-brake-authorization<br>Dynamic brake authorization by TCS<ul><li><code>39cd994e</code> Dynamic brake cut for default TCS</li>
 <li><code>805221ee</code> Fix condition to activate blending</li>
 <li><code>71283ab1</code> Dynamic brake authorization by TCS</li></ul></li>
-<li class='recent text-primary'><code>T1.5.1-2106-g62070ada6</code> Merge pull request #1156 from cesarBLG/control-operations-enable<br>Fix incorrectly disabled options in train operations window<ul><li><code>f46d5f27</code> Invert angle cock warnings for end cars</li>
+<li class=''><code>T1.5.1-2106-g62070ada6</code> Merge pull request #1156 from cesarBLG/control-operations-enable<br>Fix incorrectly disabled options in train operations window<ul><li><code>f46d5f27</code> Invert angle cock warnings for end cars</li>
 <li><code>c1f443e5</code> Do not use localized strings for core operations</li>
 <li><code>bddc6e72</code> Fix bug</li>
 <li><code>78fd9572</code> Do not check DPU status for MU wire</li>
 <li><code>c5f1627c</code> Fix incorrectly disabled options in train operations window</li></ul></li>
-<li class='recent text-primary'><code>T1.5.1-2100-g31e3fe251</code> Merge pull request #1168 from rwf-rr/bugfix-exception-exit-mapwindow-open<br>Fix exception when exiting with MapForm or SoundDebugForm open.<ul><li><code>6e2942ff</code> Fix exception when exiting with MapForm or SoundDebugForm open.<br>Bug #2127145.</li></ul></li>
+<li class=''><code>T1.5.1-2100-g31e3fe251</code> Merge pull request #1168 from rwf-rr/bugfix-exception-exit-mapwindow-open<br>Fix exception when exiting with MapForm or SoundDebugForm open.<ul><li><code>6e2942ff</code> Fix exception when exiting with MapForm or SoundDebugForm open.<br>Bug #2127145.</li></ul></li>
 <li class=''><code>T1.5.1-2098-g7915033ac</code> Merge pull request #1163 from mbm-OR/bugfix/Fix-camera8-F9-crash<br>Fix: Crash when using Camera 8 and F9.<ul><li><code>2f9e292d</code> Fix: Crash when using Camera 8 and F9.</li></ul></li>
 <li class=''><code>T1.5.1-2096-g2dd8a4679</code> Merge pull request #1164 from mbm-OR/bugfix/Fix-F9-crashes-front-coupler<br>Fix: F9 crashes with a front coupled single steam locomotive by Csantucci.<ul><li><code>1ad9889f</code> Fix: F9 crashes with a front coupled single steam locomotive.</li></ul></li>
 <li class=''><code>T1.5.1-2094-g23fd156fa</code> Merge pull request #1159 from Csantucci/skip-ruler-warnings<br>Skip OR warnings about TSRE-specific token Ruler<ul><li><code>48c9a630</code> Skip OR warnings about TSRE-specific token Ruler</li></ul></li>
