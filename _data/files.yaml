@@ -1,16 +1,16 @@
 stable_installer:
-  url: https://github.com/openrails/openrails/releases/download/1.6/Open.Rails.1.6.Setup.exe
-  date: 2025-09-09
-  bytes: 107194880
+  url: https://github.com/openrails/openrails/releases/download/1.6.1/Open.Rails.1.6.1.Setup.exe
+  date: 2026-01-14
+  bytes: 107615792
 stable_build:
-  url: https://github.com/openrails/openrails/releases/download/1.6/Open.Rails.1.6.zip
-  date: 2025-09-09
-  bytes: 111650697
+  url: https://github.com/openrails/openrails/releases/download/1.6.1/Open.Rails.1.6.1.zip
+  date: 2026-01-14
+  bytes: 111875891
 stable_source:
-  url: https://github.com/openrails/openrails/releases/download/1.6/Open.Rails.1.6.Source.zip
-  date: 2025-09-09
-  bytes: 146240942
-stable_version: 1.6
+  url: https://github.com/openrails/openrails/releases/download/1.6.1/Open.Rails.1.6.1.Source.zip
+  date: 2026-01-14
+  bytes: 146241554
+stable_version: 1.6.1
 testing_build:
   url: https://github.com/openrails/openrails-testing/releases/download/T1.5.1-2206-gb4d338abe/Open.Rails.T1.5.1-2206-gb4d338abe.zip
   date: 2026-01-09
