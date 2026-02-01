@@ -1,25 +1,36 @@
-<li class='recent text-primary'><code>T1.5.1-2232-ge26d54523</code> Merge pull request #1190 from rwf-rr/fix-map-pos-off-screen<br>Fix Map Window position saved when minimized.<ul><li><code>0e45a6be</code> Fix Map Window position saved when minimized.</li></ul></li>
-<li class='recent text-primary'><code>T1.5.1-2230-g33e89c305</code> Merge pull request #1189 from cjakeman/manual-refine-RemoveForestTreesFromRoads<br>Adds clarity for ORTSUserPreferenceRemoveForestTreesFromRoads<ul><li><code>9d83bb95</code> Adds clarity<br>( 1 ) is a Boolean, not a distance in metres.</li></ul></li>
-<li class=''><code>T1.5.1-2228-g6129d8b31</code> Merge pull request #1169 from SteelFill/manual_articulate<br>Revise TrainCar.SetUpWheels to Better Handle Unusual Rolling Stock<ul><li><code>906f204b</code> Don't throw errors on cars with no axles</li>
+<li class='recent text-primary'><code>T1.6.1-279-gf7015e872</code> Merge pull request #1185 from cjakeman/feat/adds-timetable-editor<br>Feat/adds timetable editor<br>Thanks, Peter, for approving this.<ul><li><code>1f050076</code> Remove redundant build from Build.cmd<br>Because it breaks the Appveyor build</li>
+<li><code>b265b4c3</code> refactor: Rename files to fix timetable spelling</li>
+<li><code>0840afe6</code> refactor: Fix root namespace and timetable spelling</li>
+<li><code>5f84c7cc</code> build: Convert old project file to modern SDK-style</li>
+<li><code>5d702dfe</code> Changes to project settings to match Contrib projects</li>
+<li><code>b59af6b1</code> Add new C# project TimetableEditor</li>
+<li><code>51c41edc</code> Remove redundant tools lazbuild.exe and strip.exe</li>
+<li><code>5d522d76</code> Remove old project Contrib\TimetableEditor</li></ul></li>
+<li class='recent text-primary'><code>T1.6.1-270-g45fd31706</code> Merge pull request #1158 from rwf-rr/bugfix-f9-index-out-of-range-on-resume<br>Temporary fix for bug 2121985: F9 TCO out-of-range after resume<ul><li><code>2599bfe3</code> Merge branch 'master' into bugfix-f9-index-out-of-range-on-resume</li>
+<li><code>c45cb3a9</code> Remove commented-out debug code.</li>
+<li><code>2ba7b95c</code> temporary fix for bug 2121985: F9 TCO out-of-range after resume<br>This is a temporary fix. It prevents writing an out of range index into<br>the save file. As a comment it contains a better fix for the Window, but<br>I could not come up with a simple fix for the Webpage.</li></ul></li>
+<li class=''><code>T1.6.1-266-ge26d54523</code> Merge pull request #1190 from rwf-rr/fix-map-pos-off-screen<br>Fix Map Window position saved when minimized.<ul><li><code>0e45a6be</code> Fix Map Window position saved when minimized.</li></ul></li>
+<li class=''><code>T1.6.1-264-g33e89c305</code> Merge pull request #1189 from cjakeman/manual-refine-RemoveForestTreesFromRoads<br>Adds clarity for ORTSUserPreferenceRemoveForestTreesFromRoads<ul><li><code>9d83bb95</code> Adds clarity<br>( 1 ) is a Boolean, not a distance in metres.</li></ul></li>
+<li class=''><code>T1.6.1-262-g6129d8b31</code> Merge pull request #1169 from SteelFill/manual_articulate<br>Revise TrainCar.SetUpWheels to Better Handle Unusual Rolling Stock<ul><li><code>906f204b</code> Don't throw errors on cars with no axles</li>
 <li><code>d36c3726</code> Refactor detection of WheelAxlesLoaded, remove fake axles from calculations where appropriate</li>
 <li><code>6cf8c3e1</code> Improve addition of fake axles</li>
 <li><code>a984e3fc</code> Support rigid frame rolling stock</li>
 <li><code>8fe03b19</code> Make sure superelevation is transferred</li>
 <li><code>8c1d787e</code> Mitigate wagons having invalid position</li></ul></li>
-<li class=''><code>T1.5.1-2221-g2239fd1af</code> Merge pull request #1193 from peternewell/bug-boiler-water-level<br>Correct a bug introduced in PR #1082<ul><li><code>7997f0c1</code> Correct a bug introduced in PR #1082</li></ul></li>
-<li class=''><code>T1.5.1-2219-gf6516f06c</code> Merge pull request #1175 from rwf-rr/data-logger-interval<br>Make Data Logger interval configurable<ul><li><code>7c7d7347</code> Update manual. Explain interval zero.</li>
+<li class=''><code>T1.6.1-255-g2239fd1af</code> Merge pull request #1193 from peternewell/bug-boiler-water-level<br>Correct a bug introduced in PR #1082<ul><li><code>7997f0c1</code> Correct a bug introduced in PR #1082</li></ul></li>
+<li class=''><code>T1.6.1-253-gf6516f06c</code> Merge pull request #1175 from rwf-rr/data-logger-interval<br>Make Data Logger interval configurable<ul><li><code>7c7d7347</code> Update manual. Explain interval zero.</li>
 <li><code>d28315e6</code> Add updated image of Data Logger Options to manual.<br>There is no detailed description of the data logger options in the<br>manual. Thus the manual does not require any further changes.</li>
 <li><code>b28e5729</code> Add confirmation messages that data logger was started/stopped.</li>
 <li><code>4021fbf7</code> Remove initialization of next log time.<br>It is not needed, as the interval is added to the real time, not the<br>last log time.</li>
 <li><code>7f0fdc0b</code> Make Data Logger interval configurable.</li></ul></li>
-<li class=''><code>T1.5.1-2213-g3c5e2d0ad</code> Merge pull request #1192 from openrails/release/1.6<br>Merge pull request #1191 from twpol/feature/add-pr-1177-1184<ul><li><code>d16e670d</code> Merge pull request #1191 from twpol/feature/add-pr-1177-1184<br>Life #1177 and #1184 into 1.6.1 release</li></ul></li>
-<li class=''><code>T1.5.1-2209-g3a5553500</code> Merge pull request #1184 from cjakeman/fix/avoid-type-initialization-exception<br>Fix/avoid type initialization exception - 2nd try<ul><li><code>f5c7a507</code> Fix by catching all types of exception</li>
+<li class=''><code>T1.6.1-247-g3c5e2d0ad</code> Merge pull request #1192 from openrails/release/1.6<br>Merge pull request #1191 from twpol/feature/add-pr-1177-1184<ul><li><code>d16e670d</code> Merge pull request #1191 from twpol/feature/add-pr-1177-1184<br>Life #1177 and #1184 into 1.6.1 release</li></ul></li>
+<li class=''><code>T1.6-256-g3a5553500</code> Merge pull request #1184 from cjakeman/fix/avoid-type-initialization-exception<br>Fix/avoid type initialization exception - 2nd try<ul><li><code>f5c7a507</code> Fix by catching all types of exception</li>
 <li><code>d8735006</code> Revert "Fix: Avoid fatal type-initialization exception at start-up"<br>This reverts commit f1881285eee9e488cb297ea67e5cfe90d9955fe5.</li></ul></li>
-<li class=''><code>T1.5.1-2206-gb4d338abe</code> Merge pull request #1188 from peternewell/safety_valves_effects<br>Add steam effects for safety valves<ul><li><code>7d2e8862</code> Documentation for back pressure volume control</li>
+<li class=''><code>T1.6-253-gb4d338abe</code> Merge pull request #1188 from peternewell/safety_valves_effects<br>Add steam effects for safety valves<ul><li><code>7d2e8862</code> Documentation for back pressure volume control</li>
 <li><code>400587d4</code> Add volume control for back pressure.</li>
 <li><code>8ec34ebf</code> Update documentation and minor code tidy up</li>
 <li><code>d977e7fc</code> Add steam effects for safety valves</li></ul></li>
-<li class=''><code>T1.5.1-2201-g9e1a5bfdb</code> Merge pull request #1082 from peternewell/water_gauge#1<br>Allow variable water level in glass gauge<ul><li><code>b29e9602</code> Add user configuration check.</li>
+<li class=''><code>T1.6-248-g9e1a5bfdb</code> Merge pull request #1082 from peternewell/water_gauge#1<br>Allow variable water level in glass gauge<ul><li><code>b29e9602</code> Add user configuration check.</li>
 <li><code>7ef05d99</code> Changes requested as part of review</li>
 <li><code>4d46ee44</code> further adjustments to motion pumps</li>
 <li><code>030bad31</code> Merge branch 'master' into water_gauge#1</li>
@@ -66,18 +77,18 @@
 <li><code>ca0d8e52</code> Further enhancements to grade water</li>
 <li><code>a3128ae0</code> Add extra line to HuD</li>
 <li><code>b96420ff</code> Initial work to allow variable water level in glass gauge</li></ul></li>
-<li class=''><code>T1.5.1-2153-g32215473b</code> Merge pull request #1176 from SteelFill/parser_tweak<br>Remove Implicit Requirement for Engine Name to Come After "Engine ("<ul><li><code>4cd961bc</code> Remove unneded string read in Engine( section</li></ul></li>
-<li class=''><code>T1.5.1-2151-g8388cf62b</code> Merge pull request #1178 from SteelFill/diesel_fixes<br>Fix Diesel RPM Rate of Change<ul><li><code>015769e7</code> Fix imprecision in diesel RPM change and correct rate of RPM decrease</li></ul></li>
-<li class=''><code>T1.5.1-2149-ga85c72073</code> Merge pull request #1182 from openrails/release/1.6<br>Merge pull request #1179 from twpol/feature/add-pr-1167<ul><li><code>2db9eebc</code> Merge pull request #1181 from twpol/feature/add-pr-1171<br>Lift #1171 into 1.6.1 release</li>
+<li class=''><code>T1.6-200-g32215473b</code> Merge pull request #1176 from SteelFill/parser_tweak<br>Remove Implicit Requirement for Engine Name to Come After "Engine ("<ul><li><code>4cd961bc</code> Remove unneded string read in Engine( section</li></ul></li>
+<li class=''><code>T1.6-198-g8388cf62b</code> Merge pull request #1178 from SteelFill/diesel_fixes<br>Fix Diesel RPM Rate of Change<ul><li><code>015769e7</code> Fix imprecision in diesel RPM change and correct rate of RPM decrease</li></ul></li>
+<li class=''><code>T1.6-196-ga85c72073</code> Merge pull request #1182 from openrails/release/1.6<br>Merge pull request #1179 from twpol/feature/add-pr-1167<ul><li><code>2db9eebc</code> Merge pull request #1181 from twpol/feature/add-pr-1171<br>Lift #1171 into 1.6.1 release</li>
 <li><code>d09515e4</code> Merge pull request #1180 from twpol/feature/add-pr-1168<br>Lift #1168 into 1.6.1 release</li>
 <li><code>b60415c1</code> Merge pull request #1179 from twpol/feature/add-pr-1167<br>Lift #1167 into 1.6.1 release</li></ul></li>
-<li class=''><code>T1.5.1-2142-gcff3244bf</code> Merge pull request #1183 from twpol/feature/contributing-2025<br>docs: Add code guidelines for translations<ul><li><code>41911f14</code> docs: Add code guidelines for translations</li>
+<li class=''><code>T1.6-189-gcff3244bf</code> Merge pull request #1183 from twpol/feature/contributing-2025<br>docs: Add code guidelines for translations<ul><li><code>41911f14</code> docs: Add code guidelines for translations</li>
 <li><code>ab3c6ccd</code> fix: Correctly find particular string attributes with matching context<br>This function is unused but is useful</li></ul></li>
-<li class=''><code>T1.5.1-2139-g21d9ada29</code> Merge pull request #1167 from rwf-rr/bugfix-runactivity-slow-exit<br>Fix: RunActivity slow to terminate because of long sleep in Host Process<ul><li><code>d5c0d641</code> Use interruptable sleep.<br>Was suggested in PR review. Avoids the extra counter.</li>
+<li class=''><code>T1.6-186-g21d9ada29</code> Merge pull request #1167 from rwf-rr/bugfix-runactivity-slow-exit<br>Fix: RunActivity slow to terminate because of long sleep in Host Process<ul><li><code>d5c0d641</code> Use interruptable sleep.<br>Was suggested in PR review. Avoids the extra counter.</li>
 <li><code>115325f9</code> Fix typo in variable name.</li>
 <li><code>2c028a4c</code> Reduce sleep to respond to terminate more quickly.</li></ul></li>
-<li class=''><code>T1.5.1-2135-g8951c4e76</code> Merge pull request #1177 from cjakeman/fix/avoid-type-initialization-exception<br>Fix: Avoid fatal type-initialization exception at start-up<ul><li><code>f1881285</code> Fix: Avoid fatal type-initialization exception at start-up</li></ul></li>
-<li class=''><code>T1.5.1-2133-g9962874dd</code> Merge pull request #1130 from mbm-OR/bugfix/Fix-F9-CarId-bug<br>Fix F9 points to an incorrect car ID.<ul><li><code>d517b5b6</code> Attempts to fix failures during build.</li>
+<li class=''><code>T1.6-182-g8951c4e76</code> Merge pull request #1177 from cjakeman/fix/avoid-type-initialization-exception<br>Fix: Avoid fatal type-initialization exception at start-up<ul><li><code>f1881285</code> Fix: Avoid fatal type-initialization exception at start-up</li></ul></li>
+<li class=''><code>T1.6-180-g9962874dd</code> Merge pull request #1130 from mbm-OR/bugfix/Fix-F9-CarId-bug<br>Fix F9 points to an incorrect car ID.<ul><li><code>d517b5b6</code> Attempts to fix failures during build.</li>
 <li><code>6b0f1dae</code> Merge branch 'master' into bugfix/Fix-F9-CarId-bug</li>
 <li><code>ad19b305</code> Restored colour of the large handbrake pictures</li>
 <li><code>0f4342d3</code> Merge branch 'master' into bugfix/Fix-F9-CarId-bug</li>
@@ -89,27 +100,27 @@
 <li><code>fb8a24dc</code> Fix F9 window turns black, selecting the last car of a large train.</li>
 <li><code>736c3f51</code> Fix bug when switching from cab camera to camera 2.</li>
 <li><code>251a6774</code> Fix F9 points to an incorrect car ID.</li></ul></li>
-<li class=''><code>T1.5.1-2120-g1c0dfc6fa</code> Merge pull request #1174 from openrails/release/1.6<br>Merge pull request #1172 from twpol/feature/add-pr-1163<ul><li><code>23281b95</code> Merge pull request #1173 from twpol/feature/add-pr-1164<br>Lift #1164 into 1.6.1 release</li>
+<li class=''><code>T1.6-167-g1c0dfc6fa</code> Merge pull request #1174 from openrails/release/1.6<br>Merge pull request #1172 from twpol/feature/add-pr-1163<ul><li><code>23281b95</code> Merge pull request #1173 from twpol/feature/add-pr-1164<br>Lift #1164 into 1.6.1 release</li>
 <li><code>6a78178f</code> Merge pull request #1172 from twpol/feature/add-pr-1163<br>Lift #1163 into 1.6.1 release</li></ul></li>
-<li class=''><code>T1.5.1-2115-gf00dec792</code> Merge pull request #1171 from sweiland-openrails/no_internet_no_manually_installed<br>no internet connection is available, not possible to open the Menu Content Form<ul><li><code>50efb5bc</code> Error message changed to "Failed to access the content repository (check Internet connection); automatic download not available. Error: {0}" As sugested by Roger (rwf-rr)</li>
+<li class=''><code>T1.6-162-gf00dec792</code> Merge pull request #1171 from sweiland-openrails/no_internet_no_manually_installed<br>no internet connection is available, not possible to open the Menu Content Form<ul><li><code>50efb5bc</code> Error message changed to "Failed to access the content repository (check Internet connection); automatic download not available. Error: {0}" As sugested by Roger (rwf-rr)</li>
 <li><code>8fd2066c</code> When no internet connection is available, trying to start the Menu Content form gives an error message.</li></ul></li>
-<li class=''><code>T1.5.1-2112-gc78746b34</code> Merge pull request #1170 from rwf-rr/bugfix-command-log-time-zero<br>Fix Command Log Time for Commands that had it at 0 (zero).<ul><li><code>83a049e7</code> Fix Command Log Time for commands that had it at 0 (zero).<br>Bug #2128993.<br>This may not be a complete fix. I fixed the commands that I have found<br>to have the wrong time.</li></ul></li>
-<li class=''><code>T1.5.1-2110-g84be72cd5</code> Merge pull request #1157 from cesarBLG/dynamic-brake-authorization<br>Dynamic brake authorization by TCS<ul><li><code>39cd994e</code> Dynamic brake cut for default TCS</li>
+<li class=''><code>T1.6-159-gc78746b34</code> Merge pull request #1170 from rwf-rr/bugfix-command-log-time-zero<br>Fix Command Log Time for Commands that had it at 0 (zero).<ul><li><code>83a049e7</code> Fix Command Log Time for commands that had it at 0 (zero).<br>Bug #2128993.<br>This may not be a complete fix. I fixed the commands that I have found<br>to have the wrong time.</li></ul></li>
+<li class=''><code>T1.6-157-g84be72cd5</code> Merge pull request #1157 from cesarBLG/dynamic-brake-authorization<br>Dynamic brake authorization by TCS<ul><li><code>39cd994e</code> Dynamic brake cut for default TCS</li>
 <li><code>805221ee</code> Fix condition to activate blending</li>
 <li><code>71283ab1</code> Dynamic brake authorization by TCS</li></ul></li>
-<li class=''><code>T1.5.1-2106-g62070ada6</code> Merge pull request #1156 from cesarBLG/control-operations-enable<br>Fix incorrectly disabled options in train operations window<ul><li><code>f46d5f27</code> Invert angle cock warnings for end cars</li>
+<li class=''><code>T1.6-153-g62070ada6</code> Merge pull request #1156 from cesarBLG/control-operations-enable<br>Fix incorrectly disabled options in train operations window<ul><li><code>f46d5f27</code> Invert angle cock warnings for end cars</li>
 <li><code>c1f443e5</code> Do not use localized strings for core operations</li>
 <li><code>bddc6e72</code> Fix bug</li>
 <li><code>78fd9572</code> Do not check DPU status for MU wire</li>
 <li><code>c5f1627c</code> Fix incorrectly disabled options in train operations window</li></ul></li>
-<li class=''><code>T1.5.1-2100-g31e3fe251</code> Merge pull request #1168 from rwf-rr/bugfix-exception-exit-mapwindow-open<br>Fix exception when exiting with MapForm or SoundDebugForm open.<ul><li><code>6e2942ff</code> Fix exception when exiting with MapForm or SoundDebugForm open.<br>Bug #2127145.</li></ul></li>
-<li class=''><code>T1.5.1-2098-g7915033ac</code> Merge pull request #1163 from mbm-OR/bugfix/Fix-camera8-F9-crash<br>Fix: Crash when using Camera 8 and F9.<ul><li><code>2f9e292d</code> Fix: Crash when using Camera 8 and F9.</li></ul></li>
-<li class=''><code>T1.5.1-2096-g2dd8a4679</code> Merge pull request #1164 from mbm-OR/bugfix/Fix-F9-crashes-front-coupler<br>Fix: F9 crashes with a front coupled single steam locomotive by Csantucci.<ul><li><code>1ad9889f</code> Fix: F9 crashes with a front coupled single steam locomotive.</li></ul></li>
-<li class=''><code>T1.5.1-2094-g23fd156fa</code> Merge pull request #1159 from Csantucci/skip-ruler-warnings<br>Skip OR warnings about TSRE-specific token Ruler<ul><li><code>48c9a630</code> Skip OR warnings about TSRE-specific token Ruler</li></ul></li>
-<li class=''><code>T1.5.1-2092-g6b62c2a7d</code> Merge pull request #1121 from SteelFill/manual_articulate<br>Manually Override Articulation<ul><li><code>de2a45d3</code> Documentation tweaks</li>
+<li class=''><code>T1.6-147-g31e3fe251</code> Merge pull request #1168 from rwf-rr/bugfix-exception-exit-mapwindow-open<br>Fix exception when exiting with MapForm or SoundDebugForm open.<ul><li><code>6e2942ff</code> Fix exception when exiting with MapForm or SoundDebugForm open.<br>Bug #2127145.</li></ul></li>
+<li class=''><code>T1.6-145-g7915033ac</code> Merge pull request #1163 from mbm-OR/bugfix/Fix-camera8-F9-crash<br>Fix: Crash when using Camera 8 and F9.<ul><li><code>2f9e292d</code> Fix: Crash when using Camera 8 and F9.</li></ul></li>
+<li class=''><code>T1.6-143-g2dd8a4679</code> Merge pull request #1164 from mbm-OR/bugfix/Fix-F9-crashes-front-coupler<br>Fix: F9 crashes with a front coupled single steam locomotive by Csantucci.<ul><li><code>1ad9889f</code> Fix: F9 crashes with a front coupled single steam locomotive.</li></ul></li>
+<li class=''><code>T1.6-141-g23fd156fa</code> Merge pull request #1159 from Csantucci/skip-ruler-warnings<br>Skip OR warnings about TSRE-specific token Ruler<ul><li><code>48c9a630</code> Skip OR warnings about TSRE-specific token Ruler</li></ul></li>
+<li class=''><code>T1.6-139-g6b62c2a7d</code> Merge pull request #1121 from SteelFill/manual_articulate<br>Manually Override Articulation<ul><li><code>de2a45d3</code> Documentation tweaks</li>
 <li><code>91d2d26d</code> Add manual header</li>
 <li><code>80b81f48</code> Allow manually defining articulation</li></ul></li>
-<li class=''><code>T1.5.1-2088-g5ad5bc1a6</code> Merge pull request #1165 from twpol/feature/contributing-2025<br>docs: Add code guidelines for logging<ul><li><code>aacd11b0</code> Update Docs/Contributing.md<br>Co-authored-by: Chris Jakeman <github@jakeman.plus.com></li>
+<li class=''><code>T1.6-135-g5ad5bc1a6</code> Merge pull request #1165 from twpol/feature/contributing-2025<br>docs: Add code guidelines for logging<ul><li><code>aacd11b0</code> Update Docs/Contributing.md<br>Co-authored-by: Chris Jakeman <github@jakeman.plus.com></li>
 <li><code>168c27cb</code> docs: Add code guidelines for logging</li>
 <li><code>56d23f7e</code> docs: Clean up ordering, improve submitting code section and link between sections</li>
 <li><code>8b563ac9</code> docs: Clarify general requirements as being from Microsoft .NET</li>
@@ -117,7 +128,7 @@
 <li><code>7a6e4f94</code> docs: Consistently refer to forums on Elvas Tower</li>
 <li><code>a47d67ce</code> docs: Small grammatical updates</li>
 <li><code>644d0d21</code> style: Format code</li></ul></li>
-<li class=''><code>T1.5.1-2079-gc9409918f</code> Merge pull request #1160 from peternewell/track_sounds_final_#1<br>Route Based TTrack Sounds<ul><li><code>c64daa0a</code> correct spelling error</li>
+<li class=''><code>T1.6-126-gc9409918f</code> Merge pull request #1160 from peternewell/track_sounds_final_#1<br>Route Based TTrack Sounds<ul><li><code>c64daa0a</code> correct spelling error</li>
 <li><code>9dc6b3bb</code> correct issue with 2 axle car positions not being processed.</li>
 <li><code>c45a9265</code> Remove surplus sound trigger</li>
 <li><code>84330cb0</code> Remove surplus triggers</li>
@@ -127,14 +138,14 @@
 <li><code>d58af26d</code> Remove conflict in Sounds.cs</li>
 <li><code>235a2935</code> Remove conflict</li>
 <li><code>76ee5aec</code> Initial build of track sounds</li></ul></li>
-<li class=''><code>T1.5.1-2068-g0d2de70b7</code> Merge pull request #1120 from SteelFill/auto_friction<br>Automatically Calculate Friction Values if Missing<ul><li><code>47e9955e</code> Tweaks in response to review</li>
+<li class=''><code>T1.6-115-g0d2de70b7</code> Merge pull request #1120 from SteelFill/auto_friction<br>Automatically Calculate Friction Values if Missing<ul><li><code>47e9955e</code> Tweaks in response to review</li>
 <li><code>ba3c47fa</code> Clean up after cherry picking</li>
 <li><code>786a44e4</code> Improve utility of verbose logging, expand capabilities of automatic friction calculation</li>
 <li><code>5bdba4f1</code> Automatically calculate friction values based on the bearing type</li></ul></li>
-<li class=''><code>T1.5.1-2063-g9e88e3ae1</code> Merge pull request #1162 from cjakeman/update-dds<br>specifies precedence of DDS over ACE<ul><li><code>2516ccea</code> specifies precedence of DDS over ACE<br>Describes the tolerant behaviour if filenames don't match references.</li></ul></li>
-<li class=''><code>T1.5.1-2061-g8fb3285d6</code> Merge pull request #1161 from cesarBLG/fix-script-ini<br>Fix string trim in .ini files<ul><li><code>6cfe4e21</code> Fix string trim in .ini files</li></ul></li>
-<li class=''><code>T1.5.1-2059-gdcc176472</code> Merge pull request #1115 from cesarBLG/automatic-ets<br>Do not activate ETS switch if no suitable cars are attached<ul><li><code>cb97e1d8</code> Implement number of ETS cars at the ETS switch</li></ul></li>
-<li class=''><code>T1.5.1-2057-gfe3b901f2</code> Merge pull request #1086 from rwf-rr/refactor-user-settings-loc/export-settings<br>Add Settings Exporter tool (copy settings to INI, etc)<ul><li><code>d8d61ebd</code> Add inffo that OpenRails must be closed for export.<br>Includes an unrelated change. The check for an INI file path was<br>inconsistent, using EndsWith for input and Contains for output.</li>
+<li class=''><code>T1.6-110-g9e88e3ae1</code> Merge pull request #1162 from cjakeman/update-dds<br>specifies precedence of DDS over ACE<ul><li><code>2516ccea</code> specifies precedence of DDS over ACE<br>Describes the tolerant behaviour if filenames don't match references.</li></ul></li>
+<li class=''><code>T1.6-108-g8fb3285d6</code> Merge pull request #1161 from cesarBLG/fix-script-ini<br>Fix string trim in .ini files<ul><li><code>6cfe4e21</code> Fix string trim in .ini files</li></ul></li>
+<li class=''><code>T1.6-106-gdcc176472</code> Merge pull request #1115 from cesarBLG/automatic-ets<br>Do not activate ETS switch if no suitable cars are attached<ul><li><code>cb97e1d8</code> Implement number of ETS cars at the ETS switch</li></ul></li>
+<li class=''><code>T1.6-104-gfe3b901f2</code> Merge pull request #1086 from rwf-rr/refactor-user-settings-loc/export-settings<br>Add Settings Exporter tool (copy settings to INI, etc)<ul><li><code>d8d61ebd</code> Add inffo that OpenRails must be closed for export.<br>Includes an unrelated change. The check for an INI file path was<br>inconsistent, using EndsWith for input and Contains for output.</li>
 <li><code>e10390b0</code> Update user manual for Settings Exporter.</li>
 <li><code>862913ed</code> Fix minor formatting issues.</li>
 <li><code>f34a04cf</code> Merge branch 'master' into refactor-user-settings-loc/export-settings<br>Included manual resolution of conflict in Source/ORTS.sln.</li>
@@ -148,7 +159,7 @@
 <li><code>ccd1b486</code> Add SettingsExporter (contrib).</li>
 <li><code>5cb9f463</code> Make path expansion consistent.</li>
 <li><code>76ec9e27</code> Changes needed for exporter.</li></ul></li>
-<li class=''><code>T1.5.1-2042-ga2a9bbcc8</code> Merge pull request #1104 from cesarBLG/simple-adhesion-axle<br>Handle simple adhesion within the axle module<ul><li><code>79192435</code> Merge branch 'master' into simple-adhesion-axle</li>
+<li class=''><code>T1.6-89-ga2a9bbcc8</code> Merge pull request #1104 from cesarBLG/simple-adhesion-axle<br>Handle simple adhesion within the axle module<ul><li><code>79192435</code> Merge branch 'master' into simple-adhesion-axle</li>
 <li><code>9fdade00</code> Fix incorrect brake fraction assignment</li>
 <li><code>ccc5c4dd</code> Set AdhesionConditions when starting</li>
 <li><code>87cdd9fa</code> Add TODO messages indicating that variables should never be NaN</li>
@@ -177,18 +188,18 @@
 <li><code>dd102c8e</code> Separate motive and friction axle out forces</li>
 <li><code>4222a2e7</code> Adhesion refactoring</li>
 <li><code>b4382d5c</code> Manage simple adhesion from Axle</li></ul></li>
-<li class=''><code>T1.5.1-2012-g2eb7441b0</code> Merge pull request #1143 from sweiland-openrails/WorkOrdersStatusDoneFix<br>Status in Work Orders popup set too fast<ul><li><code>36327c4e</code> removed the check on first and last wagon as it will block too many activities</li>
+<li class=''><code>T1.6-59-g2eb7441b0</code> Merge pull request #1143 from sweiland-openrails/WorkOrdersStatusDoneFix<br>Status in Work Orders popup set too fast<ul><li><code>36327c4e</code> removed the check on first and last wagon as it will block too many activities</li>
 <li><code>36d87c32</code> - functtion matchesConsistNoOrder now returns train when train contains the wagons of the activity drop off wagonlist<br>- Some actvity lists may only contain the first and last wagon. Check that first and last wagon match with those two wagons in the activity list.<br>- check if drop off train is a STATIC one</li>
 <li><code>ba9e40a2</code> If the Work Orders list in the Help from (F1) is larger than the form and scroll bar was used to scroll down, status changes make the Work Orders tab go to the top again. Disturbing... This fix makes the form stay at the current scroll position. Also the case when switching tabs.</li>
 <li><code>84f72b8d</code> Some lists may only contain the first and last wagon. Undone the previous change in matchesConsistNoOrder.</li>
 <li><code>1ad59d77</code> Fix on previous fix. Now siding check is done on wagons dropped. And amount of wagos dropped has to be exactly the amount on the activity asked list.</li>
 <li><code>71e57d23</code> status in Work Orders popup set too fast, see https://bugs.launchpad.net/or/+bug/2118776</li></ul></li>
-<li class=''><code>T1.5.1-2005-gede96ba17</code> Merge pull request #1152 from twpol/feature/data-logger-columns<br>fix: Clean up multiple issues with data logger<ul><li><code>66dfd096</code> fix: Clean up multiple issues with data logger<br>- Add explicit setting for steam power curve data<br>- Label and make steam data options properly exclusive<br>- Correct mismatched columns (multiple)<br>- Fix memory column</li></ul></li>
-<li class=''><code>T1.5.1-2003-gae57adebf</code> Merge pull request #1155 from cjakeman/fix-for-illegal-characters-in-reference-to-Shape-file<br>fix for illegal characters in refeerence to Shape file<ul><li><code>40f8c342</code> fix for illegal characters in refeerence to Shape file</li></ul></li>
-<li class=''><code>T1.5.1-2001-ga5be12922</code> Merge pull request #1153 from rwf-rr/fix-tritems-in-track-viewer<br>Fix TrItems in track viewer (events were over-writing mileposts)<ul><li><code>d2f2a025</code> Add path name to Chart Window title.<br>Appends to the default title from the properties.</li>
+<li class=''><code>T1.6-52-gede96ba17</code> Merge pull request #1152 from twpol/feature/data-logger-columns<br>fix: Clean up multiple issues with data logger<ul><li><code>66dfd096</code> fix: Clean up multiple issues with data logger<br>- Add explicit setting for steam power curve data<br>- Label and make steam data options properly exclusive<br>- Correct mismatched columns (multiple)<br>- Fix memory column</li></ul></li>
+<li class=''><code>T1.6-50-gae57adebf</code> Merge pull request #1155 from cjakeman/fix-for-illegal-characters-in-reference-to-Shape-file<br>fix for illegal characters in refeerence to Shape file<ul><li><code>40f8c342</code> fix for illegal characters in refeerence to Shape file</li></ul></li>
+<li class=''><code>T1.6-48-ga5be12922</code> Merge pull request #1153 from rwf-rr/fix-tritems-in-track-viewer<br>Fix TrItems in track viewer (events were over-writing mileposts)<ul><li><code>d2f2a025</code> Add path name to Chart Window title.<br>Appends to the default title from the properties.</li>
 <li><code>b6baa4c9</code> Remove unnecessary code that counts the events.</li>
 <li><code>eadd0820</code> Fix adding events to the standard TrItems array.<br>This fix collects the events in a list, and at the end resizes the array<br>and adds the events.<br>The existing code already counts the number of events (in cnt). Thus the<br>array could be extended before the second loop over activities, and the<br>events added directly.</li></ul></li>
-<li class=''><code>T1.5.1-1997-g9357ae784</code> Merge pull request #1154 from openrails/release/1.6<br>Merge pull request #1151 from twpol/feature/ace-dds-content-only<ul><li><code>0143dee5</code> Merge pull request #1151 from twpol/feature/ace-dds-content-only<br>fix: Do not allow non-ACE/DDS textures in content</li></ul></li>
+<li class=''><code>T1.6-44-g9357ae784</code> Merge pull request #1154 from openrails/release/1.6<br>Merge pull request #1151 from twpol/feature/ace-dds-content-only<ul><li><code>0143dee5</code> Merge pull request #1151 from twpol/feature/ace-dds-content-only<br>fix: Do not allow non-ACE/DDS textures in content</li></ul></li>
 <li class=''><code>T1.5.1-1993-ge3d1d75f9</code> Merge pull request #1139 from sweiland-openrails/IndexOutOfRangeTrainCarOperations<br>Fix for bug https://bugs.launchpad.net/or/+bug/2117357.<ul><li><code>03c6f8f6</code> set SelectedCarPosition to zero when uncoupling</li>
 <li><code>b47224d7</code> Fix for bug https://bugs.launchpad.net/or/+bug/2117357. Exception index of of range when opening Train Car Operations window</li></ul></li>
 <li class=''><code>T1.5.1-1990-g78efd5667</code> Merge pull request #1150 from Filic308/master<br>Updating italian strings<ul><li><code>9ef40020</code> Updating italian strings<br>* updating missing strings</li></ul></li>
