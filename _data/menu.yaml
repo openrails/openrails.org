@@ -43,6 +43,8 @@ toc:
         url: /learn/activities/
       - page: OR Physics
         url: /learn/physics/
+      - page: glTF and PBR
+        url: /learn/gltf/
   - title: Share
     subfolderitems:
       - page: Community
