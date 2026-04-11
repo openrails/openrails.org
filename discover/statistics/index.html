@@ -30,7 +30,12 @@ title: Statistics
     </div>
     <script src="https://cdn.plot.ly/plotly-latest.min.js" charset="utf-8"></script>
     <script>
-        var date = Math.floor(Date.now() / 86400000);
+        var DAY_MS = 1000 * 60 * 60 * 24;
+        var DATE_OFFSET_MS = DAY_MS * 19; // Adjustment to line up with .NET Ticks in statistics processing code
+        var FOUR_WEEK_MS = DAY_MS * 28;
+        var TWO_YEARS_MS = FOUR_WEEK_MS * 26;
+        var date = Math.floor(Date.now() / DAY_MS);
+        var graphBaseMs = Math.floor((Date.now() - DATE_OFFSET_MS) / FOUR_WEEK_MS) * FOUR_WEEK_MS + DATE_OFFSET_MS;
         var layout = {
             margin: {
                 l: 40,
@@ -40,8 +45,8 @@ title: Statistics
             },
             xaxis: {
                 range: [
-                    new Date(Date.now() - 1000 * 60 * 60 * 24 * 365 * 2),
-                    new Date(Date.now() - 1000 * 60 * 60 * 24 * 28),
+                    new Date(graphBaseMs - TWO_YEARS_MS),
+                    new Date(graphBaseMs),
                 ],
             },
             paper_bgcolor: '#ffe',
