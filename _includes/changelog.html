@@ -1,8 +1,16 @@
-<li class=''><code>T1.6.1-449-gd36281e59</code> Merge pull request #1252 from rwf-rr/bugfix-what-is-new<br>Fix for exception on "What is new" in main menu Notifications.<ul><li><code>b058563b</code> Remove duplicate line.</li>
-<li><code>3d4de9b2</code> Fix more Process.Start() cases where UseShellExecute is needed.<br>Also includes fixes to a couple of documentation URLs.</li>
-<li><code>149af45b</code> Merge branch 'master' into bugfix-what-is-new</li>
-<li><code>50be5685</code> Fix for exception on "What is new" in main menu Notifications.<br>With .NET 6, UseShellExecute needs to be explicitly set to true.</li></ul></li>
-<li class=''><code>T1.6.1-444-g39c27cac7</code> Merge pull request #1236 from cjakeman/fix-notifications-missing-item-type<br>adds MissingItem type to handle new item types in notifications/menu.json<ul><li><code>f47fcd09</code> simplified return statement</li>
-<li><code>14144d9b</code> simplify return statement</li>
-<li><code>7cc911af</code> adds MissingItem type to handle new, unrecognised item types in notifications/menu.json</li></ul></li>
-<li class=''><code>T1.6.1-440-g0c1e9b254</code> Merge pull request #1248 from cesarBLG/net6-scripts<br>Fix scripts not working in .NET 6<ul><li><code>382cc419</code> Add reference to system assemblies in scripts</li></ul></li>
+<li class=''><code>T1.6.1-467-gffac8db15</code> Merge pull request #1245 from SteelFill/multi_sounds<br>Thanks Peter, merging Allow Defining Multiple SMS Files Simultaneously<ul><li><code>217c5973</code> Support multiple sound sources in world sound tiles</li>
+<li><code>9373dd25</code> Add handling for multiple SMS files in trains</li></ul></li>
+<li class=''><code>T1.6.1-464-gbd0c21d12</code> Merge pull request #1221 from SteelFill/engines_tweaks<br>Thanks Peter, merging New Sounds for Diesel Locomotives (+ Refactor of Sound Debug Window)<ul><li><code>5a918c6b</code> Merge branch 'master' into engines_tweaks</li>
+<li><code>74a8e79b</code> Merge engine RPM changes, minor refinement to sound debug window</li>
+<li><code>0d08ee7f</code> Merge latest master build, minor cleanup</li>
+<li><code>b0664efa</code> Calculate wheel speed for wagons</li>
+<li><code>2f8634a0</code> Use axle drive force for sounds to reduce jitters</li>
+<li><code>6ccef21b</code> Undo changes to DieselEngine.cs, now captured in a different PR</li>
+<li><code>c3a6972b</code> Add scrollbar to the sound debug variables list</li>
+<li><code>8c646cb2</code> Unify implementation of variable curves and variable triggers, add units of measure support to sound variables</li>
+<li><code>c3ac9460</code> Fix potential NaN in engine power</li>
+<li><code>454693e6</code> Sound debug window documentation update, tweaks to handling sound streams in debug window</li>
+<li><code>ec12bc11</code> Also initialize sound variables on copied locomotives</li>
+<li><code>03e3b087</code> Also show track sound sources in sound debug</li>
+<li><code>f064f9f8</code> Better balancing of engine load between multiple engines</li>
+<li><code>910b20c3</code> Support multiple diesel engines in the audio system and add related new audio variables</li></ul></li>
