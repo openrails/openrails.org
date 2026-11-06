@@ -1,5 +1,35 @@
-<li class='recent text-primary'><code>T1.6.1-512-gf99657ec2</code> Merge pull request #1277 from rwf-rr/fix-replay-list-camera-command-not-removed<br>Fix for camera command not removed from replay list.<ul><li><code>1bae63d2</code> Fix for camera command not removed from replay list.</li></ul></li>
-<li class='recent text-primary'><code>T1.6.1-510-g6927efdce</code> Merge pull request #1278 from SteelFill/multi_sounds<br>Thanks Roger, merging Allow Defining Multiple Cab SMS Files Simultaneously<ul><li><code>f5f71798</code> Add multiple sound sources to locomotive cab view sounds</li></ul></li>
+<li class='recent text-primary'><code>T1.6.1-549-g1a2db439b</code> Merge pull request #1287 from SteelFill/multi_sounds<br>Thanks Roger, merging Fix Sound Variable Parsing Error<ul><li><code>d34956c6</code> Make sound variable indexing more resiliant</li></ul></li>
+<li class='recent text-primary'><code>T1.6.1-547-gcb6d90e19</code> Merge pull request #1272 from SteelFill/wheelslip_protection<br>Thanks Cesar, merging Wheelslip Refactor<ul><li><code>5e2cdd23</code> Attempts to reduce Polach instability at low speeds</li>
+<li><code>3be3e15d</code> Sanding documentation updates</li>
+<li><code>0de1f96d</code> More sanding reorganization</li>
+<li><code>fc8562a6</code> Clean-up</li>
+<li><code>3f12d7dd</code> Hybrid algorithm for calculating wheel slip threshold</li>
+<li><code>fb6328ef</code> New iterator for wheel slip threshold computation.</li>
+<li><code>07f1b849</code> Restore incorrectly removed sanding parameters</li>
+<li><code>e29a66fc</code> Improve effectiveness of full slip control system</li>
+<li><code>15fd5991</code> General clean-up</li>
+<li><code>e7ea60b0</code> Improve efficiency and accuracy of slip threshold calculation</li>
+<li><code>1d9738b7</code> Even more sander refactoring</li>
+<li><code>b1d70dfc</code> Refactor traction force update for general tidyness and to support individual axle control</li>
+<li><code>19e2ea35</code> Correct sander documentation</li>
+<li><code>38b91011</code> Relocate IsPecisionHigh, un-trainline WHEELSLIP cab view control</li>
+<li><code>de2f9ecc</code> Refactor slip indicators</li>
+<li><code>c5fae701</code> Fix misspellings of "warning"</li>
+<li><code>e1f23fc2</code> Refactor axle integrator substep behavior for improved accuracy and responsiveness</li>
+<li><code>9dcc2fd6</code> Clean up code and adjust performance of wheel slip detection</li>
+<li><code>2fa68aaf</code> Properly initialize sander values</li>
+<li><code>53811976</code> Refactor implementation of adhesion precision switch</li>
+<li><code>8aed4506</code> Refactor slip control implementation</li></ul></li>
+<li class='recent text-primary'><code>T1.6.1-525-g17e2cf39a</code> Merge pull request #1288 from SteelFill/engine_rpm<br>Thanks Cesar, merging Fix Diesel Engine Parsing Error<ul><li><code>74215eda</code> Continue parsing diesel engine even after encountering unknown token</li></ul></li>
+<li class='recent text-primary'><code>T1.6.1-523-g90cafd70a</code> Merge pull request #1286 from rwf-rr/fix-multiplayer-flip-null-ref-exception<br>Fix null pointer exception in multiplayer with long trains.<ul><li><code>eb0df9ac</code> Fix null pointer exception in multiplayer with long trains.<br>The arrays were created with the train size, but the copy was maxed at<br>20. This left the tail of the array at null.<br>I don't know how correct or appropriate the limit to maximum 20 cars is.</li></ul></li>
+<li class='recent text-primary'><code>T1.6.1-521-g43469db43</code> Merge pull request #1285 from rwf-rr/fix-multiplayer-uncouple-cars-vanish<br>Fix multiplayer bug: cars vanishing on uncouple.<ul><li><code>297b89f9</code> Fix multiplayer cars vanishing on uncouple.<br>Addresses issues reported in bug #2171546.</li></ul></li>
+<li class='recent text-primary'><code>T1.6.1-519-g5e29e7acb</code> Merge pull request #1263 from SteelFill/particle_emitter_fixes<br>Thanks Carlo, merging Harmless Part of Particle Emitter Overhaul<ul><li><code>b14a110f</code> Adjust diesel particle behavior</li>
+<li><code>276db2ae</code> Handle occasional infinite values produced by particle system</li>
+<li><code>99c71ca6</code> Add non-visual changes from particle emitter overhaul</li></ul></li>
+<li class='recent text-primary'><code>T1.6.1-515-g2db35ddc5</code> Merge pull request #1280 from RB211/fix/wine-wmi<br>Viewer: do not stop the game when WMI is unavailable<ul><li><code>90204e79</code> Viewer: catch any exception while reading the adapter memory<br>As suggested in review: the three catches did the same thing, and the<br>value is only informational, so one catch of Exception covers them,<br>as SystemInfo already does.<br>Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com></li>
+<li><code>a96536f5</code> Viewer: do not stop the game when WMI is unavailable<br>On .NET 6, System.Management loads wminet_utils.dll from an installed<br>.NET Framework 4. Under Wine (Proton) there is none, so querying the<br>video controllers throws PlatformNotSupportedException and the run ends<br>as the viewer starts. SystemInfo already treats this as a warning;<br>UpdateAdapterInformation now does too and leaves the adapter memory<br>unknown.<br>Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com></li></ul></li>
+<li class=''><code>T1.6.1-512-gf99657ec2</code> Merge pull request #1277 from rwf-rr/fix-replay-list-camera-command-not-removed<br>Fix for camera command not removed from replay list.<ul><li><code>1bae63d2</code> Fix for camera command not removed from replay list.</li></ul></li>
+<li class=''><code>T1.6.1-510-g6927efdce</code> Merge pull request #1278 from SteelFill/multi_sounds<br>Thanks Roger, merging Allow Defining Multiple Cab SMS Files Simultaneously<ul><li><code>f5f71798</code> Add multiple sound sources to locomotive cab view sounds</li></ul></li>
 <li class=''><code>T1.6.1-508-g665001365</code> Merge pull request #1271 from cesarBLG/net6-loading-time<br>Fix SBRException.GetPosition() regression<ul><li><code>0fb09e3c</code> Fix crash in SBRException.GetPosition()</li></ul></li>
 <li class=''><code>T1.6.1-506-g056ba09d3</code> Merge pull request #1262 from rwf-rr/fix-data-logger-steam-interval<br>Fix bugs in data logger: steam interval, steam data.<ul><li><code>f625907d</code> Fix bugs in data logger: add to log, steam data.<br>Data for Steam locomotives is logged at speed intervals. However, new<br>lines were always written at time intervals, resulting in empty rows for<br>steam loco data.<br>Some of the steam locomotive data was logged from the loco object.<br>However, the data was never copied from the STeamEngine object (where it<br>is maintained.<br>SteamPerformanceTimeS was not updated for steam locomotive using the<br>simple adhesion model.</li></ul></li>
 <li class=''><code>T1.6.1-504-g2e5cd77eb</code> Merge pull request #1264 from rwf-rr/fix-menu-starting-from-selection<br>Fix bug where StartingAt could not be changed.<ul><li><code>2ac69ed3</code> Fix bug where StartingAt could not be changed.<br>https://bugs.launchpad.net/or/+bug/2141160<br>Also minor fix to restore timetable environment from Menu_Selection in<br>settings.</li></ul></li>
