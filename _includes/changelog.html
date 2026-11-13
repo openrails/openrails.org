@@ -1,30 +1,11 @@
-<li class=''><code>T1.6.1-549-g1a2db439b</code> Merge pull request #1287 from SteelFill/multi_sounds<br>Thanks Roger, merging Fix Sound Variable Parsing Error<ul><li><code>d34956c6</code> Make sound variable indexing more resiliant</li></ul></li>
-<li class=''><code>T1.6.1-547-gcb6d90e19</code> Merge pull request #1272 from SteelFill/wheelslip_protection<br>Thanks Cesar, merging Wheelslip Refactor<ul><li><code>5e2cdd23</code> Attempts to reduce Polach instability at low speeds</li>
-<li><code>3be3e15d</code> Sanding documentation updates</li>
-<li><code>0de1f96d</code> More sanding reorganization</li>
-<li><code>fc8562a6</code> Clean-up</li>
-<li><code>3f12d7dd</code> Hybrid algorithm for calculating wheel slip threshold</li>
-<li><code>fb6328ef</code> New iterator for wheel slip threshold computation.</li>
-<li><code>07f1b849</code> Restore incorrectly removed sanding parameters</li>
-<li><code>e29a66fc</code> Improve effectiveness of full slip control system</li>
-<li><code>15fd5991</code> General clean-up</li>
-<li><code>e7ea60b0</code> Improve efficiency and accuracy of slip threshold calculation</li>
-<li><code>1d9738b7</code> Even more sander refactoring</li>
-<li><code>b1d70dfc</code> Refactor traction force update for general tidyness and to support individual axle control</li>
-<li><code>19e2ea35</code> Correct sander documentation</li>
-<li><code>38b91011</code> Relocate IsPecisionHigh, un-trainline WHEELSLIP cab view control</li>
-<li><code>de2f9ecc</code> Refactor slip indicators</li>
-<li><code>c5fae701</code> Fix misspellings of "warning"</li>
-<li><code>e1f23fc2</code> Refactor axle integrator substep behavior for improved accuracy and responsiveness</li>
-<li><code>9dcc2fd6</code> Clean up code and adjust performance of wheel slip detection</li>
-<li><code>2fa68aaf</code> Properly initialize sander values</li>
-<li><code>53811976</code> Refactor implementation of adhesion precision switch</li>
-<li><code>8aed4506</code> Refactor slip control implementation</li></ul></li>
-<li class=''><code>T1.6.1-525-g17e2cf39a</code> Merge pull request #1288 from SteelFill/engine_rpm<br>Thanks Cesar, merging Fix Diesel Engine Parsing Error<ul><li><code>74215eda</code> Continue parsing diesel engine even after encountering unknown token</li></ul></li>
-<li class=''><code>T1.6.1-523-g90cafd70a</code> Merge pull request #1286 from rwf-rr/fix-multiplayer-flip-null-ref-exception<br>Fix null pointer exception in multiplayer with long trains.<ul><li><code>eb0df9ac</code> Fix null pointer exception in multiplayer with long trains.<br>The arrays were created with the train size, but the copy was maxed at<br>20. This left the tail of the array at null.<br>I don't know how correct or appropriate the limit to maximum 20 cars is.</li></ul></li>
-<li class=''><code>T1.6.1-521-g43469db43</code> Merge pull request #1285 from rwf-rr/fix-multiplayer-uncouple-cars-vanish<br>Fix multiplayer bug: cars vanishing on uncouple.<ul><li><code>297b89f9</code> Fix multiplayer cars vanishing on uncouple.<br>Addresses issues reported in bug #2171546.</li></ul></li>
-<li class=''><code>T1.6.1-519-g5e29e7acb</code> Merge pull request #1263 from SteelFill/particle_emitter_fixes<br>Thanks Carlo, merging Harmless Part of Particle Emitter Overhaul<ul><li><code>b14a110f</code> Adjust diesel particle behavior</li>
-<li><code>276db2ae</code> Handle occasional infinite values produced by particle system</li>
-<li><code>99c71ca6</code> Add non-visual changes from particle emitter overhaul</li></ul></li>
-<li class=''><code>T1.6.1-515-g2db35ddc5</code> Merge pull request #1280 from RB211/fix/wine-wmi<br>Viewer: do not stop the game when WMI is unavailable<ul><li><code>90204e79</code> Viewer: catch any exception while reading the adapter memory<br>As suggested in review: the three catches did the same thing, and the<br>value is only informational, so one catch of Exception covers them,<br>as SystemInfo already does.<br>Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com></li>
-<li><code>a96536f5</code> Viewer: do not stop the game when WMI is unavailable<br>On .NET 6, System.Management loads wminet_utils.dll from an installed<br>.NET Framework 4. Under Wine (Proton) there is none, so querying the<br>video controllers throws PlatformNotSupportedException and the run ends<br>as the viewer starts. SystemInfo already treats this as a warning;<br>UpdateAdapterInformation now does too and leaves the adapter memory<br>unknown.<br>Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com></li></ul></li>
+<li class=''><code>T1.6.1-563-gb772bdf94</code> Merge pull request #1276 from rwf-rr/fix-replay-of-car-commands<br>Fix null pointer exception for car operations on replay.<ul><li><code>b344dee5</code> Remove unused variables, as per review comments.</li>
+<li><code>eea60e0e</code> Merge branch 'master' into fix-replay-of-car-commands<br>Includes resolving a conflict on GetCarPosition() and<br>GetCarPositionByCarID().</li>
+<li><code>972bd0e9</code> Use object reference equivalence instead of car-id to find car position.<br>Car-id may not be unique within a consist.<br>Commands should always use a reference to a car within the player<br>train's cars list.</li>
+<li><code>18550445</code> Fix null pointer exception for car operations on replay.<br>Add the car position (index) to the command log, and apply the replay<br>command to the car referenced by the index.<br>Also includes a Train.cs method from branch fix-camera-using-takewhile-with-carid,<br>needed to get the car index.</li></ul></li>
+<li class=''><code>T1.6.1-558-gab982a348</code> Merge pull request #1274 from rwf-rr/fix-camera-using-takewhile-with-carid<br>Fix potential index out of range exceptions for outside cameras.<ul><li><code>3e547a80</code> Fix case when break-in-two with camera on rear.</li>
+<li><code>c4c97d5e</code> Fixed order of lines for warning.</li>
+<li><code>4f5703f9</code> Better error handling. Minor cleanup.</li>
+<li><code>e043a87f</code> Reset AttachedCar when the prev attached car is no longer in train.</li>
+<li><code>4329a843</code> Avoid null pointer exception on attachedCar. Set to first car.<br>I encountered this in Visual Studio, but have not been able to reproduce<br>it.</li>
+<li><code>d8b42b5d</code> Fix potential index out of range exceptions for outside cameras.<br>Use FindIndex() instead of TakeWhile(), and handle case when the car is<br>not found.<br>Check and fix outside camera position. This is a temporary fix. The<br>outside cameras should really be adjusted when the uncoupling is done. I<br>may tackle that in a later PR.</li></ul></li>
+<li class=''><code>T1.6.1-551-g9e8c3ddb7</code> Merge pull request #1282 from rwf-rr/fix-timetablereader-empty-file-edwar64896<br>Fix crash when Timetable file is empty or has empty first line.<ul><li><code>7c24306d</code> Fix crash when Timetable file is empty or has empty first line.<br>This is a recreation of AI (edwar64896) PR #1257, with minor mods.<br>https://github.com/openrails/openrails/pull/1257</li></ul></li>
