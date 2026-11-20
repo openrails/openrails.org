@@ -1,14 +1,53 @@
-<li class='recent text-primary'><code>T1.6.1-563-gb772bdf94</code> Merge pull request #1276 from rwf-rr/fix-replay-of-car-commands<br>Fix null pointer exception for car operations on replay.<ul><li><code>b344dee5</code> Remove unused variables, as per review comments.</li>
+<li class='recent text-primary'><code>T1.6.1-603-g4b5b34e9a</code> Merge pull request #1091 from cesarBLG/cruise-control-review<br>Automatic speed control<ul><li><code>adbb5ec2</code> Fix wrong default value</li>
+<li><code>3cb3153e</code> CC coasting only when stop parameters are defined</li>
+<li><code>f22f5450</code> Update Source/Orts.Common/AccelerationController.cs<br>Co-authored-by: Phillip Schlichting <73207352+SteelFill@users.noreply.github.com></li>
+<li><code>4157fd1a</code> Implement DynamicBrakeMaxForceAtSelectorStep</li>
+<li><code>e99963e2</code> User-configurable parameters and PID controller adjustment</li>
+<li><code>de93c723</code> Fix theoretical acceleration calculation</li>
+<li><code>06784ecb</code> Merge branch 'master' into cruise-control-review</li>
+<li><code>26a34745</code> Merge remote-tracking branch 'official/master' into cruise-control-review</li>
+<li><code>5ac1f7d8</code> Fix cruise control throttle sonds</li>
+<li><code>1c649c1f</code> Better implementation of CC lever sounds</li>
+<li><code>378be557</code> Merge branch 'master' into cruise-control-review</li>
+<li><code>492795a4</code> Do not use discrete selector if step is 0</li>
+<li><code>e813c42c</code> Bug fixes</li>
+<li><code>9b80facc</code> Fix wrong controller restore</li>
+<li><code>2e06f85f</code> Merge branch 'master' into cruise-control-review</li>
+<li><code>aa72c133</code> Fix wrong detection of non-smooth controllers</li>
+<li><code>7fc8de16</code> Indicate if CC braking is active or not for non self-lapping controllers</li>
+<li><code>2391bc0d</code> Move acceleration controller to common namespace</li>
+<li><code>c2b19639</code> Fix for custom smooth selectors</li>
+<li><code>35f0051f</code> Fix rounding error</li>
+<li><code>b81c6fca</code> Speed selector is discrete by default</li>
+<li><code>13230d5a</code> Allow discrete speeds even when using throttle as speed selector</li>
+<li><code>ac323a2d</code> Fix selected speed never set to 0</li>
+<li><code>53fe3c28</code> Simplify condition for auto mode activation</li>
+<li><code>db81258a</code> Fix syntax in cruisecontrol.rst</li>
+<li><code>6bab3bfb</code> Merge branch 'master' into cruise-control-review</li>
+<li><code>74f0ec64</code> Fix enabling/disabling cruise control based on lever position</li>
+<li><code>b0c622b6</code> Use 0 as default braking offset<br>Legacy implementation of the offset to 0.5 was bugged before this PR, compatibility not needed</li>
+<li><code>d50b4434</code> Update documentation</li>
+<li><code>99a4650e</code> Rename speed delta function mode</li>
+<li><code>607b9c64</code> MPC and CC with non-proportional notched speeds</li>
+<li><code>b78bcceb</code> Fixes to user input</li>
+<li><code>71afdd6a</code> Rename ATO to ASC</li>
+<li><code>45c3a4ad</code> Further refinements to cruise control</li>
+<li><code>5553e930</code> Cruise control refactoring and algorithm adjusting</li>
+<li><code>f5484afa</code> Rewrite to use acceleration-based logic</li>
+<li><code>e3c5ec70</code> Add support for ATO</li>
+<li><code>9c45a4b3</code> Implement PID algorithm for cruise control</li>
+<li><code>24bf2ebe</code> Cruise control parking mode</li></ul></li>
+<li class=''><code>T1.6.1-563-gb772bdf94</code> Merge pull request #1276 from rwf-rr/fix-replay-of-car-commands<br>Fix null pointer exception for car operations on replay.<ul><li><code>b344dee5</code> Remove unused variables, as per review comments.</li>
 <li><code>eea60e0e</code> Merge branch 'master' into fix-replay-of-car-commands<br>Includes resolving a conflict on GetCarPosition() and<br>GetCarPositionByCarID().</li>
 <li><code>972bd0e9</code> Use object reference equivalence instead of car-id to find car position.<br>Car-id may not be unique within a consist.<br>Commands should always use a reference to a car within the player<br>train's cars list.</li>
 <li><code>18550445</code> Fix null pointer exception for car operations on replay.<br>Add the car position (index) to the command log, and apply the replay<br>command to the car referenced by the index.<br>Also includes a Train.cs method from branch fix-camera-using-takewhile-with-carid,<br>needed to get the car index.</li></ul></li>
-<li class='recent text-primary'><code>T1.6.1-558-gab982a348</code> Merge pull request #1274 from rwf-rr/fix-camera-using-takewhile-with-carid<br>Fix potential index out of range exceptions for outside cameras.<ul><li><code>3e547a80</code> Fix case when break-in-two with camera on rear.</li>
+<li class=''><code>T1.6.1-558-gab982a348</code> Merge pull request #1274 from rwf-rr/fix-camera-using-takewhile-with-carid<br>Fix potential index out of range exceptions for outside cameras.<ul><li><code>3e547a80</code> Fix case when break-in-two with camera on rear.</li>
 <li><code>c4c97d5e</code> Fixed order of lines for warning.</li>
 <li><code>4f5703f9</code> Better error handling. Minor cleanup.</li>
 <li><code>e043a87f</code> Reset AttachedCar when the prev attached car is no longer in train.</li>
 <li><code>4329a843</code> Avoid null pointer exception on attachedCar. Set to first car.<br>I encountered this in Visual Studio, but have not been able to reproduce<br>it.</li>
 <li><code>d8b42b5d</code> Fix potential index out of range exceptions for outside cameras.<br>Use FindIndex() instead of TakeWhile(), and handle case when the car is<br>not found.<br>Check and fix outside camera position. This is a temporary fix. The<br>outside cameras should really be adjusted when the uncoupling is done. I<br>may tackle that in a later PR.</li></ul></li>
-<li class='recent text-primary'><code>T1.6.1-551-g9e8c3ddb7</code> Merge pull request #1282 from rwf-rr/fix-timetablereader-empty-file-edwar64896<br>Fix crash when Timetable file is empty or has empty first line.<ul><li><code>7c24306d</code> Fix crash when Timetable file is empty or has empty first line.<br>This is a recreation of AI (edwar64896) PR #1257, with minor mods.<br>https://github.com/openrails/openrails/pull/1257</li></ul></li>
+<li class=''><code>T1.6.1-551-g9e8c3ddb7</code> Merge pull request #1282 from rwf-rr/fix-timetablereader-empty-file-edwar64896<br>Fix crash when Timetable file is empty or has empty first line.<ul><li><code>7c24306d</code> Fix crash when Timetable file is empty or has empty first line.<br>This is a recreation of AI (edwar64896) PR #1257, with minor mods.<br>https://github.com/openrails/openrails/pull/1257</li></ul></li>
 <li class=''><code>T1.6.1-549-g1a2db439b</code> Merge pull request #1287 from SteelFill/multi_sounds<br>Thanks Roger, merging Fix Sound Variable Parsing Error<ul><li><code>d34956c6</code> Make sound variable indexing more resiliant</li></ul></li>
 <li class=''><code>T1.6.1-547-gcb6d90e19</code> Merge pull request #1272 from SteelFill/wheelslip_protection<br>Thanks Cesar, merging Wheelslip Refactor<ul><li><code>5e2cdd23</code> Attempts to reduce Polach instability at low speeds</li>
 <li><code>3be3e15d</code> Sanding documentation updates</li>
