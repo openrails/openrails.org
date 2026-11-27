@@ -12,18 +12,18 @@ stable_source:
   bytes: 146241554
 stable_version: 1.6.1
 testing_build:
-  url: https://github.com/openrails/openrails-testing/releases/download/T1.6.1-603-g4b5b34e9a/Open.Rails.T1.6.1-603-g4b5b34e9a.zip
-  date: 2026-11-20
-  bytes: 103050756
+  url: https://github.com/openrails/openrails-testing/releases/download/T1.6.1-610-gdfb5246ca/Open.Rails.T1.6.1-610-gdfb5246ca.zip
+  date: 2026-11-27
+  bytes: 102686949
 testing_source:
-  url: https://github.com/openrails/openrails-testing/releases/download/T1.6.1-603-g4b5b34e9a/Open.Rails.T1.6.1-603-g4b5b34e9a.Source.zip
-  date: 2026-11-20
-  bytes: 169932504
+  url: https://github.com/openrails/openrails-testing/releases/download/T1.6.1-610-gdfb5246ca/Open.Rails.T1.6.1-610-gdfb5246ca.Source.zip
+  date: 2026-11-27
+  bytes: 169770308
 testing_manual:
   url: https://static.openrails.org/files/OpenRails-Testing-Manual.pdf
   date: 2023-02-03
   bytes: 36504088
-testing_version: T1.6.1-603-g4b5b34e9a
+testing_version: T1.6.1-610-gdfb5246ca
 unstable_build:
   url: https://github.com/openrails/openrails-unstable/releases/download/U2026.11.26-1123/Open.Rails.U2026.11.26-1123.zip
   date: 2026-11-26
